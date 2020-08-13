@@ -4,7 +4,7 @@
 ## Online Example & Deployment:
 
 This application was deployed to Heroku services.
--  Link: https://mern-auth-boiler-plate-jwt.herokuapp.com/
+-  Link: https://project3-plate.herokuapp.com/
 
 ## Description
 
