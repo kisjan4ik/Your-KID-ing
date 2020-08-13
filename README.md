@@ -37,8 +37,7 @@ npm install
     To start using this project: 
 
     1.  Install node modules for Fron-End and Back-End with: npm install
-    2.  Use a Mongo service like "Mongo Atlas" to create your database and credentials.
-    3.  Create a .env file at the root location of the project to handle the database credentials and JWT secret:
+    2.  Create a .env file at the root location of the project to handle the database credentials and JWT secret:
     
         # Database Info
         DATABASE_INFO = "Your Mongo Credentials"
@@ -46,8 +45,8 @@ npm install
         #JWT Secret
         JWT_SECRET = "Your JWT Secret"
 
-    4.  Run the following command to start the application: npm run dev
-    5.  Enjoy..!
+    3.  Run the following command to start the application: npm run dev
+    4.  Enjoy..!
 ``` 
 
 ## Questions
