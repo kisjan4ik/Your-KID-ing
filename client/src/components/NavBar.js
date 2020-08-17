@@ -12,7 +12,7 @@ export const NavBar = () => {
         if (isAuthenticated) {
             return (
                 <>
-                    <Link to="/dashboard" className="item">{currentUser.email}</Link>
+                    <Link to="/dashboard" className="item">{currentUser.nickname}</Link>
                     <Logout />
                 </>
             )
