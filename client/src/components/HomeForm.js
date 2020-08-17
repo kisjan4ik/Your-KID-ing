@@ -1,14 +1,13 @@
 import React from "react";
-import HomeCardInfo from "../components/HomeCardInfo";
+import { Link } from "react-router-dom";
 
-function HomeForm(props){
+function HomeForm(props) {
 
-return(
-    <div className="t-inline-block t-card" onClick={() => props.click(props.item)}>
-    <img className="t-card-image" src={props.item.imgSrc} alt={props.item.imgSrc} />
-{props.item.selected && <HomeCardInfo  link={props.item.link} />}
-</div>
-)
+    return (
+        <div className="t-inline-block t-card" onClick={() => props.click(props.item.image)}>
+            <Link to={props.item.link} target="blank" rel="noopener noreferrer"><img className="t-card-image" src={props.item.imgSrc} alt={props.item.imgSrc} /></Link>
 
+        </div>
+    )
 }
- export default HomeForm;
+export default HomeForm;
