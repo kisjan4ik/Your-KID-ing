@@ -28,6 +28,11 @@ const RegisterForm = (props) => {
 
                 <Segment>
                     <Field
+                        name="nickname"
+                        component={renderInput}
+                        label="Enter User name"
+                    />
+                    <Field
                         name="firstname"
                         component={renderInput}
                         label="Enter Name"
@@ -36,6 +41,11 @@ const RegisterForm = (props) => {
                         name="lastname"
                         component={renderInput}
                         label="Enter Last name"
+                    />
+                    <Field
+                        name="location"
+                        component={renderInput}
+                        label="city, state"
                     />
                     <Field
                         name="email"
@@ -66,7 +76,14 @@ const renderInput = ({ input, label }) => {
 
         if (input.name === "email" || input.name === "firstname" || input.name === "lastname") {
             return "user icon"
-        } else {
+        } 
+        if (input.name === "nickname") {
+            return "user outline icon"
+        }
+        if (input.name === "location") {
+            return "map marker alternate icon"
+        }else 
+        {
             return "lock icon"
         }
 

@@ -8,9 +8,9 @@ module.exports = {
 
         try {
 
-            const { email, password, firstname, lastname } = req.body;
+            const { email, password, firstname, lastname, nickname, location } = req.body;
             // Check user enters all fields
-            if (!email || !password || !firstname || !lastname) return res.status(400).json({ message: "Please enter all fields" });
+            if (!email || !password || !firstname || !lastname || !nickname || !location) return res.status(400).json({ message: "Please enter all fields" });
             // Check the user enters the right formatted email
             const reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
             if (reg.test(email) === false) return res.status(400).json({ message: "Incorrect email format" });
@@ -19,8 +19,10 @@ module.exports = {
 
             // create new User object to be saved in Database
             const newUser = new User({
+                nickname,
                 firstname,
                 lastname,
+                location,
                 email,
                 password
             })
@@ -43,8 +45,10 @@ module.exports = {
                         if (err) throw err;
                         res.json({
                             token,
+                            nickname,
                             firstname,
                             lastname,
+                            location,
                             email
                         })
                     })
@@ -80,8 +84,10 @@ module.exports = {
                     if (err) throw err;
                     res.json({
                         token,
+                        nickname: user.nickname,
                         firstname: user.firstname,
                         lastname: user.lastname,
+                        location: user.location,
                         email
                     })
                 })

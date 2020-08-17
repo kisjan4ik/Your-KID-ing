@@ -24,8 +24,8 @@ export const Home = () => {
         <div>
             <Message className="message-container" size="huge" secondary="true">
                 <Header size="huge"> Home</Header>
-                <p style={{ marginBottom: "5px" }}>This is a Boiler Plate MERN application with authentication using JSON Web Tokens.</p>
-                <p style={{ margin: "5px 0 25px" }}>This APP was design to be used as a starting point for any developer looking to integrate authentication with a MERN application.</p>
+                <p style={{ marginBottom: "5px" }}>Stay at home ideas.</p>
+                <p style={{ margin: "5px 0 25px" }}>Here you can find ideas to entertain your kids at home: board games, arts/crafts ideas, educational materials and active indoor games ideas.</p>
                 <Link to="/login">
                     {showLoginBtn()}
                 </Link>

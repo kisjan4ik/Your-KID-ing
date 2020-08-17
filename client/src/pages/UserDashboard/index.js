@@ -1,6 +1,7 @@
 import React from 'react';
 import { Header, Message } from "semantic-ui-react";
 import { useSelector } from "react-redux";
+import SearchResults from "../../components/SearchResults";
 
 
 export const UserDashboard = () => {
@@ -14,6 +15,7 @@ export const UserDashboard = () => {
                 <p>This is a Protected Route</p>
                 <p>Welcome {user ? user.email : ""}</p>
             </Message>
+<SearchResults />
         </>
     )
 }
