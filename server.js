@@ -4,8 +4,6 @@ const mongoose = require("mongoose");
 require("dotenv").config();
 const config = require("./config");
 const routes = require("./routes");
-// var bodyParser = require('body-parser');   
-// var morgan = require("morgan"); 
 
 const app = express();
 
