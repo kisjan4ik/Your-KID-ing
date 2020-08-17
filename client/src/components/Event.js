@@ -13,7 +13,6 @@ class Event extends React.Component {
             items: [
                 {
                     id: 0,
-                    title: "location - to add",
                     subtitle: "Want to see events in your area?",
                     imgSrc: event,
                     link: "https://mommypoppins.com/events/1400/orlando/all/tag/all/age/all/all/deals/0/near/0/0",

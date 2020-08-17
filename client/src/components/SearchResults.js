@@ -9,6 +9,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 
+
 class SearchResults extends React.Component {
     constructor(props) {
         super(props);
@@ -75,6 +76,7 @@ return (
         
         </Col>
         <Col md={4} className="justify-content-left">
+           
         <Event />
         </Col>
         </Row>
