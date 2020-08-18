@@ -11,6 +11,7 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 import PrivateRoute from "./PrivateRoute";
 import NoMatch from "../pages/NoMatch";
+import Particles from 'react-particles-js';
 
 export const App = () => {
 
@@ -23,6 +24,25 @@ export const App = () => {
     return (
         <>
             <Router history={history}>
+            <Particles  params={{
+    particles: {
+      color: {
+        value: "#000000"
+      },
+      line_linked: {
+        color: {
+          value: "#000000"
+        }
+      },
+      number: {
+        value: 50
+      },
+      size: {
+        value: 3
+      }
+    }
+  }}
+></Particles>
                 <NavBar />
                 <Switch>
                     <Route path="/" exact component={Home} />

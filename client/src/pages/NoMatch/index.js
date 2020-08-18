@@ -1,6 +1,7 @@
 import React from 'react'
 import { Header, Message } from "semantic-ui-react";
 
+
 export const NoMatch = () => {
     // Show 404 message if url don't match any routes
     return (
@@ -13,6 +14,7 @@ export const NoMatch = () => {
               </span>
                 </h1>
             </Message>
+            
         </>
     )
 }

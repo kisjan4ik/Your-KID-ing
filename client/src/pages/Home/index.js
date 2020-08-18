@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import HomeCard from '../../components/HomeCard';
 
+
 export const Home = () => {
     // access to the isAuthenticated property from the auth reducer state
     const isAuthenticated = useSelector(state => state.auth.isAuthenticated)
@@ -11,12 +12,15 @@ export const Home = () => {
     const showLoginBtn = () => {
         if (!isAuthenticated) {
             return (
+                <>
                 <Button color="black" animated secondary>
                     <Button.Content visible>Login</Button.Content>
                     <Button.Content hidden>
                         <Icon name='arrow right' />
                     </Button.Content>
                 </Button>
+                
+                </>
             )
         }
     }

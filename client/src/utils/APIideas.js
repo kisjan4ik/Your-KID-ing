@@ -21,11 +21,8 @@ export default {
   getIdea: function (id) {
     return axios.get("/api/ideas/" + id);
   },
-//   // Deletes the idea with the given id
-//   deleteIdea: function (id) {
-//     return axios.delete("/api/ideas/" + id);
-//   },
-  // Saves an idea to the database
+
+  // Saves an idea 
   saveIdea: function (ideaData) {
     return axios.post("/api/ideas", ideaData);
   }
