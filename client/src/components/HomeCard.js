@@ -6,7 +6,7 @@ import education from "../assets/images/education.jpg";
 import indoorgames from "../assets/images/indoorgames.jpg";
 import Row from "react-bootstrap/Row";
 import Container from  "react-bootstrap/Container";
-import Particles from 'react-particles-js';
+
 
 
 class HomeCard extends React.Component {
@@ -70,40 +70,7 @@ makeItems = (items) => {
     render() {
         return (
             <Container fluid={true}>
-                <Particles  params={{
-    particles: {
-      color: {
-        value: [
-            "#529B88",
-            "#CDD180",
-            "#FFFA32",
-            "#FB6255",
-            "#FB4A53",
-            "#FF4E50",
-            "#F9D423"
-          ]
-      },
-      "line_linked": {
-        "enable": false
-    },
-      "number": {
-        "value": 160,
-        "density": {
-            "enable": false
-        }
-    },
-    "size": {
-        "value": 20,
-        "random": true,
-        "anim": {
-            "speed": 4,
-            "size_min": 0.3
-        }
-    },
-    style:{zIndex:1}
-    }
-  }}
-></Particles>
+                
                 <Row className="justify-content-around">
                 
                     {this.makeItems(this.state.items)}

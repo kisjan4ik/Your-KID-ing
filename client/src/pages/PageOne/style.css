@@ -5,7 +5,7 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: white;
+  
 }
 
 body {
@@ -29,7 +29,8 @@ body {
   position: absolute;
   will-change: transform;
   border-radius: 50%;
-  background: lightcoral;
+  background-image: linear-gradient(lightcoral,rgb(94,231,223), yellow);
+  /* background: lightcoral; */
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   opacity: 0.6;
 }

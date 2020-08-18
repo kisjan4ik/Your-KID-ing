@@ -13,12 +13,7 @@ export const PageOne = () => {
     return (
         <>
 
-            <Message className="message-container" size="huge" secondary="true">
-                <Header size="huge"> Page One </Header>
-                <p>This is a Protected Route</p>
-            </Message>
-
-            <svg style={{ position: 'absolute', width: 0, height: 0 }}>
+            <Message className="message-container" size="huge" secondary="true"><svg style={{ position: 'absolute', width: 0, height: 0 }}>
                 <filter id="goo">
                     <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="30" />
                     <feColorMatrix in="blur" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 30 -7" />
@@ -29,6 +24,11 @@ export const PageOne = () => {
                     <animated.div key={index} style={{ transform: props.xy.interpolate(trans) }} />
                 ))}
             </div>
+                <Header size="huge"> Page One </Header>
+                <p>This is a Protected Route</p>
+            </Message>
+
+            
         </>
     )
     

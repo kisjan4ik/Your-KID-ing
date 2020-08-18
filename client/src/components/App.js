@@ -27,19 +27,34 @@ export const App = () => {
             <Particles  params={{
     particles: {
       color: {
-        value: "#000000"
+        value: [
+            "#529B88",
+            "#CDD180",
+            "#FFFA32",
+            "#FB6255",
+            "#FB4A53",
+            "#FF4E50",
+            "#F9D423"
+          ]
       },
-      line_linked: {
-        color: {
-          value: "#000000"
+      "line_linked": {
+        "enable": false
+    },
+      "number": {
+        "value": 160,
+        "density": {
+            "enable": false
         }
-      },
-      number: {
-        value: 50
-      },
-      size: {
-        value: 3
-      }
+    },
+    "size": {
+        "value": 20,
+        "random": true,
+        "anim": {
+            "speed": 4,
+            "size_min": 0.3
+        }
+    }
+    
     }
   }}
 ></Particles>
