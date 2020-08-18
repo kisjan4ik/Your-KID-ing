@@ -15,6 +15,7 @@ export const UserDashboard = () => {
                 <p>This is a Protected Route</p>
                 <p>Welcome {user ? user.nickname : ""}</p>
             </Message>
+            
 <SearchResults />
         </>
     )

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Header, Message } from "semantic-ui-react";
-import { render } from 'react-dom'
-import { useTrail, animated } from 'react-spring'
+import { useTrail, animated } from 'react-spring';
 import "./style.css";
 
 const fast = { tension: 1200, friction: 40 }
