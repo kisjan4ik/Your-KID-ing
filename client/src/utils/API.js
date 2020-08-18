@@ -13,8 +13,4 @@ export default {
         return axios.get("/auth/user", headers)
     },
 
-    searchIdeas(data) { 
-        return axios.get ("/api/ideas", data)
-    }
-
 }
