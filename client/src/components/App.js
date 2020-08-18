@@ -34,14 +34,18 @@ export const App = () => {
             "#FB6255",
             "#FB4A53",
             "#FF4E50",
-            "#F9D423"
+            "#F9D423",
+            "#FF00FF",
+            "#00FF00",
+            "#FFFF00",
+            "#0000FF"
           ]
       },
       "line_linked": {
         "enable": false
     },
       "number": {
-        "value": 160,
+        "value": 200,
         "density": {
             "enable": false
         }
@@ -50,7 +54,7 @@ export const App = () => {
         "value": 20,
         "random": true,
         "anim": {
-            "speed": 4,
+            "speed": 10,
             "size_min": 0.3
         }
     }

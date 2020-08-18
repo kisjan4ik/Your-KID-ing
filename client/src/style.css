@@ -3,9 +3,12 @@ body {
     background-attachment: fixed;
     padding: 0;
     margin: 0;
-    height: 100%
+    height: 100%;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
 
 }
+
 
 /* NavBar Styling */
 .ui.menu:first-child {
@@ -51,7 +54,7 @@ body {
 
   #tsparticles {
     position: fixed;
-    height: 100vh;
-    width: 100vw;
+    height: 105vh;
+    width: 110vw;
     z-index: -1;
   }
