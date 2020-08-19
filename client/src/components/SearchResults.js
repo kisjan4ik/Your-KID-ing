@@ -39,16 +39,16 @@ class SearchResults extends React.Component {
     handleSubmit = event => {
         event.preventDefault();
         console.log("states:" + this.state.activtype, this.state.actlevel, this.state.age);
-        this.loadIdeas({where:this.state.activtype, activeness:this.state.actlevel,age: this.state.age });
+        this.loadIdeas({ where: this.state.activtype, activeness: this.state.actlevel, age: this.state.age });
 
     }
 
     loadIdeas = (activity) => {
-       
+
 
         APIideas.where(activity)
             .then(res => {
-                console.log("res.data: "+JSON.stringify(res));
+                console.log("res.data: " + JSON.stringify(res));
                 this.setState({
                     ideas: res.data,
                     where: "",
@@ -121,8 +121,17 @@ class SearchResults extends React.Component {
                         <Form.Label>
                             Age:
                     </Form.Label>
-                        <Form.Control tyoe="text" placeholder="age" name="age" value={this.state.age} onChange={this.handleChange}>
-
+                        <Form.Control as="select" name="age" value={this.state.age} onChange={this.handleChange}>
+                            <option>0+</option>
+                            <option>2+</option>
+                            <option>3+</option>
+                            <option>4+</option>
+                            <option>5+</option>
+                            <option>6+</option>
+                            <option>7+</option>
+                            <option>8+</option>
+                            <option>10+</option>
+                            <option>12+</option>
                         </Form.Control>
                     </Form.Group>
                     <Button variant="primary" type="submit">
