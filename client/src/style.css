@@ -22,7 +22,15 @@ body {
     padding: 50px;
     box-shadow: 0;
     margin: 0;
+    background-color: transparent;
+    border: violet double 18px;
+    border-radius: 15px;
+    font-family: 'Indie Flower', cursive;
 }
+.games{
+    font-family: 'Indie Flower', cursive;
+}
+
 /* UserForm styling */
 .form-container{
     text-align: center;

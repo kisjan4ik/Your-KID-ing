@@ -11,44 +11,31 @@ import APIideas from "../utils/APIideas";
 import IdeaSearch from "./IdeaSearch";
 import ChosenIdeas from "./ChosenIdeas";
 import Idea from "./Idea";
+import Button from "react-bootstrap/Button";
 
 
 
 class SearchResults extends React.Component {
 
-    state = {
+constructor(props) {
+    super(props);
+   
+
+    this.state = {
         where: "",
         activeness: "",
         age: "",
         ideas: []
     };
-
-
-
-    handleInputChange = event => {
-
-        const value = event.target.value;
-
-        this.setState([
-            {
-                where: value,
-                message: ""
-            },
-            {
-                activeness: value,
-                message: ""
-            },
-            {
-                age:value,
-                message: ""
-            }
-
-        ]);
-    };
-
     
+  }
+
+
     loadIdeas = event => {
         event.preventDefault();
+        
+    let form=event.target
+        console.log(form.elements.age.value, form.elements.activity.value, form.elements.activitylevel.value);
         if (this.state.where === "") {
             this.setState({ message: "Indoor or outdoor" })
         } else {
@@ -102,12 +89,37 @@ class SearchResults extends React.Component {
                     title={"Activities Search:"}
                     subTitle={"Search for and Save places and activities you would like"}>
                 </IdeaSearch>
-                <Form
-                    query={this.state.where}
-                    handleInputChange={this.handleInputChange}
-                    loadIdeas={this.loadIdeas}
-                    message={this.state.message}
-                >
+                <Form onSubmit={this.loadIdeas}>
+                    <Form.Group>
+                        <Form.Label>
+                            Activy type:
+                    </Form.Label>
+                        <Form.Control as="select" name="activity" >
+                            <option>Indoor</option>
+                            <option>Outdoor</option>
+                        </Form.Control>
+                    </Form.Group>
+                    <Form.Group>
+                        <Form.Label>
+                            Activeness:
+                    </Form.Label>
+                        <Form.Control as="select" name="activitylevel" > 
+                            <option>Active</option>
+                            <option>Moderate</option>
+                            <option>Passive</option>
+                        </Form.Control>
+                    </Form.Group>
+                    <Form.Group>
+                        <Form.Label>
+                            Age:
+                    </Form.Label>
+                        <Form.Control tyoe="text" placeholder="age" name="age" >
+
+                        </Form.Control>
+                    </Form.Group>
+                    <Button variant="primary" type="submit">
+                        Submit
+                    </Button>
                 </Form>
                 <ChosenIdeas>
                     {this.state.ideas.map((idea, i) => {

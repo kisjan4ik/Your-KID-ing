@@ -28,9 +28,9 @@ export const Home = () => {
     return (
         <div>
             <Message className="message-container" size="huge" secondary="true">
-                <Header size="huge" style={{ marginBottom: "5px", fontSize: "24px" }}>Stay at home ideas.</Header>
-                <p style={{ margin: "5px 0 25px", fontSize: "26px" }}>Here you can find ideas to entertain your kids at home: </p>
-                <p style={{ margin: "5px 0 25px", fontSize: "26px" }}> board games, arts/crafts ideas, educational materials and active indoor games ideas.</p>
+                <Header className="games" size="huge" style={{ marginBottom: "35px", fontSize: "44px" , fontFamily: "Indie Flower, cursive"}}>Stay at home ideas.</Header>
+                <p className="games" style={{ margin: "5px 0 25px", fontSize: "26px" }}>Here you can find ideas to entertain your kids at home: </p>
+                
                 <Link to="/login">
                     {showLoginBtn()}
                 </Link>

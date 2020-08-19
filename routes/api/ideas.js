@@ -3,6 +3,9 @@ const ideasController = require("../../controllers/ideasController");
 
 // Matches with "/api/ideas"
 router.route("/")
+// .get(ideasController.findAll({
+  
+// }))
   .get(ideasController.findAll)
   .post(ideasController.create);
 

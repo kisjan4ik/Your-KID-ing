@@ -9,6 +9,12 @@ module.exports = {
       .then(dbIdea => res.json(dbIdea))
       .catch(err => res.status(422).json(err));
   },
+  // findbyParam: function(req, res) {
+  //   db.Idea
+  //   .find()
+  // },
+
+
   findById: function (req, res) {
     db.Idea
       .findById(req.params.id)
