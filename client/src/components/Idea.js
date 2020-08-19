@@ -16,7 +16,7 @@ function Idea(props) {
       <p className="">{props.activeness}</p>
       <p className="">{props.age}</p>
 
-      <a href={props.link} target="_blank" rel="noopener noreferrer">
+      <a href={props.website} target="_blank" rel="noopener noreferrer">
         <button className="btnView">View</button></a>
       <button onClick={() => props.saveBook(props.ideaId)} className="btnSave">Save</button>
     </div>

@@ -5,8 +5,8 @@ const IDEAURL = "/api/ideas";
 
 export default {
   where: function (activity) {
-    console.log(activity);
-    return axios.get(IDEAURL, {params:{ID:12345}})
+    console.log("activity:" + JSON.stringify(activity));
+    return axios.get(IDEAURL + "/" + activity.activeness + "/" + activity.where +"/" + activity.age)
     
   },
 

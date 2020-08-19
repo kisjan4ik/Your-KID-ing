@@ -6,7 +6,7 @@ router.route("/")
   .get(ideasController.findAll)
   // .get(ideasController.findAll)
   .post(ideasController.create);
-router.route("/:params")
+router.route("/:activeness/:where/:age")
 .get(ideasController.findWhere);
 // Matches with "/api/ideas/:id"
 router

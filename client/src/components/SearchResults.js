@@ -48,25 +48,26 @@ class SearchResults extends React.Component {
 
         APIideas.where(activity)
             .then(res => {
+                console.log("res.data: "+JSON.stringify(res));
                 this.setState({
-                    ideas: res.data.items,
+                    ideas: res.data,
                     where: "",
                 })
             })
-            .then(res => {
-                APIideas.getIdeas()
-                    .then(res => {
-                        res.data.forEach(item => {
-                            for (let j = 0; j < this.where.ideas.length; j++) {
-                                if (item.where === this.where.ideas[j].where) {
-                                    let newIdeaArray = [...this.where.ideas]
-                                    newIdeaArray.splice([j], 1)
-                                    this.setState({ ideas: newIdeaArray })
-                                }
-                            }
-                        })
-                    })
-            })
+            // .then(res => {
+            //     APIideas.getIdeas()
+            //         .then(res => {
+            //             res.data.forEach(item => {
+            //                 for (let j = 0; j < this.where.ideas.length; j++) {
+            //                     if (item.where === this.where.ideas[j].where) {
+            //                         let newIdeaArray = [...this.where.ideas]
+            //                         newIdeaArray.splice([j], 1)
+            //                         this.setState({ ideas: newIdeaArray })
+            //                     }
+            //                 }
+            //             })
+            //         })
+            // })
             .catch(err => console.log(err));
     }
 
@@ -129,6 +130,7 @@ class SearchResults extends React.Component {
                     </Button>
                 </Form>
                 <ChosenIdeas>
+                    {/* if(this.state.ideas.length) */}
                     {this.state.ideas.map((idea, i) => {
                         return (
                             <Idea
