@@ -58,11 +58,52 @@ body {
     width: 480px;
     height: 300px;
     box-shadow: 0px 0px 3px 1px #ccc;
+    border: #4dfd4d double 18px;
+    border-radius: 15px;
   }
+
+  .t-card-image:hover {
+    border-radius: 10px;
+    width: 480px;
+    height: 300px;
+    box-shadow: 0px 0px 3px 1px #ccc;
+    border:#8673f5 double 18px;
+    border-radius: 15px;
+  }
+
 
   #tsparticles {
     position: fixed;
     height: 105vh;
     width: 110vw;
     z-index: -1;
+  }
+
+  #font-user {
+    font-family: 'Indie Flower', cursive;
+    font-size:80px;
+    font-weight: 900;
+    color: coral;
+  }
+   #subtitle{
+       font-size: 32px;
+       color: blue;
+   }
+   #font-user ::first-letter {
+    font-size: 200%;
+    color: #8A2BE2;
+  }
+  #font-pg1 {
+    font-family: 'Indie Flower', cursive;
+    font-size:80px;
+    font-weight: 900;
+    color: rgb(248, 66, 105);
+  }
+   #subtitle1{
+       font-size: 32px;
+       color: rgb(76, 76, 209);
+   }
+   #font-pg1 ::first-letter {
+    font-size: 200%;
+    color: #06ad1c;
   }

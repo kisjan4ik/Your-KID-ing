@@ -15,54 +15,61 @@ import Button from "react-bootstrap/Button";
 
 
 
+
 class SearchResults extends React.Component {
 
-constructor(props) {
-    super(props);
-   
-
-    this.state = {
-        where: "",
-        activeness: "",
-        age: "",
-        ideas: []
-    };
-    
-  }
+    constructor(props) {
+        super(props);
 
 
-    loadIdeas = event => {
-        event.preventDefault();
-        
-    let form=event.target
-        console.log(form.elements.age.value, form.elements.activity.value, form.elements.activitylevel.value);
-        if (this.state.where === "") {
-            this.setState({ message: "Indoor or outdoor" })
-        } else {
-            APIideas.search(this.state.where)
-                .then(res => {
-                    this.setState({
-                        ideas: res.data.items,
-                        where: "",
-                    })
-                })
-                .then(res => {
-                    APIideas.getIdeas()
-                        .then(res => {
-                            res.data.forEach(item => {
-                                for (let j = 0; j < this.where.ideas.length; j++) {
-                                    if (item.where === this.where.ideas[j].where) {
-                                        let newIdeaArray = [...this.where.ideas]
-                                        newIdeaArray.splice([j], 1)
-                                        this.setState({ ideas: newIdeaArray })
-                                    }
-                                }
-                            })
-                        })
-                })
-                .catch(err => console.log(err));
-        }
+        this.state = {
+            activtype: "",
+            actlevel: "",
+            age: "",
+            ideas: []
+        };
+
     }
+
+    handleChange = event => {
+        const value = event.target.value;
+        this.setState({ ...this.state, [event.target.name]: value })
+    }
+
+    handleSubmit = event => {
+        event.preventDefault();
+        console.log("states:" + this.state.activtype, this.state.actlevel, this.state.age);
+        this.loadIdeas({where:this.state.activtype, activeness:this.state.actlevel,age: this.state.age });
+
+    }
+
+    loadIdeas = (activity) => {
+       
+
+        APIideas.where(activity)
+            .then(res => {
+                this.setState({
+                    ideas: res.data.items,
+                    where: "",
+                })
+            })
+            .then(res => {
+                APIideas.getIdeas()
+                    .then(res => {
+                        res.data.forEach(item => {
+                            for (let j = 0; j < this.where.ideas.length; j++) {
+                                if (item.where === this.where.ideas[j].where) {
+                                    let newIdeaArray = [...this.where.ideas]
+                                    newIdeaArray.splice([j], 1)
+                                    this.setState({ ideas: newIdeaArray })
+                                }
+                            }
+                        })
+                    })
+            })
+            .catch(err => console.log(err));
+    }
+
 
     saveIdea = (id) => {
 
@@ -89,12 +96,12 @@ constructor(props) {
                     title={"Activities Search:"}
                     subTitle={"Search for and Save places and activities you would like"}>
                 </IdeaSearch>
-                <Form onSubmit={this.loadIdeas}>
-                    <Form.Group>
+                <Form onSubmit={this.handleSubmit}>
+                    <Form.Group >
                         <Form.Label>
                             Activy type:
                     </Form.Label>
-                        <Form.Control as="select" name="activity" >
+                        <Form.Control as="select" name="activtype" value={this.state.activtype} onChange={this.handleChange}>
                             <option>Indoor</option>
                             <option>Outdoor</option>
                         </Form.Control>
@@ -103,7 +110,7 @@ constructor(props) {
                         <Form.Label>
                             Activeness:
                     </Form.Label>
-                        <Form.Control as="select" name="activitylevel" > 
+                        <Form.Control as="select" name="actlevel" value={this.state.actlevel} onChange={this.handleChange}>
                             <option>Active</option>
                             <option>Moderate</option>
                             <option>Passive</option>
@@ -113,7 +120,7 @@ constructor(props) {
                         <Form.Label>
                             Age:
                     </Form.Label>
-                        <Form.Control tyoe="text" placeholder="age" name="age" >
+                        <Form.Control tyoe="text" placeholder="age" name="age" value={this.state.age} onChange={this.handleChange}>
 
                         </Form.Control>
                     </Form.Group>

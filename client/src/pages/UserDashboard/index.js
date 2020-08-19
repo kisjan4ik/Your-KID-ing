@@ -12,9 +12,9 @@ export const UserDashboard = () => {
     return (
         <>
             <Message className="message-container" size="huge" secondary="true">
-                <Header size="huge"> User Dashboard </Header>
-                <p>This is a Protected Route</p>
-                <p>Welcome {user ? user.nickname : ""}</p>
+                <Header  id="font-user" size="huge"> <p id="font"> {user ? user.nickname : ""}, welcome </p></Header>
+                <p id="subtitle"> to Your KID-ing App</p>
+                
             </Message>
            
 <SearchResults />

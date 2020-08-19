@@ -5,15 +5,17 @@ module.exports = {
   findAll: function (req, res) {
     db.Idea
       .find(req.query)
-      // .sort({ title: -1 })
       .then(dbIdea => res.json(dbIdea))
       .catch(err => res.status(422).json(err));
   },
-  // findbyParam: function(req, res) {
-  //   db.Idea
-  //   .find()
-  // },
 
+  findWhere: function (req, res) {
+    console.log("request params:" +req.params);
+    db.Idea
+      .findById(req.params.id)
+      .then(dbIdea => res.json(dbIdea))
+      .catch(err => res.status(422).json(err));
+  },
 
   findById: function (req, res) {
     db.Idea

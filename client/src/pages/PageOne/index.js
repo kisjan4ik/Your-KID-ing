@@ -24,8 +24,8 @@ export const PageOne = () => {
                     <animated.div key={index} style={{ transform: props.xy.interpolate(trans) }} />
                 ))}
             </div>
-                <Header size="huge"> Page One </Header>
-                <p>This is a Protected Route</p>
+                <Header id="font-pg1" size="huge"><p>Page One</p>  </Header>
+                <p id="subtitle1">This is a Protected Route</p>
             </Message>
 
             

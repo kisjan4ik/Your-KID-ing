@@ -1,12 +1,15 @@
 import axios from "axios";
 
-const IDEAURL = "http://localhost:3001/api/ideas";
+const IDEAURL = "/api/ideas";
 
 
 export default {
-  where: function () {
-    return axios.get(IDEAURL);
+  where: function (activity) {
+    console.log(activity);
+    return axios.get(IDEAURL, {params:{ID:12345}})
+    
   },
+
   activeness: function () {
     return axios.get(IDEAURL);
   },
