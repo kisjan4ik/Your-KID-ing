@@ -10,7 +10,7 @@ export const Location = () => {
     return (
         <>
             
-                <p className="pt-5">{user ? user.location : ""}</p>
+                <p id="label2" >{user ? user.location : ""} ?</p>
            
 
         </>

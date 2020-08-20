@@ -98,18 +98,19 @@ class SearchResults extends React.Component {
 
         return (
             <div>
-                <IdeaSearch
-                    title={"Activities Search:"}
-                    subTitle={"Search for and Save places and activities you would like"}>
+                <IdeaSearch 
+                    title={"Find a place to go :"}
+                    // subTitle={"Search for and Save places and activities you would like"}
+                    >
                 </IdeaSearch>
-                <Form onSubmit={this.handleSubmit}>
+                <Form id="placesearch" onSubmit={this.handleSubmit}>
                     <Form.Group >
-                        <Form.Label>
+                        <Form.Label id="label">
                             Activy type:
                     </Form.Label>
-                        <Form.Control as="select" name="activtype" value={this.state.activtype} onChange={this.handleChange}>
-                            <option>Indoor</option>
-                            <option>Outdoor</option>
+                        <Form.Control id="formcontrol" as="select" name="activtype" value={this.state.activtype} onChange={this.handleChange}>
+                            <option id="option">Indoor</option>
+                            <option id="option">Outdoor</option>
                         </Form.Control>
                     </Form.Group>
                     {/* <Form.Group>
@@ -123,23 +124,23 @@ class SearchResults extends React.Component {
                         </Form.Control>
                     </Form.Group> */}
                     <Form.Group>
-                        <Form.Label>
+                        <Form.Label id="label2">
                             Age:
                     </Form.Label>
-                        <Form.Control as="select" name="age" value={this.state.age} onChange={this.handleChange}>
-                            <option>0+</option>
-                            <option>2+</option>
-                            <option>3+</option>
-                            <option>4+</option>
-                            <option>5+</option>
-                            <option>6+</option>
-                            <option>7+</option>
-                            <option>8+</option>
-                            <option>10+</option>
-                            <option>12+</option>
+                        <Form.Control id="formcontrol" as="select" name="age" value={this.state.age} onChange={this.handleChange}>
+                            <option id="option">0+</option>
+                            <option id="option">2+</option>
+                            <option id="option">3+</option>
+                            <option id="option">4+</option>
+                            <option id="option">5+</option>
+                            <option id="option">6+</option>
+                            <option id="option">7+</option>
+                            <option id="option">8+</option>
+                            <option id="option">10+</option>
+                            <option id="option">12+</option>
                         </Form.Control>
                     </Form.Group>
-                    <Button variant="primary" type="submit">
+                    <Button id="flatxl" type="submit">
                         Submit
                     </Button>
                 </Form>
@@ -163,8 +164,9 @@ class SearchResults extends React.Component {
                             />
                         )
                     })}
+                     <Event />
                 </ChosenIdeas>
-                <Event />
+               
             </div>
         )
     }

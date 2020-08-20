@@ -3,7 +3,7 @@ import React from "react";
 
 function ChosenIdeas(props) {
   return (
-    <div className="">
+    <div id="results">
       {props.children}
     </div>
   );

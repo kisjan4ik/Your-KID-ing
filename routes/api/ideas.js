@@ -8,6 +8,7 @@ router.route("/")
   // finding all matching data from db
   .post(ideasController.create);
 router.route("/:where/:age")
+
 // /:activeness
   .get(ideasController.findWhere);
 

@@ -1,10 +1,10 @@
 import React from "react";
 function IdeaSearch(props) {
     return (
-      <div className="form">
+      <div id="togo">
         {/* <img className="jumboImg" alt="google logo" src="./assets/img/google_logo.png"></img> */}
-        <h1>{props.title}</h1>
-        <h2>{props.subTitle}</h2>
+        <p >{props.title}</p>
+        {/* <h2>{props.subTitle}</h2> */}
         {props.children}
       </div>
     );

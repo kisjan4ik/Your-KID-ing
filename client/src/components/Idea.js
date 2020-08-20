@@ -2,6 +2,7 @@ import React from "react";
 
 
 
+
 function Idea(props) {
   console.log(props);
 
