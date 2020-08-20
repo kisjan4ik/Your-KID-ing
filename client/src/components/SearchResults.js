@@ -25,7 +25,7 @@ class SearchResults extends React.Component {
 
         this.state = {
             activtype: "",
-            actlevel: "",
+            // actlevel: "",
             age: "",
             ideas: []
         };
@@ -39,8 +39,12 @@ class SearchResults extends React.Component {
 
     handleSubmit = event => {
         event.preventDefault();
-        console.log("states:" + this.state.activtype, this.state.actlevel, this.state.age);
-        this.loadIdeas({ where: this.state.activtype, activeness: this.state.actlevel, age: this.state.age });
+        console.log("states:" + this.state.activtype, 
+        // this.state.actlevel, 
+        this.state.age);
+        this.loadIdeas({ where: this.state.activtype,
+            //  activeness: this.state.actlevel,
+              age: this.state.age });
 
     }
 
@@ -108,7 +112,7 @@ class SearchResults extends React.Component {
                             <option>Outdoor</option>
                         </Form.Control>
                     </Form.Group>
-                    <Form.Group>
+                    {/* <Form.Group>
                         <Form.Label>
                             Activeness:
                     </Form.Label>
@@ -117,7 +121,7 @@ class SearchResults extends React.Component {
                             <option>Moderate</option>
                             <option>Passive</option>
                         </Form.Control>
-                    </Form.Group>
+                    </Form.Group> */}
                     <Form.Group>
                         <Form.Label>
                             Age:

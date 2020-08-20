@@ -7,7 +7,8 @@ router.route("/")
 
   // finding all matching data from db
   .post(ideasController.create);
-router.route("/:activeness/:where/:age")
+router.route("/:where/:age")
+// /:activeness
   .get(ideasController.findWhere);
 
 // Matches with "/api/ideas/:id"

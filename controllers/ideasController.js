@@ -10,12 +10,14 @@ module.exports = {
   },
   // set variables to parameters and lowercase then to match the db"
   findWhere: function (req, res) {
-    let activeness = req.params.activeness.toLowerCase();
+    // let activeness = req.params.activeness.toLowerCase();
     let where = req.params.where.toLowerCase();
     let age = req.params.age.toLowerCase();
 
     // going through the db filtering it by input params
-    db.Idea.find({ "activeness": activeness, "where": where, "age": age })
+    db.Idea.find({ 
+      // "activeness": activeness, 
+      "where": where, "age": age })
       .then(dbIdea => {
         console.log(dbIdea);
         res.json(dbIdea)

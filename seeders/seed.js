@@ -41,7 +41,7 @@ var ideaSeed = [
     },
     {
         placename: "Andretti Indoor Karting and Games",
-        image: "https://fun4orlandokids.com/images/banners/default/211.jpg Rides",
+        image: "https://fun4orlandokids.com/images/banners/default/211.jpg",
         category: "Amusement Parks and Rides",
         where: "indoor",
         activeness: "active",
@@ -52,7 +52,7 @@ var ideaSeed = [
     },
     {
         placename: "Fun Spot",
-        image: "https://fun4orlandokids.com/images/banners/default/211.jpg Rides",
+        image: "https://fun4orlandokids.com/images/banners/default/211.jpg",
         category: "Amusement Parks and Rides",
         where: "indoor",
         activeness: "active",
@@ -63,7 +63,7 @@ var ideaSeed = [
     },
     {
         placename: "Funtania Family Fun Center",
-        image: "https://fun4orlandokids.com/images/banners/default/211.jpg Rides",
+        image: "https://fun4orlandokids.com/images/banners/default/211.jpg",
         category: "Amusement Parks and Rides",
         where: "indoor",
         activeness: "active",
@@ -74,7 +74,7 @@ var ideaSeed = [
     },
     {
         placename: "Icon Park",
-        image: "https://fun4orlandokids.com/images/banners/default/211.jpg Rides",
+        image: "https://fun4orlandokids.com/images/banners/default/211.jpg",
         category: "Amusement Parks and Rides",
         where: "outdoor",
         activeness: "active",
@@ -85,7 +85,7 @@ var ideaSeed = [
     },
     {
         placename: "Sea World Adventure Parks",
-        image: "https://fun4orlandokids.com/images/banners/default/211.jpg Rides",
+        image: "https://fun4orlandokids.com/images/banners/default/211.jpg",
         category: "Amusement Parks and Rides",
         where: "outdoor",
         activeness: "active",
@@ -96,7 +96,7 @@ var ideaSeed = [
     },
     {
         placename: "Universal Orlando Resorts",
-        image: "https://fun4orlandokids.com/images/banners/default/211.jpg Rides",
+        image: "https://fun4orlandokids.com/images/banners/default/211.jpg",
         category: "Amusement Parks and Rides",
         where: "outdoor",
         activeness: "active",
@@ -107,7 +107,7 @@ var ideaSeed = [
     },
     {
         placename: "Walt Disney World Resort",
-        image: "https://fun4orlandokids.com/images/banners/default/211.jpg Rides",
+        image: "https://fun4orlandokids.com/images/banners/default/211.jpg",
         category: "Amusement Parks and Rides",
         where: "outdoor",
         activeness: "active",
@@ -118,7 +118,7 @@ var ideaSeed = [
     },
     {
         placename: "Wonderworks",
-        image: "https://fun4orlandokids.com/images/banners/default/211.jpg Rides",
+        image: "https://fun4orlandokids.com/images/banners/default/211.jpg",
         category: "Amusement Parks and Rides",
         where: "indoor",
         activeness: "moderate",
@@ -930,7 +930,7 @@ var ideaSeed = [
     },   
     {
         placename: "Universal Orlando Resorts",
-        image: "https://fun4orlandokids.com/images/banners/default/211.jpg Rides",
+        image: "https://fun4orlandokids.com/images/banners/default/211.jpg",
         category: "Amusement Parks and Rides",
         where: "outdoor",
         activeness: "active",
@@ -941,7 +941,7 @@ var ideaSeed = [
     },
     {
         placename: "Walt Disney World Resort",
-        image: "https://fun4orlandokids.com/images/banners/default/211.jpg Rides",
+        image: "https://fun4orlandokids.com/images/banners/default/211.jpg",
         category: "Amusement Parks and Rides",
         where: "outdoor",
         activeness: "active",
@@ -952,7 +952,7 @@ var ideaSeed = [
     },
     {
         placename: "Universal Orlando Resorts",
-        image: "https://fun4orlandokids.com/images/banners/default/211.jpg Rides",
+        image: "https://fun4orlandokids.com/images/banners/default/211.jpg",
         category: "Amusement Parks and Rides",
         where: "outdoor",
         activeness: "active",
@@ -963,7 +963,7 @@ var ideaSeed = [
     },
     {
         placename: "Walt Disney World Resort",
-        image: "https://fun4orlandokids.com/images/banners/default/211.jpg Rides",
+        image: "https://fun4orlandokids.com/images/banners/default/211.jpg",
         category: "Amusement Parks and Rides",
         where: "outdoor",
         activeness: "active",
@@ -974,7 +974,7 @@ var ideaSeed = [
     },
     {
         placename: "Universal Orlando Resorts",
-        image: "https://fun4orlandokids.com/images/banners/default/211.jpg Rides",
+        image: "https://fun4orlandokids.com/images/banners/default/211.jpg",
         category: "Amusement Parks and Rides",
         where: "outdoor",
         activeness: "active",
@@ -985,7 +985,7 @@ var ideaSeed = [
     },
     {
         placename: "Walt Disney World Resort",
-        image: "https://fun4orlandokids.com/images/banners/default/211.jpg Rides",
+        image: "https://fun4orlandokids.com/images/banners/default/211.jpg",
         category: "Amusement Parks and Rides",
         where: "outdoor",
         activeness: "active",
@@ -995,7 +995,7 @@ var ideaSeed = [
         website: "https://disneyworld.disney.go.com/"
     },{
         placename: "Universal Orlando Resorts",
-        image: "https://fun4orlandokids.com/images/banners/default/211.jpg Rides",
+        image: "https://fun4orlandokids.com/images/banners/default/211.jpg",
         category: "Amusement Parks and Rides",
         where: "outdoor",
         activeness: "active",
@@ -1006,7 +1006,7 @@ var ideaSeed = [
     },
     {
         placename: "Walt Disney World Resort",
-        image: "https://fun4orlandokids.com/images/banners/default/211.jpg Rides",
+        image: "https://fun4orlandokids.com/images/banners/default/211.jpg",
         category: "Amusement Parks and Rides",
         where: "outdoor",
         activeness: "active",
@@ -1323,7 +1323,7 @@ var ideaSeed = [
         }, 
         {
             placename: "Sea World Adventure Parks",
-            image: "https://fun4orlandokids.com/images/banners/default/211.jpg Rides",
+            image: "https://fun4orlandokids.com/images/banners/default/211.jpg",
             category: "Amusement Parks and Rides",
             where: "outdoor",
             activeness: "active",
@@ -1334,7 +1334,7 @@ var ideaSeed = [
         },
         {
             placename: "Universal Orlando Resorts",
-            image: "https://fun4orlandokids.com/images/banners/default/211.jpg Rides",
+            image: "https://fun4orlandokids.com/images/banners/default/211.jpg",
             category: "Amusement Parks and Rides",
             where: "outdoor",
             activeness: "active",
@@ -1345,7 +1345,7 @@ var ideaSeed = [
         },
         {
             placename: "Walt Disney World Resort",
-            image: "https://fun4orlandokids.com/images/banners/default/211.jpg Rides",
+            image: "https://fun4orlandokids.com/images/banners/default/211.jpg",
             category: "Amusement Parks and Rides",
             where: "outdoor",
             activeness: "active",
