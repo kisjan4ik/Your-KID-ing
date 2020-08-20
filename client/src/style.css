@@ -107,3 +107,10 @@ body {
     font-size: 200%;
     color: #06ad1c;
   }
+  
+  #imglst{
+    height:125px;
+    width: 200px;
+    float:left;
+    margin-right:15px;
+  }

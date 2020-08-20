@@ -1,6 +1,7 @@
 import React from "react";
 
 
+
 function Idea(props) {
   console.log(props);
 
@@ -8,7 +9,7 @@ function Idea(props) {
   return (
     <div className="">
       <div className="">
-        <img alt={props.category} src={props.image} />
+        <img id="imglst" alt={props.category} src={props.image} />
       </div>
       <h2>{props.placename}</h2>
       <p className="">{props.category}</p>

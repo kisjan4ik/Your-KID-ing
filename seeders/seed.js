@@ -8,7 +8,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/idea", {
 var ideaSeed = [
     {
         placename: "Aerophile at Disney Springs",
-        image: "air adventure",
+        image: "https://fun4orlandokids.com/images/banners/default/230.jpg",
         category: "Air adventures",
         where: "outdoor",
         activeness: "moderate",
@@ -19,7 +19,7 @@ var ideaSeed = [
     },
     {
         placename: "Aerostat Adventures Hot Air Balloon Ride",
-        image: "air adventure",
+        image: "https://fun4orlandokids.com/images/banners/default/230.jpg",
         category: "Air adventures",
         where: "outdoor",
         activeness: "moderate",
@@ -30,7 +30,7 @@ var ideaSeed = [
     },
     {
         placename: "Air Force Fun Helicopter Tours",
-        image: "air adventure",
+        image: "https://fun4orlandokids.com/images/banners/default/230.jpg",
         category: "Air adventures",
         where: "outdoor",
         activeness: "moderate",
@@ -41,7 +41,7 @@ var ideaSeed = [
     },
     {
         placename: "Andretti Indoor Karting and Games",
-        image: "Parks and Rides",
+        image: "https://fun4orlandokids.com/images/banners/default/211.jpg Rides",
         category: "Amusement Parks and Rides",
         where: "indoor",
         activeness: "active",
@@ -52,7 +52,7 @@ var ideaSeed = [
     },
     {
         placename: "Fun Spot",
-        image: "Parks and Rides",
+        image: "https://fun4orlandokids.com/images/banners/default/211.jpg Rides",
         category: "Amusement Parks and Rides",
         where: "indoor",
         activeness: "active",
@@ -63,7 +63,7 @@ var ideaSeed = [
     },
     {
         placename: "Funtania Family Fun Center",
-        image: "Parks and Rides",
+        image: "https://fun4orlandokids.com/images/banners/default/211.jpg Rides",
         category: "Amusement Parks and Rides",
         where: "indoor",
         activeness: "active",
@@ -74,7 +74,7 @@ var ideaSeed = [
     },
     {
         placename: "Icon Park",
-        image: "Parks and Rides",
+        image: "https://fun4orlandokids.com/images/banners/default/211.jpg Rides",
         category: "Amusement Parks and Rides",
         where: "outdoor",
         activeness: "active",
@@ -85,7 +85,7 @@ var ideaSeed = [
     },
     {
         placename: "Sea World Adventure Parks",
-        image: "Parks and Rides",
+        image: "https://fun4orlandokids.com/images/banners/default/211.jpg Rides",
         category: "Amusement Parks and Rides",
         where: "outdoor",
         activeness: "active",
@@ -96,7 +96,7 @@ var ideaSeed = [
     },
     {
         placename: "Universal Orlando Resorts",
-        image: "Parks and Rides",
+        image: "https://fun4orlandokids.com/images/banners/default/211.jpg Rides",
         category: "Amusement Parks and Rides",
         where: "outdoor",
         activeness: "active",
@@ -107,7 +107,7 @@ var ideaSeed = [
     },
     {
         placename: "Walt Disney World Resort",
-        image: "Parks and Rides",
+        image: "https://fun4orlandokids.com/images/banners/default/211.jpg Rides",
         category: "Amusement Parks and Rides",
         where: "outdoor",
         activeness: "active",
@@ -118,7 +118,7 @@ var ideaSeed = [
     },
     {
         placename: "Wonderworks",
-        image: "Parks and Rides",
+        image: "https://fun4orlandokids.com/images/banners/default/211.jpg Rides",
         category: "Amusement Parks and Rides",
         where: "indoor",
         activeness: "moderate",
@@ -129,7 +129,7 @@ var ideaSeed = [
     },
     {
         placename: "Gator Golf Adventure Park",
-        image: "animal",
+        image: "https://fun4orlandokids.com/images/banners/default/16.jpg",
         category: "Animal Encounters",
         where: "outdoor",
         activeness: "moderate",
@@ -140,7 +140,7 @@ var ideaSeed = [
     },
     {
         placename: "Gatorland",
-        image: "animal",
+        image: "https://fun4orlandokids.com/images/banners/default/16.jpg",
         category: "Animal Encounters",
         where: "outdoor",
         activeness: "moderate",
@@ -151,7 +151,7 @@ var ideaSeed = [
     },
     {
         placename: "Jungle Adventures Nature Animal Park",
-        image: "animal",
+        image: "https://fun4orlandokids.com/images/banners/default/16.jpg",
         category: "Animal Encounters",
         where: "outdoor",
         activeness: "moderate",
@@ -162,7 +162,7 @@ var ideaSeed = [
     },
     {
         placename: "SEA LIFE Orlando Aquarium",
-        image: "animal",
+        image: "https://fun4orlandokids.com/images/banners/default/16.jpg",
         category: "Animal Encounters",
         where: "outdoor",
         activeness: "moderate",
@@ -173,7 +173,7 @@ var ideaSeed = [
     },
     {
         placename: "AMF Sky Lanes",
-        image: "bowling",
+        image: "https://fun4orlandokids.com/images/banners/default/163.jpg",
         category: "bowling",
         where: "indoor",
         activeness: "acive",
@@ -184,7 +184,7 @@ var ideaSeed = [
     },
     {
         placename: "AMF Sky Lanes",
-        image: "bowling",
+        image: "https://fun4orlandokids.com/images/banners/default/163.jpg",
         category: "bowling",
         where: "indoor",
         activeness: "acive",
@@ -195,7 +195,7 @@ var ideaSeed = [
     },
     {
         placename: "Arcade City",
-        image: "arcade",
+        image: "https://fun4orlandokids.com/images/banners/default/236.jpg",
         category: "arcade",
         where: "indoor",
         activeness: "moderate",
@@ -206,7 +206,7 @@ var ideaSeed = [
     },
     {
         placename: "Astro Skate Family Fun Center",
-        image: "skate",
+        image: "https://fun4orlandokids.com/images/banners/default/172.jpg",
         category: "skate",
         where: "indoor",
         activeness: "acive",
@@ -217,7 +217,7 @@ var ideaSeed = [
     },
     {
         placename: "Chuck E. Cheese's",
-        image: "arcade",
+        image: "https://fun4orlandokids.com/images/banners/default/236.jpg",
         category: "arcade",
         where: "indoor",
         activeness: "acive",
@@ -228,7 +228,7 @@ var ideaSeed = [
     },
     {
         placename: "I-Drive NASCAR Indoor Karts",
-        image: "karts",
+        image: "https://fun4orlandokids.com/images/banners/default/212.jpg",
         category: "karts",
         where: "indoor",
         activeness: "acive",
@@ -239,7 +239,7 @@ var ideaSeed = [
     },
     {
         placename: "Central Florida Railroad Museum",
-        image: "museum",
+        image: "https://fun4orlandokids.com/images/banners/default/97.jpg",
         category: "Free Fun",
         where: "indoor",
         activeness: "moderate",
@@ -250,7 +250,7 @@ var ideaSeed = [
     },
     {
         placename: "Orlando Fire Museum",
-        image: "museum",
+        image: "https://fun4orlandokids.com/images/banners/default/97.jpg",
         category: "Free Fun",
         where: "indoor",
         activeness: "moderate",
@@ -261,7 +261,7 @@ var ideaSeed = [
     },
     {
         placename: "Russian Ballet Orlando- Free Sunday Classes",
-        image: "ballet",
+        image: "https://fun4orlandokids.com/media/com_mtree/images/listings/s/9569.png",
         category: "Free Fun",
         where: "indoor",
         activeness: "active",
@@ -272,7 +272,7 @@ var ideaSeed = [
     },
     {
         placename: "Splash Pad and Pavilion",
-        image: "splash",
+        image: "https://fun4orlandokids.com/media/com_mtree/images/listings/s/934.png",
         category: "Free Fun",
         where: "outdoor",
         activeness: "active",
@@ -283,7 +283,7 @@ var ideaSeed = [
     },
     {
         placename: "Disney's Boardwalk",
-        image: "park",
+        image: "https://fun4orlandokids.com/media/com_mtree/images/listings/s/1003.jpg",
         category: "Free Fun",
         where: "outdoor",
         activeness: "moderate",
@@ -294,7 +294,7 @@ var ideaSeed = [
     },
     {
         placename: "Fort Christmas Historical Park and Museum",
-        image: "museum",
+        image: "https://fun4orlandokids.com/images/banners/default/97.jpg",
         category: "Free Fun",
         where: "outdoor",
         activeness: "moderate",
@@ -305,7 +305,7 @@ var ideaSeed = [
     },
     {
         placename: "Home Depot FREE Kids Workshop",
-        image: "workshop",
+        image: "https://fun4orlandokids.com/images/banners/default/90.jpg",
         category: "Free Fun",
         where: "indoor",
         activeness: "moderate",
@@ -316,7 +316,7 @@ var ideaSeed = [
     },
     {
         placename: "Mead Botanical Gardens",
-        image: "park",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQQYkEZUnIxT1ua4gjfdGM-t6pIj-ABYQwhuw&usqp=CAU",
         category: "Free Fun",
         where: "outdoor",
         activeness: "moderate",
@@ -327,7 +327,7 @@ var ideaSeed = [
     },
     {
         placename: "Crayola Experience",
-        image: "arts and crafts",
+        image: "https://fun4orlandokids.com/media/com_mtree/images/listings/s/2200.png",
         category: "creativity",
         where: "indoor",
         activeness: "moderate",
@@ -338,7 +338,7 @@ var ideaSeed = [
     },
     {
         placename: "Main Event",
-        image: "bowling",
+        image: "https://fun4orlandokids.com/images/banners/default/163.jpg",
         category: "bowling",
         where: "indoor",
         activeness: "active",
@@ -349,7 +349,7 @@ var ideaSeed = [
     },
     {
         placename: "Outer Limitz Indoor Trampoline Area",
-        image: "trampoline",
+        image: "https://fun4orlandokids.com/images/banners/default/82.jpg",
         category: "trampoline",
         where: "indoor",
         activeness: "active",
@@ -360,7 +360,7 @@ var ideaSeed = [
     },
     {
         placename: "East Orange County R/C Raceway",
-        image: "racing",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRuaXPAzXuhT6H007aI-vb9lvLa6HAJ-jlWVw&usqp=CAU",
         category: "racing",
         where: "outdoor",
         activeness: "active",
@@ -371,7 +371,7 @@ var ideaSeed = [
     },
     {
         placename: "K1 Speed Orlando",
-        image: "racing",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRuaXPAzXuhT6H007aI-vb9lvLa6HAJ-jlWVw&usqp=CAU",
         category: "racing",
         where: "indoor",
         activeness: "active",
@@ -382,7 +382,7 @@ var ideaSeed = [
     },
     {
         placename: "Albin Polasek Museum and Sculpture Garden",
-        image: "museum",
+        image: "https://fun4orlandokids.com/images/banners/default/97.jpg",
         category: "museum",
         where: "indoor",
         activeness: "moderate",
@@ -393,7 +393,7 @@ var ideaSeed = [
     },
     {
         placename: "Chocolate Kingdom - The Factory Adventure Tour",
-        image: "museum",
+        image: "https://fun4orlandokids.com/images/banners/default/97.jpg",
         category: "museum",
         where: "indoor",
         activeness: "moderate",
@@ -404,7 +404,7 @@ var ideaSeed = [
     },
     {
         placename: "Chocolate Museum and Cafe",
-        image: "museum",
+        image: "https://fun4orlandokids.com/images/banners/default/97.jpg",
         category: "museum",
         where: "indoor",
         activeness: "moderate",
@@ -415,7 +415,7 @@ var ideaSeed = [
     },
     {
         placename: "Holy Land Experience",
-        image: "museum",
+        image: "https://fun4orlandokids.com/images/banners/default/97.jpg",
         category: "religion",
         where: "outdoor",
         activeness: "moderate",
@@ -426,7 +426,7 @@ var ideaSeed = [
     },
     {
         placename: "Medieval Times",
-        image: "theater",
+        image: "https://fun4orlandokids.com/images/banners/default/174.jpg",
         category: "theater",
         where: "indoor",
         activeness: "moderate",
@@ -437,7 +437,7 @@ var ideaSeed = [
     },
     {
         placename: "Winter Park History Museum",
-        image: "museum",
+        image: "https://fun4orlandokids.com/images/banners/default/97.jpg",
         category: "museum",
         where: "indoor",
         activeness: "moderate",
@@ -448,7 +448,7 @@ var ideaSeed = [
     },
     {
         placename: "All Fired Up",
-        image: "arts and crafts",
+        image: "https://images.agoramedia.com/wte3.0/gcms/Fun-Craft-Ideas-for-Toddlers-722x406.jpg?width=414",
         category: "creativity",
         where: "indoor",
         activeness: "moderate",
@@ -459,7 +459,7 @@ var ideaSeed = [
     },
     {
         placename: "Art Room",
-        image: "arts and crafts",
+        image: "https://images.agoramedia.com/wte3.0/gcms/Fun-Craft-Ideas-for-Toddlers-722x406.jpg?width=414",
         category: "creativity",
         where: "indoor",
         activeness: "moderate",
@@ -470,7 +470,7 @@ var ideaSeed = [
     },
     {
         placename: "Nailed It DIY Studio",
-        image: "arts and crafts",
+        image: "https://images.agoramedia.com/wte3.0/gcms/Fun-Craft-Ideas-for-Toddlers-722x406.jpg?width=414",
         category: "creativity",
         where: "indoor",
         activeness: "moderate",
@@ -481,7 +481,7 @@ var ideaSeed = [
     },
     {
         placename: "Painting with a Twist",
-        image: "arts and crafts",
+        image: "https://i.pinimg.com/originals/b9/f4/a0/b9f4a09f911b56a76b6451a0cee8d4d2.jpg",
         category: "creativity",
         where: "indoor",
         activeness: "moderate",
@@ -492,7 +492,7 @@ var ideaSeed = [
     },
     {
         placename: "Pottery Studio",
-        image: "arts and crafts",
+        image: "https://i.pinimg.com/originals/b9/f4/a0/b9f4a09f911b56a76b6451a0cee8d4d2.jpg",
         category: "creativity",
         where: "indoor",
         activeness: "moderate",
@@ -503,7 +503,7 @@ var ideaSeed = [
     },
     {
         placename: "Super Awesome Cool Pottery",
-        image: "arts and crafts",
+        image: "https://i.pinimg.com/originals/b9/f4/a0/b9f4a09f911b56a76b6451a0cee8d4d2.jpg",
         category: "creativity",
         where: "indoor",
         activeness: "moderate",
@@ -514,7 +514,7 @@ var ideaSeed = [
     },
     {
         placename: "The Art Corner by Artistic Talent Group",
-        image: "arts and crafts",
+        image: "https://i.pinimg.com/originals/b9/f4/a0/b9f4a09f911b56a76b6451a0cee8d4d2.jpg",
         category: "creativity",
         where: "indoor",
         activeness: "moderate",
@@ -525,8 +525,8 @@ var ideaSeed = [
     },
     {
         placename: "Congo River Golf",
-        image: "minigolf",
-        category: "minigolf",
+        image: "https://fun4orlandokids.com/images/banners/default/168.jpg",
+        category: "",
         where: "outdoor",
         activeness: "active",
         age: "3+",
@@ -536,7 +536,7 @@ var ideaSeed = [
     },
     {
         placename: "Disney's Fantasia Gardens and Fairways Miniature Golf",
-        image: "minigolf",
+        image: "https://fun4orlandokids.com/images/banners/default/168.jpg",
         category: "minigolf",
         where: "outdoor",
         activeness: "active",
@@ -547,7 +547,7 @@ var ideaSeed = [
     },
     {
         placename: "Disney's Winter Summerland Miniature Golf",
-        image: "minigolf",
+        image: "https://fun4orlandokids.com/images/banners/default/168.jpg",
         category: "minigolf",
         where: "outdoor",
         activeness: "active",
@@ -558,7 +558,7 @@ var ideaSeed = [
     },
     {
         placename: "Hawaiian Rumble Adventure Golf",
-        image: "minigolf",
+        image: "https://fun4orlandokids.com/images/banners/default/168.jpg",
         category: "minigolf",
         where: "outdoor",
         activeness: "active",
@@ -569,7 +569,7 @@ var ideaSeed = [
     },
     {
         placename: "Hollywood Drive in Golf",
-        image: "minigolf",
+        image: "https://fun4orlandokids.com/images/banners/default/168.jpg",
         category: "minigolf",
         where: "outdoor",
         activeness: "active",
@@ -580,7 +580,7 @@ var ideaSeed = [
     },
     {
         placename: "LOST CAVERNS ADVENTURE GOLF",
-        image: "minigolf",
+        image: "https://fun4orlandokids.com/images/banners/default/168.jpg",
         category: "minigolf",
         where: "outdoor",
         activeness: "active",
@@ -591,7 +591,7 @@ var ideaSeed = [
     },
     {
         placename: "LOST CAVERNS ADVENTURE GOLF",
-        image: "minigolf",
+        image: "https://fun4orlandokids.com/images/banners/default/168.jpg",
         category: "minigolf",
         where: "outdoor",
         activeness: "active",
@@ -602,7 +602,7 @@ var ideaSeed = [
     },
     {
         placename: "AMC Disney Springs 24 with Dine-In Theatres",
-        image: "movie",
+        image: "https://idealbloghub.com/wp-content/uploads/2020/02/Top-best-Android-Apps-to-watch-and-stream-free-movies-online.jpg",
         category: "movie",
         where: "indoor",
         activeness: "passive",
@@ -613,7 +613,7 @@ var ideaSeed = [
     },
     {
         placename: "AMC West Oaks 14",
-        image: "movie",
+        image: "https://idealbloghub.com/wp-content/uploads/2020/02/Top-best-Android-Apps-to-watch-and-stream-free-movies-online.jpg",
         category: "movie",
         where: "indoor",
         activeness: "passive",
@@ -624,7 +624,7 @@ var ideaSeed = [
     },
     {
         placename: "Avalon Park Movie Under the Stars",
-        image: "movie",
+        image: "https://idealbloghub.com/wp-content/uploads/2020/02/Top-best-Android-Apps-to-watch-and-stream-free-movies-online.jpg",
         category: "movie",
         where: "outdoor",
         activeness: "passive",
@@ -635,7 +635,7 @@ var ideaSeed = [
     },
     {
         placename: "Cinemark Artegon Marketplace and XD",
-        image: "movie",
+        image: "https://idealbloghub.com/wp-content/uploads/2020/02/Top-best-Android-Apps-to-watch-and-stream-free-movies-online.jpg",
         category: "movie",
         where: "indoor",
         activeness: "passive",
@@ -646,7 +646,7 @@ var ideaSeed = [
     },
     {
         placename: "Cinepolis Luxury Cinemas Hamlin",
-        image: "movie",
+        image: "https://idealbloghub.com/wp-content/uploads/2020/02/Top-best-Android-Apps-to-watch-and-stream-free-movies-online.jpg",
         category: "movie",
         where: "indoor",
         activeness: "passive",
@@ -657,7 +657,7 @@ var ideaSeed = [
     },
     {
         placename: "Cobb Theaters Plaza Cinema Cafe 12",
-        image: "movie",
+        image: "https://idealbloghub.com/wp-content/uploads/2020/02/Top-best-Android-Apps-to-watch-and-stream-free-movies-online.jpg",
         category: "movie",
         where: "indoor",
         activeness: "passive",
@@ -668,7 +668,7 @@ var ideaSeed = [
     },
     {
         placename: "Popcorn Flicks",
-        image: "movie",
+        image: "https://idealbloghub.com/wp-content/uploads/2020/02/Top-best-Android-Apps-to-watch-and-stream-free-movies-online.jpg",
         category: "movie",
         where: "outdoor",
         activeness: "passive",
@@ -679,7 +679,7 @@ var ideaSeed = [
     },
     {
         placename: "Premiere Cinemas",
-        image: "movie",
+        image: "https://idealbloghub.com/wp-content/uploads/2020/02/Top-best-Android-Apps-to-watch-and-stream-free-movies-online.jpg",
         category: "movie",
         where: "indoor",
         activeness: "passive",
@@ -690,7 +690,7 @@ var ideaSeed = [
     },
     {
         placename: "Regal Entertainment Group",
-        image: "movie",
+        image: "https://idealbloghub.com/wp-content/uploads/2020/02/Top-best-Android-Apps-to-watch-and-stream-free-movies-online.jpg",
         category: "movie",
         where: "indoor",
         activeness: "passive",
@@ -701,7 +701,7 @@ var ideaSeed = [
     },
     {
         placename: "Touchstar Cinemas",
-        image: "movie",
+        image: "https://idealbloghub.com/wp-content/uploads/2020/02/Top-best-Android-Apps-to-watch-and-stream-free-movies-online.jpg",
         category: "movie",
         where: "indoor",
         activeness: "passive",
@@ -712,7 +712,7 @@ var ideaSeed = [
     },
     {
         placename: "Universal Cinemark",
-        image: "movie",
+        image: "https://idealbloghub.com/wp-content/uploads/2020/02/Top-best-Android-Apps-to-watch-and-stream-free-movies-online.jpg",
         category: "movie",
         where: "indoor",
         activeness: "passive",
@@ -723,7 +723,7 @@ var ideaSeed = [
     },
     {
         placename: "West Orange Cinema",
-        image: "movie",
+        image: "https://idealbloghub.com/wp-content/uploads/2020/02/Top-best-Android-Apps-to-watch-and-stream-free-movies-online.jpg",
         category: "movie",
         where: "indoor",
         activeness: "passive",
@@ -734,7 +734,7 @@ var ideaSeed = [
     },
     {
         placename: "Cornell Fine Arts Museum",
-        image: "museum",
+        image: "https://fun4orlandokids.com/images/banners/default/97.jpg",
         category: "museum",
         where: "indoor",
         activeness: "moderate",
@@ -745,7 +745,7 @@ var ideaSeed = [
     },
     {
         placename: "DEFY Orlando",
-        image: "extreme air sport",
+        image: "https://fun4orlandokids.com/media/com_mtree/images/listings/s/8029.jpg",
         category: "extreme air sport",
         where: "indoor",
         activeness: "active",
@@ -756,7 +756,7 @@ var ideaSeed = [
     },
     {
         placename: "Epic Axe Throwing",
-        image: "extreme sport",
+        image: "https://fun4orlandokids.com/media/com_mtree/images/listings/s/10717.jpg",
         category: "extreme sport",
         where: "indoor",
         activeness: "active",
@@ -767,7 +767,7 @@ var ideaSeed = [
     },
     {
         placename: "Fort Barachel Skate Park",
-        image: "skating",
+        image: "https://fun4orlandokids.com/images/banners/default/172.jpg",
         category: "skating",
         where: "indoor",
         activeness: "active",
@@ -778,7 +778,7 @@ var ideaSeed = [
     },
     {
         placename: "Metro Skateboard Academy",
-        image: "skating",
+        image: "https://fun4orlandokids.com/images/banners/default/172.jpg",
         category: "skating",
         where: "indoor",
         activeness: "active",
@@ -789,7 +789,7 @@ var ideaSeed = [
     },
     {
         placename: "Orlando Skate Park",
-        image: "skating",
+        image: "https://fun4orlandokids.com/images/banners/default/172.jpg",
         category: "skating",
         where: "outdoor",
         activeness: "active",
@@ -800,7 +800,7 @@ var ideaSeed = [
     },
     {
         placename: "Pirate's Dinner Adventure",
-        image: "theater",
+        image: "https://fun4orlandokids.com/media/com_mtree/images/listings/s/10258.jpg",
         category: "theater",
         where: "indoor",
         activeness: "passive",
@@ -811,7 +811,7 @@ var ideaSeed = [
     },
     {
         placename: "Airboat Rides at Midway",
-        image: "boat rides",
+        image: "https://fun4orlandokids.com/media/com_mtree/images/listings/s/2138.jpg",
         category: "boat rides",
         where: "outdoor",
         activeness: "active",
@@ -822,7 +822,7 @@ var ideaSeed = [
     },
     {
         placename: "A-Awesome Air Boat Rides",
-        image: "boat rides",
+        image: "https://fun4orlandokids.com/media/com_mtree/images/listings/s/2138.jpg",
         category: "boat rides",
         where: "outdoor",
         activeness: "active",
@@ -833,7 +833,7 @@ var ideaSeed = [
     },
     {
         placename: "Buena Vista Watersports",
-        image: "watersports",
+        image: "https://fun4orlandokids.com/media/com_mtree/images/listings/s/2866.png",
         category: "watersports",
         where: "outdoor",
         activeness: "active",
@@ -844,7 +844,7 @@ var ideaSeed = [
     },
     {
         placename: "OWC Aquapark",
-        image: "watersports",
+        image: "https://fun4orlandokids.com/images/banners/default/175.jpg",
         category: "watersports",
         where: "outdoor",
         activeness: "active",
@@ -854,7 +854,7 @@ var ideaSeed = [
         website: "https://www.orlandowatersports.com/"
     }, {
         placename: "Universal's Volcano Bay Water Park",
-        image: "water park",
+        image: "https://fun4orlandokids.com/images/banners/default/175.jpg",
         category: "water park",
         where: "outdoor",
         activeness: "active",
@@ -865,7 +865,7 @@ var ideaSeed = [
     },
     {
         placename: "Disney's Winter Summerland Miniature Golf",
-        image: "minigolf",
+        image: "https://fun4orlandokids.com/images/banners/default/168.jpg",
         category: "minigolf",
         where: "outdoor",
         activeness: "active",
@@ -876,7 +876,7 @@ var ideaSeed = [
     },
     {
         placename: "Hawaiian Rumble Adventure Golf",
-        image: "minigolf",
+        image: "https://fun4orlandokids.com/images/banners/default/168.jpg",
         category: "minigolf",
         where: "outdoor",
         activeness: "active",
@@ -886,7 +886,7 @@ var ideaSeed = [
         website: "http://www.hawaiianrumbleorlando.com/"
     },{
         placename: "Disney's Winter Summerland Miniature Golf",
-        image: "minigolf",
+        image: "https://fun4orlandokids.com/images/banners/default/168.jpg",
         category: "minigolf",
         where: "outdoor",
         activeness: "active",
@@ -897,7 +897,7 @@ var ideaSeed = [
     },
     {
         placename: "Hawaiian Rumble Adventure Golf",
-        image: "minigolf",
+        image: "https://fun4orlandokids.com/images/banners/default/168.jpg",
         category: "minigolf",
         where: "outdoor",
         activeness: "active",
@@ -908,7 +908,7 @@ var ideaSeed = [
     },
     {
         placename: "Disney's Winter Summerland Miniature Golf",
-        image: "minigolf",
+        image: "https://fun4orlandokids.com/images/banners/default/168.jpg",
         category: "minigolf",
         where: "outdoor",
         activeness: "active",
@@ -919,7 +919,7 @@ var ideaSeed = [
     },
     {
         placename: "Hawaiian Rumble Adventure Golf",
-        image: "minigolf",
+        image: "https://fun4orlandokids.com/images/banners/default/168.jpg",
         category: "minigolf",
         where: "outdoor",
         activeness: "active",
@@ -930,7 +930,7 @@ var ideaSeed = [
     },   
     {
         placename: "Universal Orlando Resorts",
-        image: "Parks and Rides",
+        image: "https://fun4orlandokids.com/images/banners/default/211.jpg Rides",
         category: "Amusement Parks and Rides",
         where: "outdoor",
         activeness: "active",
@@ -941,7 +941,7 @@ var ideaSeed = [
     },
     {
         placename: "Walt Disney World Resort",
-        image: "Parks and Rides",
+        image: "https://fun4orlandokids.com/images/banners/default/211.jpg Rides",
         category: "Amusement Parks and Rides",
         where: "outdoor",
         activeness: "active",
@@ -952,7 +952,7 @@ var ideaSeed = [
     },
     {
         placename: "Universal Orlando Resorts",
-        image: "Parks and Rides",
+        image: "https://fun4orlandokids.com/images/banners/default/211.jpg Rides",
         category: "Amusement Parks and Rides",
         where: "outdoor",
         activeness: "active",
@@ -963,7 +963,7 @@ var ideaSeed = [
     },
     {
         placename: "Walt Disney World Resort",
-        image: "Parks and Rides",
+        image: "https://fun4orlandokids.com/images/banners/default/211.jpg Rides",
         category: "Amusement Parks and Rides",
         where: "outdoor",
         activeness: "active",
@@ -974,7 +974,7 @@ var ideaSeed = [
     },
     {
         placename: "Universal Orlando Resorts",
-        image: "Parks and Rides",
+        image: "https://fun4orlandokids.com/images/banners/default/211.jpg Rides",
         category: "Amusement Parks and Rides",
         where: "outdoor",
         activeness: "active",
@@ -985,7 +985,7 @@ var ideaSeed = [
     },
     {
         placename: "Walt Disney World Resort",
-        image: "Parks and Rides",
+        image: "https://fun4orlandokids.com/images/banners/default/211.jpg Rides",
         category: "Amusement Parks and Rides",
         where: "outdoor",
         activeness: "active",
@@ -995,7 +995,7 @@ var ideaSeed = [
         website: "https://disneyworld.disney.go.com/"
     },{
         placename: "Universal Orlando Resorts",
-        image: "Parks and Rides",
+        image: "https://fun4orlandokids.com/images/banners/default/211.jpg Rides",
         category: "Amusement Parks and Rides",
         where: "outdoor",
         activeness: "active",
@@ -1006,7 +1006,7 @@ var ideaSeed = [
     },
     {
         placename: "Walt Disney World Resort",
-        image: "Parks and Rides",
+        image: "https://fun4orlandokids.com/images/banners/default/211.jpg Rides",
         category: "Amusement Parks and Rides",
         where: "outdoor",
         activeness: "active",
@@ -1017,7 +1017,7 @@ var ideaSeed = [
     },
     {
         placename: "Avalon Park Movie Under the Stars",
-        image: "movie",
+        image: "https://idealbloghub.com/wp-content/uploads/2020/02/Top-best-Android-Apps-to-watch-and-stream-free-movies-online.jpg",
         category: "movie",
         where: "outdoor",
         activeness: "passive",
@@ -1028,7 +1028,7 @@ var ideaSeed = [
     },
     {
         placename: "Avalon Park Movie Under the Stars",
-        image: "movie",
+        image: "https://idealbloghub.com/wp-content/uploads/2020/02/Top-best-Android-Apps-to-watch-and-stream-free-movies-online.jpg",
         category: "movie",
         where: "outdoor",
         activeness: "passive",
@@ -1038,7 +1038,7 @@ var ideaSeed = [
         website: "https://www.avalonpark.com/news-events/events/"
     },{
         placename: "Avalon Park Movie Under the Stars",
-        image: "movie",
+        image: "https://idealbloghub.com/wp-content/uploads/2020/02/Top-best-Android-Apps-to-watch-and-stream-free-movies-online.jpg",
         category: "movie",
         where: "outdoor",
         activeness: "passive",
@@ -1049,7 +1049,7 @@ var ideaSeed = [
     },
     {
         placename: "Avalon Park Movie Under the Stars",
-        image: "movie",
+        image: "https://idealbloghub.com/wp-content/uploads/2020/02/Top-best-Android-Apps-to-watch-and-stream-free-movies-online.jpg",
         category: "movie",
         where: "outdoor",
         activeness: "passive",
@@ -1060,7 +1060,7 @@ var ideaSeed = [
     },
     {
         placename: "Congo River Golf",
-        image: "minigolf",
+        image: "https://fun4orlandokids.com/images/banners/default/168.jpg",
         category: "minigolf",
         where: "outdoor",
         activeness: "active",
@@ -1071,7 +1071,7 @@ var ideaSeed = [
     },
     {
         placename: "Congo River Golf",
-        image: "minigolf",
+        image: "https://fun4orlandokids.com/images/banners/default/168.jpg",
         category: "minigolf",
         where: "outdoor",
         activeness: "active",
@@ -1082,7 +1082,7 @@ var ideaSeed = [
     },
     {
         placename: "Congo River Golf",
-        image: "minigolf",
+        image: "https://fun4orlandokids.com/images/banners/default/168.jpg",
         category: "minigolf",
         where: "outdoor",
         activeness: "active",
@@ -1093,7 +1093,7 @@ var ideaSeed = [
     },
     {
         placename: "Congo River Golf",
-        image: "minigolf",
+        image: "https://fun4orlandokids.com/images/banners/default/168.jpg",
         category: "minigolf",
         where: "outdoor",
         activeness: "active",
@@ -1104,7 +1104,7 @@ var ideaSeed = [
     },
     {
         placename: "Airboat Rides at Midway",
-        image: "boat rides",
+        image: "https://fun4orlandokids.com/media/com_mtree/images/listings/s/496.jpg",
         category: "boat rides",
         where: "outdoor",
         activeness: "active",
@@ -1115,7 +1115,7 @@ var ideaSeed = [
     },
     {
         placename: "A-Awesome Air Boat Rides",
-        image: "boat rides",
+        image: "https://fun4orlandokids.com/media/com_mtree/images/listings/s/2138.jpg",
         category: "boat rides",
         where: "outdoor",
         activeness: "active",
@@ -1126,7 +1126,7 @@ var ideaSeed = [
     },
     {
         placename: "Airboat Rides at Midway",
-        image: "boat rides",
+        image: "https://fun4orlandokids.com/media/com_mtree/images/listings/s/496.jpg",
         category: "boat rides",
         where: "outdoor",
         activeness: "active",
@@ -1137,7 +1137,7 @@ var ideaSeed = [
     },
     {
         placename: "A-Awesome Air Boat Rides",
-        image: "boat rides",
+        image: "https://fun4orlandokids.com/media/com_mtree/images/listings/s/2138.jpg",
         category: "boat rides",
         where: "outdoor",
         activeness: "active",
@@ -1148,7 +1148,7 @@ var ideaSeed = [
     },
     {
         placename: "Airboat Rides at Midway",
-        image: "boat rides",
+        image: "https://fun4orlandokids.com/media/com_mtree/images/listings/s/496.jpg",
         category: "boat rides",
         where: "outdoor",
         activeness: "active",
@@ -1159,7 +1159,7 @@ var ideaSeed = [
     },
     {
         placename: "A-Awesome Air Boat Rides",
-        image: "boat rides",
+        image: "https://fun4orlandokids.com/media/com_mtree/images/listings/s/2138.jpg",
         category: "boat rides",
         where: "outdoor",
         activeness: "active",
@@ -1170,7 +1170,7 @@ var ideaSeed = [
     },
     {
         placename: "Airboat Rides at Midway",
-        image: "boat rides",
+        image: "https://fun4orlandokids.com/media/com_mtree/images/listings/s/496.jpg",
         category: "boat rides",
         where: "outdoor",
         activeness: "active",
@@ -1181,7 +1181,7 @@ var ideaSeed = [
     },
     {
         placename: "A-Awesome Air Boat Rides",
-        image: "boat rides",
+        image: "https://fun4orlandokids.com/media/com_mtree/images/listings/s/2138.jpg",
         category: "boat rides",
         where: "outdoor",
         activeness: "active",
@@ -1192,7 +1192,7 @@ var ideaSeed = [
     },  
     {
         placename: "Aerophile at Disney Springs",
-        image: "air adventure",
+        image: "https://fun4orlandokids.com/images/banners/default/230.jpg",
         category: "Air adventures",
         where: "outdoor",
         activeness: "moderate",
@@ -1203,7 +1203,7 @@ var ideaSeed = [
     },
     {
         placename: "Aerostat Adventures Hot Air Balloon Ride",
-        image: "air adventure",
+        image: "https://fun4orlandokids.com/images/banners/default/230.jpg",
         category: "Air adventures",
         where: "outdoor",
         activeness: "moderate",
@@ -1214,7 +1214,7 @@ var ideaSeed = [
     },
     {
         placename: "Air Force Fun Helicopter Tours",
-        image: "air adventure",
+        image: "https://fun4orlandokids.com/images/banners/default/230.jpg",
         category: "Air adventures",
         where: "outdoor",
         activeness: "moderate",
@@ -1224,7 +1224,7 @@ var ideaSeed = [
         website: "https://airforcefun.com/home"
     },  {
         placename: "Aerophile at Disney Springs",
-        image: "air adventure",
+        image: "https://fun4orlandokids.com/images/banners/default/230.jpg",
         category: "Air adventures",
         where: "outdoor",
         activeness: "moderate",
@@ -1235,7 +1235,7 @@ var ideaSeed = [
     },
     {
         placename: "Aerostat Adventures Hot Air Balloon Ride",
-        image: "air adventure",
+        image: "https://fun4orlandokids.com/images/banners/default/230.jpg",
         category: "Air adventures",
         where: "outdoor",
         activeness: "moderate",
@@ -1246,7 +1246,7 @@ var ideaSeed = [
     },
     {
         placename: "Air Force Fun Helicopter Tours",
-        image: "air adventure",
+        image: "https://fun4orlandokids.com/images/banners/default/230.jpg",
         category: "Air adventures",
         where: "outdoor",
         activeness: "moderate",
@@ -1257,7 +1257,7 @@ var ideaSeed = [
     },
     {
         placename: "Aerophile at Disney Springs",
-        image: "air adventure",
+        image: "https://fun4orlandokids.com/images/banners/default/230.jpg",
         category: "Air adventures",
         where: "outdoor",
         activeness: "moderate",
@@ -1268,7 +1268,7 @@ var ideaSeed = [
     },
     {
         placename: "Aerostat Adventures Hot Air Balloon Ride",
-        image: "air adventure",
+        image: "https://fun4orlandokids.com/images/banners/default/230.jpg",
         category: "Air adventures",
         where: "outdoor",
         activeness: "moderate",
@@ -1279,7 +1279,7 @@ var ideaSeed = [
     },
     {
         placename: "Air Force Fun Helicopter Tours",
-        image: "air adventure",
+        image: "https://fun4orlandokids.com/images/banners/default/230.jpg",
         category: "Air adventures",
         where: "outdoor",
         activeness: "moderate",
@@ -1290,7 +1290,7 @@ var ideaSeed = [
     },
         {
             placename: "Aerophile at Disney Springs",
-            image: "air adventure",
+            image: "https://fun4orlandokids.com/images/banners/default/230.jpg",
             category: "Air adventures",
             where: "outdoor",
             activeness: "moderate",
@@ -1301,7 +1301,7 @@ var ideaSeed = [
         },
         {
             placename: "Aerostat Adventures Hot Air Balloon Ride",
-            image: "air adventure",
+            image: "https://fun4orlandokids.com/images/banners/default/230.jpg",
             category: "Air adventures",
             where: "outdoor",
             activeness: "moderate",
@@ -1312,7 +1312,7 @@ var ideaSeed = [
         },
         {
             placename: "Air Force Fun Helicopter Tours",
-            image: "air adventure",
+            image: "https://fun4orlandokids.com/images/banners/default/230.jpg",
             category: "Air adventures",
             where: "outdoor",
             activeness: "moderate",
@@ -1323,7 +1323,7 @@ var ideaSeed = [
         }, 
         {
             placename: "Sea World Adventure Parks",
-            image: "Parks and Rides",
+            image: "https://fun4orlandokids.com/images/banners/default/211.jpg Rides",
             category: "Amusement Parks and Rides",
             where: "outdoor",
             activeness: "active",
@@ -1334,7 +1334,7 @@ var ideaSeed = [
         },
         {
             placename: "Universal Orlando Resorts",
-            image: "Parks and Rides",
+            image: "https://fun4orlandokids.com/images/banners/default/211.jpg Rides",
             category: "Amusement Parks and Rides",
             where: "outdoor",
             activeness: "active",
@@ -1345,7 +1345,7 @@ var ideaSeed = [
         },
         {
             placename: "Walt Disney World Resort",
-            image: "Parks and Rides",
+            image: "https://fun4orlandokids.com/images/banners/default/211.jpg Rides",
             category: "Amusement Parks and Rides",
             where: "outdoor",
             activeness: "active",
@@ -1356,7 +1356,7 @@ var ideaSeed = [
         },
         {
             placename: "Avalon Park Movie Under the Stars",
-            image: "movie",
+            image: "https://idealbloghub.com/wp-content/uploads/2020/02/Top-best-Android-Apps-to-watch-and-stream-free-movies-online.jpg",
             category: "movie",
             where: "outdoor",
             activeness: "passive",
@@ -1364,6 +1364,104 @@ var ideaSeed = [
             address: "3680 Avalon Park East Blvd. Ste. 300, Orlando, FL, 32828",
             phone: "(407) 658-6565",
             website: "https://www.avalonpark.com/news-events/events/"
+        },
+        {
+            placename: "Orlando Science CenterAvalon Park Movie Under the Stars",
+            image: "https://fun4orlandokids.com/media/com_mtree/images/listings/m/10962.png",
+            category: "Science Center",
+            where: "indoor",
+            activeness: "moderate",
+            age: "2+",
+            address: "777 E. Princeton Street, Orlando, FL, 32803",
+            phone: "(407) 514-2000",
+            website: "https://www.osc.org/"
+        }, {
+            placename: "Orlando Science CenterAvalon Park Movie Under the Stars",
+            image: "https://fun4orlandokids.com/media/com_mtree/images/listings/m/10962.png",
+            category: "Science Center",
+            where: "indoor",
+            activeness: "moderate",
+            age: "3+",
+            address: "777 E. Princeton Street, Orlando, FL, 32803",
+            phone: "(407) 514-2000",
+            website: "https://www.osc.org/"
+        },
+        {
+            placename: "Orlando Science CenterAvalon Park Movie Under the Stars",
+            image: "https://fun4orlandokids.com/media/com_mtree/images/listings/m/10962.png",
+            category: "Science Center",
+            where: "indoor",
+            activeness: "moderate",
+            age: "4+",
+            address: "777 E. Princeton Street, Orlando, FL, 32803",
+            phone: "(407) 514-2000",
+            website: "https://www.osc.org/"
+        },
+        {
+            placename: "Orlando Science CenterAvalon Park Movie Under the Stars",
+            image: "https://fun4orlandokids.com/media/com_mtree/images/listings/m/10962.png",
+            category: "Science Center",
+            where: "indoor",
+            activeness: "moderate",
+            age: "5+",
+            address: "777 E. Princeton Street, Orlando, FL, 32803",
+            phone: "(407) 514-2000",
+            website: "https://www.osc.org/"
+        },
+        {
+            placename: "Orlando Science CenterAvalon Park Movie Under the Stars",
+            image: "https://fun4orlandokids.com/media/com_mtree/images/listings/m/10962.png",
+            category: "Science Center",
+            where: "indoor",
+            activeness: "moderate",
+            age: "6+",
+            address: "777 E. Princeton Street, Orlando, FL, 32803",
+            phone: "(407) 514-2000",
+            website: "https://www.osc.org/"
+        },
+        {
+            placename: "Orlando Science CenterAvalon Park Movie Under the Stars",
+            image: "https://fun4orlandokids.com/media/com_mtree/images/listings/m/10962.png",
+            category: "Science Center",
+            where: "indoor",
+            activeness: "moderate",
+            age: "7+",
+            address: "777 E. Princeton Street, Orlando, FL, 32803",
+            phone: "(407) 514-2000",
+            website: "https://www.osc.org/"
+        },
+        {
+            placename: "Orlando Science CenterAvalon Park Movie Under the Stars",
+            image: "https://fun4orlandokids.com/media/com_mtree/images/listings/m/10962.png",
+            category: "Science Center",
+            where: "indoor",
+            activeness: "moderate",
+            age: "8+",
+            address: "777 E. Princeton Street, Orlando, FL, 32803",
+            phone: "(407) 514-2000",
+            website: "https://www.osc.org/"
+        },
+        {
+            placename: "Orlando Science CenterAvalon Park Movie Under the Stars",
+            image: "https://fun4orlandokids.com/media/com_mtree/images/listings/m/10962.png",
+            category: "Science Center",
+            where: "indoor",
+            activeness: "moderate",
+            age: "10+",
+            address: "777 E. Princeton Street, Orlando, FL, 32803",
+            phone: "(407) 514-2000",
+            website: "https://www.osc.org/"
+        },
+        {
+            placename: "Orlando Science CenterAvalon Park Movie Under the Stars",
+            image: "https://fun4orlandokids.com/media/com_mtree/images/listings/m/10962.png",
+            category: "Science Center",
+            where: "indoor",
+            activeness: "moderate",
+            age: "12+",
+            address: "777 E. Princeton Street, Orlando, FL, 32803",
+            phone: "(407) 514-2000",
+            website: "https://www.osc.org/"
         },
 
 
