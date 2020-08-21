@@ -6,6 +6,8 @@ import education from "../assets/images/education.jpg";
 import indoorgames from "../assets/images/indoorgames.jpg";
 import Row from "react-bootstrap/Row";
 import Container from  "react-bootstrap/Container";
+import Carousel from "./Carousel";
+import logo from "../assets/images/logo.png"
 
 
 
@@ -17,24 +19,28 @@ class HomeCard extends React.Component {
             items: [
                 {
                     id: 0,
+                    title: "Arts and crafts",
                     imgSrc: arts,
-                    link: "https://murmuring-reef-63999.herokuapp.com/user/login",
+                    link: "https://shrouded-scrubland-07214.herokuapp.com/",
                     selected: false
                 },
                 {
                     id: 1,
+                    title: "Board games",
                     imgSrc: boardgames,
                     link: "https://shrouded-scrubland-07214.herokuapp.com/",
                     selected: false
                 },
                 {
                     id: 2,
+                    title: "Educational materials",
                     imgSrc: education,
                     link: "https://kisjan4ik.github.io/Gig-Crasher/",
                     selected: false
                 },
                 {
                     id: 3,
+                    title: "Indoor games",
                     imgSrc: indoorgames,
                     link: "https://kisjan4ik.github.io/JavaScript-Password-Generator/",
                     selected: false
@@ -69,6 +75,7 @@ makeItems = (items) => {
 
     render() {
         return (
+            <>
             <Container fluid={true}>
                 
                 <Row className="justify-content-around">
@@ -76,7 +83,11 @@ makeItems = (items) => {
                     {this.makeItems(this.state.items)}
 
                 </Row>
+                
             </Container>
+            <Carousel className="t-card-image"/>
+            
+            </>
         )
     }
 }

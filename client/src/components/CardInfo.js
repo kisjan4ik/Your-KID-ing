@@ -9,8 +9,7 @@ return (
     <div>
     <animated.div className="pt-3" style={style}>
         <p className="">{props.title}</p>
-        <p className="">{props.subtitle}</p>
-        <a href={props.link} target="blank" rel="noopener noreferrer">View</a>
+        <a href={props.link} target="blank" rel="noopener noreferrer"id="flatxl">View</a>
     </animated.div>
     </div>
 )

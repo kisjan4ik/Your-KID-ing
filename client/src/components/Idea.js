@@ -8,19 +8,23 @@ function Idea(props) {
 
 
   return (
-    <div className="">
-      <div className="">
+    <div id="resultitem">
+      <div>
         <img id="imglst" alt={props.category} src={props.image} />
       </div>
-      <h2>{props.placename}</h2>
-      <p className="">{props.category}</p>
+      <div >
+      <p id="label"> {props.placename}</p>
+      <p id="listitem"><span id="listitem1">Category :</span>{props.category}</p>
       
-      <p className="">{props.activeness}</p>
-      <p className="">{props.age}</p>
-
+      <p id="listitem"><span id="listitem1">Activity level :</span>{props.activeness}</p>
+      <p id="listitem"><span id="listitem1">Age :</span>{props.age}</p>
+      <br/>
+      </div>
+      <div>
       <a href={props.website} target="_blank" rel="noopener noreferrer">
-        <button className="btnView">Go to the Website</button></a>
-      <button onClick={() => props.saveBook(props.ideaId)} className="btnSave">Save the place</button>
+        <button id="flatxl1">Go to the Website</button></a>
+      <button  id="flatxl1" onClick={() => props.saveBook(props.ideaId)} className="btnSave">Save the place</button>
+   </div>
     </div>
   );
 }

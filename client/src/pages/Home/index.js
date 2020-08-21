@@ -3,6 +3,7 @@ import { Header, Message, Button, Icon } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import HomeCard from '../../components/HomeCard';
+import logo from "../../assets/images/logo.png"
 
 
 export const Home = () => {
@@ -34,8 +35,10 @@ export const Home = () => {
                 <Link to="/login">
                     {showLoginBtn()}
                 </Link>
+                <img id="logo" alt="jkdfdslk" src={logo}/>
             </Message>
 <HomeCard />
+
         </div>
     )
 };
