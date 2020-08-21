@@ -28,7 +28,7 @@ export default {
   },
 
   // Saves an idea 
-  saveIdea: function (ideaData) {
-    return axios.post("/api/ideas", ideaData);
+  saveIdea: function (id, email) {
+    return axios.post("/api/ideas/"+ id +"/" + email);
   }
 };

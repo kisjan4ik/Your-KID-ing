@@ -7,7 +7,7 @@ import indoorgames from "../assets/images/indoorgames.jpg";
 import Row from "react-bootstrap/Row";
 import Container from  "react-bootstrap/Container";
 import Carousel from "./Carousel";
-import logo from "../assets/images/logo.png"
+
 
 
 

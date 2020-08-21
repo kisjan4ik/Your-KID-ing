@@ -2,6 +2,8 @@ import React from 'react';
 import { Header, Message } from "semantic-ui-react";
 import { useTrail, animated } from 'react-spring';
 import "./style.css";
+// import MyGames from '../../components/games';
+import Event from "../../components/Event"
 
 const fast = { tension: 1200, friction: 40 }
 const slow = { mass: 10, tension: 200, friction: 50 }
@@ -24,11 +26,11 @@ export const PageOne = () => {
                     <animated.div key={index} style={{ transform: props.xy.interpolate(trans) }} />
                 ))}
             </div>
-                <Header id="font-pg1" size="huge"><p>Page One</p>  </Header>
-                <p id="subtitle1">This is a Protected Route</p>
+                <Header id="font-pg1" size="huge"><p>Kids events</p>  </Header>
+                <p id="subtitle1">in your area</p>
             </Message>
-
-            
+<div id="events">
+<Event /></div>
         </>
     )
     

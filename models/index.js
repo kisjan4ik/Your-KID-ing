@@ -1,3 +1,4 @@
 module.exports = {
-  Idea: require("./Idea")
+  Idea: require("./Idea"),
+  User: require("./user")
 };

@@ -25,7 +25,11 @@ const UserSchema = new Schema({
     password: {
         type: String,
         require: true
-    }
+    },
+
+    savedplaces:[{ 
+        type: Schema.Types.ObjectId, 
+        ref: "Idea" }]
 });
 
 module.exports = User = mongoose.model("user", UserSchema);

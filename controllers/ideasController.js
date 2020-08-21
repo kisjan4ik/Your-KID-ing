@@ -15,11 +15,12 @@ module.exports = {
     let age = req.params.age.toLowerCase();
 
     // going through the db filtering it by input params
-    db.Idea.find({ 
+    db.Idea.find({
       // "activeness": activeness, 
-      "where": where, "age": age })
+      "where": where, "age": age
+    })
       .then(dbIdea => {
-        console.log(dbIdea);
+        // console.log(dbIdea);
         res.json(dbIdea)
       })
       .catch(err => res.status(422).json(err));
@@ -49,5 +50,38 @@ module.exports = {
       .then(dbIdea => dbIdea.remove())
       .then(dbIdea => res.json(dbIdea))
       .catch(err => res.status(422).json(err));
-  }
+  },
+
+  saveIdea: function (req, res) {
+    console.log("params: " + req.params.email, req.params.id);
+    db.User
+      .findOneAndUpdate({ email: req.params.email }, { $push: { savedplaces: req.params.id } }, { new: true })
+      .then(dbIdea => {
+        db.Idea.find({ _id: req.params.id })
+          .then(saved => {
+            console.log("saved" + saved);
+            res.json(saved)
+          })
+
+      })
+
+      .catch(err => res.status(422).json(err));
+  },
+
+getSaved: function(req, res){
+  console.log("params: " + req.params.email, req.params.id);
+  db.User
+    .findAll({ email: req.params.email }, { $push: { savedplaces: req.params.id } }, { new: true })
+    .then(dbIdea => {
+      db.Idea.find({ _id: req.params.id })
+        .then(saved => {
+          console.log("saved" + saved);
+          res.json(saved)
+        })
+
+    })
+
+    .catch(err => res.status(422).json(err));
+},
+
 };

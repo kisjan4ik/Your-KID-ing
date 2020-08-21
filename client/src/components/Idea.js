@@ -1,4 +1,5 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 
 
@@ -6,6 +7,7 @@ import React from "react";
 function Idea(props) {
   console.log(props);
 
+  const { currentUser, isAuthenticated } = useSelector(state => state.auth)
 
   return (
     <div id="resultitem">
@@ -23,7 +25,7 @@ function Idea(props) {
       <div>
       <a href={props.website} target="_blank" rel="noopener noreferrer">
         <button id="flatxl1">Go to the Website</button></a>
-      <button  id="flatxl1" onClick={() => props.saveBook(props.ideaId)} className="btnSave">Save the place</button>
+      <button  id="flatxl1" onClick={() => props.saveIdea(props.placeid, currentUser.email)} className="btnSave">Save the place</button>
    </div>
     </div>
   );

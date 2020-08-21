@@ -19,4 +19,11 @@ router
   .put(ideasController.update)
   .delete(ideasController.remove);
 
+// /:places
+router.route("/:id/:email")
+  .post(ideasController.saveIdea);
+
+router.route("/user/userplaces")
+.get(ideasController.getSaved);
+
 module.exports = router;

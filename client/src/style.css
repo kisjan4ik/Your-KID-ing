@@ -325,3 +325,18 @@ body {
 #carname ::first-letter{
   font-size: 200%;
   color: rgb(253, 123, 1); }
+
+   #events{
+     margin: 0 auto;
+  width:40%;
+  margin-top: 15px;
+  padding: 15px;
+  box-shadow: 0px 0px 3px 1px #ccc;
+  border:rgb(64, 8, 218) double 18px;
+  border-radius: 15px;
+}
+#imgplace{
+ position: relative;
+ left:20%;
+
+}

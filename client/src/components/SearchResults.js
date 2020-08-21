@@ -1,17 +1,13 @@
 import React from "react";
 import Form from "react-bootstrap/Form";
-// import Button from "react-bootstrap/Button";
-// import Content from "../components/Content";
-// import Axios from "axios";
-import Event from "../components/Event";
-// import Container from "react-bootstrap/Container";
-// import Row from "react-bootstrap/Row";
-// import Col from "react-bootstrap/Col";
 import APIideas from "../utils/APIideas";
 import IdeaSearch from "./IdeaSearch";
 import ChosenIdeas from "./ChosenIdeas";
 import Idea from "./Idea";
 import Button from "react-bootstrap/Button";
+import SavedIdeas from "../components/SavedIdeas";
+import { rest } from "lodash";
+import API from "../utils/API";
 
 
 
@@ -27,9 +23,26 @@ class SearchResults extends React.Component {
             activtype: "",
             // actlevel: "",
             age: "",
-            ideas: []
+            ideas: [],
+            savedideas: []
         };
 
+    }
+
+    componentDidMount() {
+       this.loadUserPlaces();
+
+    }
+
+    loadUserPlaces = (savedplaces) => {
+        // API call to a function that would me made in API to get the user and all of their saved places and bring them back to the page
+        // getSaved places - API function
+        // express route that handles /userplaces 
+        // in Controller - populate method
+        API.getSaved(savedplaces)
+        .then(res =>
+            this.setState({savedplaces: res.data})
+            )
     }
 
     handleChange = event => {
@@ -39,12 +52,14 @@ class SearchResults extends React.Component {
 
     handleSubmit = event => {
         event.preventDefault();
-        console.log("states:" + this.state.activtype, 
-        // this.state.actlevel, 
-        this.state.age);
-        this.loadIdeas({ where: this.state.activtype,
+        console.log("states:" + this.state.activtype,
+            // this.state.actlevel, 
+            this.state.age);
+        this.loadIdeas({
+            where: this.state.activtype,
             //  activeness: this.state.actlevel,
-              age: this.state.age });
+            age: this.state.age
+        });
 
     }
 
@@ -60,7 +75,7 @@ class SearchResults extends React.Component {
                 })
             })
             // .then(res => {
-            //     APIideas.getIdeas()
+            //     APIideas.geideatIdeas()
             //         .then(res => {
             //             res.data.forEach(item => {
             //                 for (let j = 0; j < this.where.ideas.length; j++) {
@@ -77,19 +92,28 @@ class SearchResults extends React.Component {
     }
 
 
-    saveIdea = (id) => {
+    saveIdea = (id, email) => {
+        // build idea
+        // let savedidea = {
+        //     placename: this.state.ideas[id].placename,
+        //     image: this.state.ideas[id].image,
+        //     address: this.state.ideas[id].address,
+        //     phone: this.state.ideas[id].phone,
+        //     website: this.state.ideas[id].website
+        // }
+        // update savedideas array with the idea
 
-        APIideas.saveIdea({
-            placename: this.state.ideas[id].placename,
-            image: this.state.ideas[id].image,
-            address: this.state.ideas[id].address,
-            phone: this.state.ideas[id].phone,
-            website: this.state.ideas[id].website
-        })
+
+
+        APIideas.saveIdea(id, email)
+
             .then(res => {
-                let newIdeaArray = [...this.state.ideas]
-                newIdeaArray.splice([id], 1)
-                this.setState({ ideas: newIdeaArray })
+                console.log(res);
+                this.setState({ ...this.state, savedideas: [...this.state.savedideas, res.data[0]] })
+
+                // let newIdeaArray = [...this.state.ideas]
+                // newIdeaArray.splice([id], 1)
+                // this.setState({ ideas: savedidea })
             })
             .catch(err => console.log(err));
     }
@@ -98,10 +122,10 @@ class SearchResults extends React.Component {
 
         return (
             <div>
-                <IdeaSearch 
+                <IdeaSearch
                     title={"Find a place to go :"}
-                    // subTitle={"Search for and Save places and activities you would like"}
-                    >
+                // subTitle={"Search for and Save places and activities you would like"}
+                >
                 </IdeaSearch>
                 <Form id="placesearch" onSubmit={this.handleSubmit}>
                     <Form.Group >
@@ -144,29 +168,33 @@ class SearchResults extends React.Component {
                         Submit
                     </Button>
                 </Form>
-                <ChosenIdeas>
-                    {/* if(this.state.ideas.length) */}
-                    {this.state.ideas.map((idea, i) => {
-                        return (
-                            <Idea
-                                key={i}
-                                ideaId={i}
-                                placename={idea.placename}
-                                image={idea.image}
-                                category={idea.category}
-                                activeness={idea.activeness}
-                                age={idea.age}
-                                address={idea.adress}
-                                phone={idea.phone}
-                                website={idea.website}
-                                saveBook={this.saveIdea}
-                                onMyListText={this.state.onMyListText}
-                            />
-                        )
-                    })}
-                     <Event />
-                </ChosenIdeas>
-               
+                <div id="results">
+                    <ChosenIdeas>
+                        {/* if(this.state.ideas.length) */}
+                        {this.state.ideas.map((idea, i) => {
+                            return (
+                                <Idea
+                                    placeid={idea._id}
+                                    key={i}
+                                    ideaId={i}
+                                    placename={idea.placename}
+                                    image={idea.image}
+                                    category={idea.category}
+                                    activeness={idea.activeness}
+                                    age={idea.age}
+                                    address={idea.adress}
+                                    phone={idea.phone}
+                                    website={idea.website}
+                                    saveIdea={this.saveIdea}
+                                    onMyListText={this.state.onMyListText}
+                                />
+                            )
+                        })}
+
+                    </ChosenIdeas >
+
+                </div>
+                <SavedIdeas savedideas={this.state.savedideas} />
             </div>
         )
     }
