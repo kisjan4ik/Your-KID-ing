@@ -6,8 +6,8 @@ import ChosenIdeas from "./ChosenIdeas";
 import Idea from "./Idea";
 import Button from "react-bootstrap/Button";
 import SavedIdeas from "../components/SavedIdeas";
-import { rest } from "lodash";
-import API from "../utils/API";
+// import { rest } from "lodash";
+// import API from "../utils/API";
 
 
 
@@ -29,21 +29,21 @@ class SearchResults extends React.Component {
 
     }
 
-    componentDidMount() {
-       this.loadUserPlaces();
+    // componentDidMount() {
+    //    this.loadUserPlaces();
 
-    }
+    // }
 
-    loadUserPlaces = (savedplaces) => {
-        // API call to a function that would me made in API to get the user and all of their saved places and bring them back to the page
-        // getSaved places - API function
-        // express route that handles /userplaces 
-        // in Controller - populate method
-        API.getSaved(savedplaces)
-        .then(res =>
-            this.setState({savedplaces: res.data})
-            )
-    }
+    // loadUserPlaces = (savedplaces) => {
+    //     // API call to a function that would me made in API to get the user and all of their saved places and bring them back to the page
+    //     // getSaved places - API function
+    //     // express route that handles /userplaces 
+    //     // in Controller - populate method
+    //     API.getSaved(savedplaces)
+    //     .then(res =>
+    //         this.setState({savedplaces: res.data})
+    //         )
+    // }
 
     handleChange = event => {
         const value = event.target.value;

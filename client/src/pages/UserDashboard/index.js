@@ -2,6 +2,7 @@ import React from 'react';
 import { Header, Message } from "semantic-ui-react";
 import { useSelector } from "react-redux";
 import SearchResults from "../../components/SearchResults";
+import UserSavedPlaces from "../../components/UserSavedPlaces";
 
 
 
@@ -19,6 +20,7 @@ export const UserDashboard = () => {
                 
                 
             </Message>
+            <UserSavedPlaces/>
            
 <SearchResults />
         </>

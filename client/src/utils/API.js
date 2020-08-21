@@ -13,8 +13,5 @@ export default {
         return axios.get("/auth/user", headers)
     },
 
-    getSaved(savedplaces) {
-        return axios.get("/api/user/"+ savedplaces)
-    }
-
+    
 }

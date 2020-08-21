@@ -82,6 +82,13 @@ getSaved: function(req, res){
     })
 
     .catch(err => res.status(422).json(err));
+
+
+    db.User
+    .findById(req.params.id)
+    .populate("savedplaces")
+    .then(dbIdea => res.json(dbIdea))
+    .catch(err => res.status(422).json(err))
 },
 
 };

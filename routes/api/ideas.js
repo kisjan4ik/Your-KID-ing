@@ -23,7 +23,7 @@ router
 router.route("/:id/:email")
   .post(ideasController.saveIdea);
 
-router.route("/user/userplaces")
+router.route("/dashboard/savedplaces/:id")
 .get(ideasController.getSaved);
 
 module.exports = router;

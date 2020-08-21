@@ -30,5 +30,10 @@ export default {
   // Saves an idea 
   saveIdea: function (id, email) {
     return axios.post("/api/ideas/"+ id +"/" + email);
-  }
+  },
+  
+  getUserPlaces: function (id) {
+    return axios.get("/api/dashboard/savedplaces"+ id)
+}
+
 };
