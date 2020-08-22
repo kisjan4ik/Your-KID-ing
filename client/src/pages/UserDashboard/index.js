@@ -20,9 +20,10 @@ export const UserDashboard = () => {
                 
                 
             </Message>
+            <SearchResults />
             <UserSavedPlaces/>
            
-<SearchResults />
+
         </>
     )
 }

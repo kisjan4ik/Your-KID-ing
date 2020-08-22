@@ -10,26 +10,59 @@ body {
 }
 
 
+
+.ui.menu{
+  font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+  margin-top: 0;
+    margin-bottom: 0;
+    background:transparent;
+    border:none;
+}
+
 /* NavBar Styling */
 .ui.menu:first-child {
+  font-family: 'Indie Flower', cursive;
+    font-weight: bold;
     margin-top: 0;
     margin-bottom: 0;
+    background:transparent;
+    border:none;
 }
 
 /* Jumbotron/Message styling */
 .ui.message.message-container {
+  padding-top:30px;
     text-align: center;
     padding: 50px;
     box-shadow: 0;
     margin: 0;
     background-color: transparent;
-    border: violet double 18px;
+    border: rgb(92, 92, 221) double 18px;
     border-radius: 15px;
     font-family: 'Indie Flower', cursive;
- 
 }
 
+.ui.form.field.field input:-webkit-autofill {
+  font-family: 'Indie Flower', cursive;
+  border-radius: 50px;
+}
 
+.ui.message{
+  background: bottom;
+  background-color:lightgreen;
+  opacity: 1;
+  border-radius: 60px;
+  border: solid 2px white;
+}
+
+.ui.segment{
+  background: bottom;
+  background-color:rgb(224, 245, 104);
+  opacity: 0.75;
+  border-radius: 45px;
+  border: solid 2px white;
+}
 /* UserForm styling */
 .form-container{
     text-align: center;
@@ -43,6 +76,8 @@ body {
     margin-bottom: 1em;
     text-align: center;
 }
+
+
 .homecard {
     margin-top:10px;
     min-height: 45px;
@@ -81,10 +116,11 @@ body {
     position: fixed;
     height: 105vh;
     width: 110vw;
-    z-index: -1;
+    z-index: -3;
   }
 
   #font-user {
+    margin-top:25px;
     font-family: 'Indie Flower', cursive;
     font-size:80px;
     font-weight: 900;
@@ -103,6 +139,16 @@ body {
     font-size:80px;
     font-weight: 900;
     color: rgb(248, 66, 105);
+  }
+  #font-404 {
+    font-family: 'Indie Flower', cursive;
+    font-size:80px;
+    font-weight: 900;
+    color: rgb(59, 10, 172);
+  }
+  #font-404 ::first-letter {
+    font-size: 200%;
+    color: #d41021;
   }
    #subtitle1{
        font-size: 32px;
@@ -141,7 +187,6 @@ body {
 }
 #togo{
   font-size: 45px;
-  color: blue;
   margin-left:10%;
   margin-top:40px;
   color:purple;
@@ -150,6 +195,17 @@ body {
 #togo ::first-letter {
   font-size: 200%;
   color: rgb(50, 150, 20);
+ }
+ #togo1{
+  font-size: 45px;
+  margin-left:10%;
+  margin-top:40px;
+  color:rgb(50, 150, 20);
+
+}
+#togo1 ::first-letter {
+  font-size: 200%;
+  color: purple;
  }
 
 #flatxl{
@@ -164,11 +220,13 @@ body {
 }
 
 #placesearch{
-  float:left;
+  /* float:left; */
+  width: 750px;
   margin-right:10%;
-  width:30%;
+  /* width:30%; */
   margin-left:7%;
   margin-top: 15px;
+  margin-bottom: 25px;
   padding: 15px;
   box-shadow: 0px 0px 3px 1px #ccc;
   border:#8673f5 double 18px;
@@ -217,16 +275,31 @@ body {
    border-radius: 50px;
  }
  #results{
-  float:left;
-  margin-left:60%;
-  margin-bottom:10%;
-  width:40%;
+  /* float:left; */
+  /* margin-left:60%; */
+  /* margin-bottom:10%; */
+  /* width:40%; */
+  width:750px;
   margin-left:7%;
-  margin-top: 15px;
+  margin-top: 50px;
   padding: 15px;
   box-shadow: 0px 0px 3px 1px #ccc;
   border:yellow double 18px;
   border-radius: 15px;
+
+
+}
+#results1{
+
+  width:750px;
+  margin-left:7%;
+  margin-top: 130px;
+  padding: 15px;
+  box-shadow: 0px 0px 3px 1px #ccc;
+  border:rgb(16, 146, 38) double 18px;
+  border-radius: 15px;
+
+
 }
 
 #size{
@@ -237,7 +310,23 @@ body {
   border-bottom: dashed yellow 5px;
   padding-bottom:10px;
 }
+#resultitem1{
+ 
+  border-bottom: dashed rgb(16, 146, 38) 5px;
+  padding-bottom:10px;
+}
 #flatxl1{
+  background-color: purple;
+      color: white;
+      padding: 0.5rem 1rem;
+      margin: 10px 10px;
+      font-size: 1.5rem;
+      border: white;
+      border-radius: 20px;
+      font-family: 'Indie Flower', cursive;
+}
+#flatxl2{
+ 
   background-color: purple;
       color: white;
       padding: 0.5rem 1rem;
@@ -334,9 +423,173 @@ body {
   box-shadow: 0px 0px 3px 1px #ccc;
   border:rgb(64, 8, 218) double 18px;
   border-radius: 15px;
+  z-index: +1;
 }
 #imgplace{
  position: relative;
  left:20%;
 
+}
+ #nav{
+   border:none;
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+   display: inline-flex;
+   margin-top:15px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   font-size:28px;
+ }
+#item1{
+ 
+  font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+  display: inline-flex;
+   margin-top:15px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   font-size:28px;
+  margin:20px;
+  padding:10px;
+  color:rgb(207, 40, 157);
+  border: dotted 7px rgb(37, 119, 241);
+  border-radius: 60%;
+  align-content: center;
+}
+
+#item2{
+  
+  font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+  display: inline-flex;
+   margin-top:15px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   font-size:28px;
+  margin:20px;
+  padding:10px;
+  color:green;
+  border: dotted 7px yellow;
+  border-radius: 60%;
+}
+#item3{
+ 
+  font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+  display: inline-flex;
+   margin-top:15px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   font-size:28px;
+  margin:20px;
+  padding:10px;
+  color:purple;
+  border: dotted 7px orange;
+  border-radius: 60%;
+}
+#item4{
+  
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+  display: inline-flex;
+   margin-top:15px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   font-size:28px;
+  margin:20px;
+  padding:10px;
+  color:blue;
+  border: dotted 7px red;
+  border-radius: 60%;
+}
+#item5{
+  
+  font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+  display: inline-flex;
+   margin-top:15px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   font-size:28px;
+  
+  margin:20px;
+  padding:10px;
+  color:rgb(99, 163, 4);
+  border: dotted 7px cornflowerblue;
+  border-radius: 60%;
+}
+#right{
+  border:none;
+  font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+  float:right;
+  
+}
+
+#flatxl3{
+  background-color: rgb(245, 31, 42);
+      color: white;
+      padding: 0.5rem 1rem;
+      margin: 10px 10px;
+      font-size: 1.5rem;
+      border: white;
+      border-radius: 20px;
+      font-family: 'Indie Flower', cursive;
+}
+#flatxl4{
+  background-color: rgb(71, 5, 255);
+      color: white;
+      padding: 0.5rem 1rem;
+      margin: 10px 10px;
+      font-size: 1.5rem;
+      border: white;
+      border-radius: 20px;
+      font-family: 'Indie Flower', cursive;
+}
+
+#login{
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+  color: blue;
+}
+#login2{
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+  color: blue;
+  font-size:18px;
+}
+#login1{
+  font-family: 'Indie Flower', cursive;
+  font-weight: bolder;
+  font-size:16px;
+  color: rgb(245, 31, 42);
+}
+#input{
+  font-family: 'Indie Flower', cursive;
+  font-weight: bolder;
+  border-radius: 50px;
+}
+#animated{
+ 
+  background: transparent;
+  
+
+}
+
+.hidden {
+  
+  color:red;
+  border: 2px solid red;
+  border-radius: 80px;
+  padding: 15px;
+}
+
+#footer {
+  color: rgb(84, 3, 119);
+  margin-top: 10%;
+  padding-top:0px;
+  padding-bottom: 10px;
+  /* border: dashed 3px  darkviolet;
+  border-radius: 10px; */
+  font-size: 18px;
 }

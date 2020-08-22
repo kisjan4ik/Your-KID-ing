@@ -24,14 +24,14 @@ export const UserSavedPlaces = () => {
     // access to the currentUser property from the auth reducer state
     const user = useSelector(state => state.auth.currentUser);
     useEffect(() => {
-        axios.get("/api/dashboard/userplaces/" + user._id)
+        axios.get("/api/dashboard/savedplaces/" + user._id)
         .then(data => {
             console.log("this is saved place", data)
         })
 
 
 
-    }, [])
+    }, )
     return (
         <>
            
@@ -41,7 +41,7 @@ export const UserSavedPlaces = () => {
                         {savedideas.map(idea => {
                             return (
                                 <div className="col-md-4 col-sm-6">
-                             <SavedIdeas
+                             <SavedIdeas 
                                 key={idea._id}
                                 image={idea.image}
                                 placename={idea.placename}

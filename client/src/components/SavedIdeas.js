@@ -4,14 +4,15 @@ import React, { Component } from "react";
 // import APIideas from "../utils/APIideas";
 import IdeaSearch from "./IdeaSearch";
 import ChosenIdeas from "./ChosenIdeas";
-
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row"
 
 class SavedIdeas extends Component {
     constructor(props){
   super (props)
 }
     componentDidMount() {
-        console.log(this.props.savedideas);
+        console.log(this.props.saved);
         
     }
 
@@ -30,28 +31,33 @@ class SavedIdeas extends Component {
     render() {
 
         return (
-            <div>
-               <IdeaSearch
-                   title={"Saved places"}>
+            <div id="results1">
+               <IdeaSearch 
+                   title={"Saved places :"} >
 
                    </IdeaSearch>
                 {this.props.savedideas.map((idea, i) => {
                     return (
                         <ChosenIdeas key={i} >
                             
-                            <div>
-                                <div className="">
-                                    <img alt={idea.placename} src={idea.image} />
-                                </div>
-                                <p>Placename:
+                            <div id="resultitem1">
+                                <Row>
+                            <Col sm={5}>
+                                    <img id="imglst" alt={idea.placename} src={idea.image} />
+                                    </Col>
+                                    <Col sm={5}>
+                                <p id="label">Placename:
                                     {/* {idea._id}  */}
                                     {idea.placename}</p>
-                                 <p className="">Address: {idea.address}</p>
-                                <p className=""> Phone: {idea.phone}</p>
-                                <a href={idea.website} target="_blank" rel="noopener noreferrer">
-                                    <button className="viewBtnSaved">view</button></a>
+                                 <p id="listitem"><span id="listitem1">Address:</span> {idea.address}</p>
+                                <p id="listitem"><span id="listitem1"> Phone:</span> {idea.phone}</p>
                                 
+                                <a href={idea.website} target="_blank" rel="noopener noreferrer">
+                                    <button id="flatxl2">view</button></a>
+                                </Col>
+                                </Row>
                            </div>
+                           
                         </ChosenIdeas>
                     );
                 })}

@@ -6,6 +6,9 @@ import ChosenIdeas from "./ChosenIdeas";
 import Idea from "./Idea";
 import Button from "react-bootstrap/Button";
 import SavedIdeas from "../components/SavedIdeas";
+import Row from "react-bootstrap/Row";
+import Col from  "react-bootstrap/Col";
+import kids from "../assets/images/kidev.png"
 // import { rest } from "lodash";
 // import API from "../utils/API";
 
@@ -121,7 +124,9 @@ class SearchResults extends React.Component {
     render() {
 
         return (
-            <div>
+            <Row>
+                <Col md={6}>
+                
                 <IdeaSearch
                     title={"Find a place to go :"}
                 // subTitle={"Search for and Save places and activities you would like"}
@@ -168,8 +173,11 @@ class SearchResults extends React.Component {
                         Submit
                     </Button>
                 </Form>
+                
                 <div id="results">
+                    
                     <ChosenIdeas>
+                    <img  alt="imgplace" id="imgplace"src={kids} height="250px" width="330px" />
                         {/* if(this.state.ideas.length) */}
                         {this.state.ideas.map((idea, i) => {
                             return (
@@ -194,8 +202,11 @@ class SearchResults extends React.Component {
                     </ChosenIdeas >
 
                 </div>
+                </Col>
+                <Col md={5}>
                 <SavedIdeas savedideas={this.state.savedideas} />
-            </div>
+                </Col>
+            </Row>
         )
     }
 

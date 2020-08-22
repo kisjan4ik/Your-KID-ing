@@ -3,7 +3,7 @@ import { Header, Message, Button, Icon } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import HomeCard from '../../components/HomeCard';
-import logo from "../../assets/images/logo.png"
+
 
 
 export const Home = () => {
@@ -14,8 +14,8 @@ export const Home = () => {
         if (!isAuthenticated) {
             return (
                 <>
-                <Button color="black" animated secondary>
-                    <Button.Content visible>Login</Button.Content>
+                <Button  animated  id="animated">
+                    <Button.Content visible><p id="flatxl3">Login</p></Button.Content>
                     <Button.Content hidden>
                         <Icon name='arrow right' />
                     </Button.Content>
@@ -35,7 +35,7 @@ export const Home = () => {
                 <Link to="/login">
                     {showLoginBtn()}
                 </Link>
-                <img id="logo" alt="jkdfdslk" src={logo}/>
+                
             </Message>
 <HomeCard />
 

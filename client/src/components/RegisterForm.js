@@ -26,39 +26,39 @@ const RegisterForm = (props) => {
 
             <Form onSubmit={props.handleSubmit(props.onSubmit)} size='large'>
 
-                <Segment>
-                    <Field
+                <Segment id="input">
+                    <Field id="input"
                         name="nickname"
                         component={renderInput}
                         label="Enter User name"
                     />
-                    <Field
+                    <Field id="input"
                         name="firstname"
                         component={renderInput}
                         label="Enter Name"
                     />
-                    <Field
+                    <Field id="input"
                         name="lastname"
                         component={renderInput}
                         label="Enter Last name"
                     />
-                    <Field
+                    <Field id="input"
                         name="location"
                         component={renderInput}
                         label="city, state"
                     />
-                    <Field
+                    <Field id="input"
                         name="email"
                         component={renderInput}
                         label="E-mail address"
                     />
                     {errorMessage ? <Label className="alertMssg" basic color='red'>{errorMessage}</Label> : ""}
-                    <Field
+                    <Field id="input"
                         name="password"
                         component={renderInput}
                         label="Password"
                     />
-                    <Button secondary fluid size='large'>
+                    <Button secondary fluid size='large' id="flatxl4">
                         {props.buttonText}
                     </Button>
                 </Segment>

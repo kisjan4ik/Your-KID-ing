@@ -11,7 +11,7 @@ const Register = () => {
     const dispatch = useDispatch();
 
     const renderFormMessage = () => {
-        return <>Already Registered ? <Link to="/login">Login</Link></>
+        return <><p id="login1">Already Registered ? </p><Link to="/login"><p id="login2">Login</p></Link></>
     }
 
     const onFormSubmit = (formVal) => {
@@ -22,7 +22,7 @@ const Register = () => {
 
         <div className="form-container">
             <Header as='h2' secondary="true" textAlign='center'>
-                Register
+                <p id="login">Register</p>
             </Header>
             <RegisterForm
                 renderMessage={renderFormMessage}

@@ -26,19 +26,19 @@ const LoginForm = (props) => {
 
             <Form onSubmit={props.handleSubmit(props.onSubmit)} size='large'>
 
-                <Segment>
-                    <Field
+                <Segment id="input">
+                    <Field id="input"
                         name="email"
                         component={renderInput}
                         label="E-mail address"
                     />
                     {errorMessage ? <Label className="alertMssg" basic color='red'>{errorMessage}</Label> : ""}
-                    <Field
+                    <Field id="input"
                         name="password"
                         component={renderInput}
                         label="Password"
                     />
-                    <Button secondary fluid size='large'>
+                    <Button secondary fluid size='large' id="flatxl3">
                         {props.buttonText}
                     </Button>
                 </Segment>

@@ -21,7 +21,7 @@ const Login = (props) => {
     })
 
     const renderFormMessage = () => {
-        return <>New to us ? <Link to="/register">Register</Link></>
+        return <> <p id="login1">New to us ?</p> <Link to="/register"><p id="login2">Register</p></Link></>
     }
 
     const onFormSubmit = (formVal) => {
@@ -31,7 +31,7 @@ const Login = (props) => {
     return (
         <div className="form-container">
             <Header as='h2' secondary="true" textAlign='center'>
-                Login to your account
+               <p id="login">Login to your account</p> 
                 </Header>
             <LoginForm
                 renderMessage={renderFormMessage}

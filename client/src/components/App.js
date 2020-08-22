@@ -12,6 +12,7 @@ import Register from "../pages/Register";
 import PrivateRoute from "./PrivateRoute";
 import NoMatch from "../pages/NoMatch";
 import Particles from 'react-particles-js';
+import Footer from "../components/Footer";
 
 export const App = () => {
 
@@ -71,6 +72,7 @@ export const App = () => {
                     <PrivateRoute path="/pageone" component={PageOne} />
                     <Route component={NoMatch} />
                 </Switch>
+                <Footer/>
             </Router>
         </>
     )

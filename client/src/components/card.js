@@ -10,7 +10,7 @@ function Card(props) {
             <Location  className="pt-5"/>
             <img id="size"src={props.item.imgSrc} alt={props.item.imgSrc} />
          
-            {props.item.selected && <CardInfo  link={props.item.link} />}
+            {props.item.selected && <CardInfo  link={props.item.link}  />}
         </div>
     )
 

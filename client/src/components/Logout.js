@@ -5,9 +5,9 @@ import { useDispatch } from "react-redux";
 const Logout = () => {
     const dispatch = useDispatch();
     return (
-        <a href="/" style={{ border: "none", cursor: "pointer" }} className="item" onClick={() => { dispatch(LogoutUser()) }}>
-            Logout
-        </a>
+        <div id="nav"><a href="/" style={{  cursor: "pointer" }} id="item5" onClick={() => { dispatch(LogoutUser()) }}>
+            <p id="right">Logout</p>
+        </a></div>
     )
 }
 
