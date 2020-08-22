@@ -21,28 +21,28 @@ class HomeCard extends React.Component {
                     id: 0,
                     title: "Arts and crafts",
                     imgSrc: arts,
-                    link: "https://shrouded-scrubland-07214.herokuapp.com/",
+                    link: "https://drive.google.com/file/d/1n3MgZJhiZNAepSeJqW_9ZJsIhc57Nkre/view?usp=sharing",
                     selected: false
                 },
                 {
                     id: 1,
                     title: "Board games",
                     imgSrc: boardgames,
-                    link: "https://shrouded-scrubland-07214.herokuapp.com/",
+                    link: "https://drive.google.com/file/d/1uvfSMv42acKXIZXRVWB7Fa1NhJbFsuSn/view?usp=sharing",
                     selected: false
                 },
                 {
                     id: 2,
                     title: "Educational materials",
                     imgSrc: education,
-                    link: "https://kisjan4ik.github.io/Gig-Crasher/",
+                    link: "https://drive.google.com/file/d/1FhcB0nZiUDCkJevUhy0ZRW17aGXcZCgn/view?usp=sharing",
                     selected: false
                 },
                 {
                     id: 3,
                     title: "Indoor games",
                     imgSrc: indoorgames,
-                    link: "https://kisjan4ik.github.io/JavaScript-Password-Generator/",
+                    link: "https://drive.google.com/file/d/1D5Cb9yS_b-8aDFm9lk5vCQCsJvdodQMU/view?usp=sharing",
                     selected: false
                 },
 
