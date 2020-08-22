@@ -72,8 +72,9 @@ export const App = () => {
                     <PrivateRoute path="/pageone" component={PageOne} />
                     <Route component={NoMatch} />
                 </Switch>
-                <Footer/>
+              
             </Router>
+              <Footer/>
         </>
     )
 }

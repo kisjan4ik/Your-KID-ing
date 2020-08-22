@@ -5,7 +5,8 @@ import React, { Component } from "react";
 import IdeaSearch from "./IdeaSearch";
 import ChosenIdeas from "./ChosenIdeas";
 import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row"
+import Row from "react-bootstrap/Row";
+import saved from "../assets/images/kids-transparent-background-1.png";
 
 class SavedIdeas extends Component {
     constructor(props){
@@ -32,10 +33,13 @@ class SavedIdeas extends Component {
 
         return (
             <div id="results1">
+                <img  alt="saved" id="imgplace1" src={saved} height="150px" width="330px" />
+                
                <IdeaSearch 
                    title={"Saved places :"} >
-
+<p></p>
                    </IdeaSearch>
+                   
                 {this.props.savedideas.map((idea, i) => {
                     return (
                         <ChosenIdeas key={i} >
@@ -43,6 +47,7 @@ class SavedIdeas extends Component {
                             <div id="resultitem1">
                                 <Row>
                             <Col sm={5}>
+                                
                                     <img id="imglst" alt={idea.placename} src={idea.image} />
                                     </Col>
                                     <Col sm={5}>
