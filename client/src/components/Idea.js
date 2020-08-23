@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 
 function Idea(props) {
  
-  const { currentUser, isAuthenticated } = useSelector(state => state.auth)
+  const { currentUser } = useSelector(state => state.auth)
 
   return (
     <div id="resultitem">

@@ -5,11 +5,12 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import saved from "../assets/images/kids-transparent-background-1.png";
 
-class SavedIdeas extends Component {
-    constructor(props) {
-        super(props)
 
-    }
+class SavedIdeas extends Component {
+    // constructor(props) {
+    //     super(props)
+
+    // }
     // componentDidMount() {
     //     console.log(this.props);
 
@@ -45,7 +46,7 @@ class SavedIdeas extends Component {
                                         <p id="listitem"><span id="listitem1"> Phone:</span> {idea.phone}</p>
 
                                         <a href={idea.website} target="_blank" rel="noopener noreferrer">
-                                            <button id="flatxl2">view</button></a>
+                                            <button id="flatxl2">Go to the Website </button></a>
                                     </Col>
                                 </Row>
                             </div>
