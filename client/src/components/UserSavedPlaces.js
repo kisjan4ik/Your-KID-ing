@@ -38,9 +38,12 @@ export const UserSavedPlaces = () => {
             <div className="container">
                 <div className="row"> 
                
-                        {savedplaces.map(idea => {
-                            return (
-                                <div className="col-md-4 col-sm-6">
+                        {/* {savedplaces.map(idea => { */}
+                            {/* return (
+                                //  */}
+                                <div 
+                                // className="col-md-4 col-sm-6"
+                                >
                              <SavedIdeas 
                                 // key={idea._id}
                                 // image={idea.image}
@@ -51,8 +54,10 @@ export const UserSavedPlaces = () => {
                                 savedplaces={savedplaces}
 
                                 />
-                                 </div>
-                        )})}
+                                {/* //   */}
+                                </div>
+                        {/* ) */}
+                        {/* // })} */}
                 </div>
             </div>
         </>

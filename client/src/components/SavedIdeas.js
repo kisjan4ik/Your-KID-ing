@@ -11,6 +11,7 @@ import saved from "../assets/images/kids-transparent-background-1.png";
 class SavedIdeas extends Component {
     constructor(props){
   super (props)
+  
 }
     // componentDidMount() {
     //     console.log(this.props);
@@ -33,7 +34,7 @@ class SavedIdeas extends Component {
 // console.log(this.props);
         return (
             <div id="results1">
-                <img  alt="saved" id="imgplace1" src={saved} height="150px" width="330px" />
+                <img  alt="saved" id="imgplace1" src={saved} height="145px" width="310px" />
                 
                <IdeaSearch 
                    title={"Saved places :"} >
@@ -66,7 +67,8 @@ class SavedIdeas extends Component {
                            
                         </ChosenIdeas>
                     );
-                })}
+                }
+                )}
             </div>  
         )
         
