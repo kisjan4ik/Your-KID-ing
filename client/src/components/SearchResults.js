@@ -27,7 +27,7 @@ class SearchResults extends React.Component {
             // actlevel: "",
             age: "",
             ideas: [],
-            savedideas: []
+            savedplaces: []
         };
 
     }
@@ -112,7 +112,7 @@ class SearchResults extends React.Component {
 
             .then(res => {
                 console.log(res);
-                this.setState({ ...this.state, savedideas: [...this.state.savedideas, res.data[0]] })
+                this.setState({ ...this.state, savedplaces: [...this.state.savedplaces, res.data[0]] })
 
                 // let newIdeaArray = [...this.state.ideas]
                 // newIdeaArray.splice([id], 1)
@@ -177,7 +177,7 @@ class SearchResults extends React.Component {
                 <div id="results">
                     
                     <ChosenIdeas>
-                    <img  alt="imgplace" id="imgplace"src={kids} height="250px" width="330px" />
+                    <img  alt="imgplace" id="imgplace"src={kids} height="200px" width="290px" />
                         {/* if(this.state.ideas.length) */}
                         {this.state.ideas.map((idea, i) => {
                             return (
@@ -204,7 +204,7 @@ class SearchResults extends React.Component {
                 </div>
                 </Col>
                 <Col md={5}>
-                <SavedIdeas savedideas={this.state.savedideas} />
+                <SavedIdeas savedplaces={this.state.savedplaces} />
                 </Col>
             </Row>
         )

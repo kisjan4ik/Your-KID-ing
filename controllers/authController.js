@@ -88,6 +88,7 @@ module.exports = {
                         firstname: user.firstname,
                         lastname: user.lastname,
                         location: user.location,
+                        id:user.id,
                         email
                     })
                 })

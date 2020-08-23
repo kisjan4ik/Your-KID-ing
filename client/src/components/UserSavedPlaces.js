@@ -7,7 +7,7 @@ import SavedIdeas from "../components/SavedIdeas";
 
 export const UserSavedPlaces = () => {
 
-    const [savedideas, setSavedPlaces] = useState([])
+    const [savedplaces, setSavedPlaces] = useState([])
 
     useEffect(() => {
         loadUserPlaces()
@@ -15,18 +15,18 @@ export const UserSavedPlaces = () => {
 
     // load all the merch and set ot tp merch
     function loadUserPlaces() {
-        APIideas.getUserPlaces().then(result => {
-            console.log(result)
-            setSavedPlaces(result.data)
+        APIideas.getUserPlaces(localStorage.getItem("id")).then(result => {
+            console.log(result.data.savedplaces)
+            setSavedPlaces(result.data.savedplaces)
         })
             .catch(err => console.log(err))
     }
     // access to the currentUser property from the auth reducer state
     const user = useSelector(state => state.auth.currentUser);
     useEffect(() => {
-        axios.get("/api/dashboard/savedplaces/" + user._id)
+        axios.get("/api/ideas/dashboard/savedplaces/" + user._id)
         .then(data => {
-            console.log("this is saved place", data)
+            console.log("this is user id", user._id)
         })
 
 
@@ -38,16 +38,17 @@ export const UserSavedPlaces = () => {
             <div className="container">
                 <div className="row"> 
                
-                        {savedideas.map(idea => {
+                        {savedplaces.map(idea => {
                             return (
                                 <div className="col-md-4 col-sm-6">
                              <SavedIdeas 
-                                key={idea._id}
-                                image={idea.image}
-                                placename={idea.placename}
-                                address={idea.address}
-                                phone={idea.phone}
-                                website={idea.website}
+                                // key={idea._id}
+                                // image={idea.image}
+                                // placename={idea.placename}
+                                // address={idea.address}
+                                // phone={idea.phone}
+                                // website={idea.website}
+                                savedplaces={savedplaces}
 
                                 />
                                  </div>

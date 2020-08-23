@@ -69,19 +69,20 @@ module.exports = {
   },
 
 getSaved: function(req, res){
-  console.log("params: " + req.params.email, req.params.id);
-  db.User
-    .findAll({ email: req.params.email }, { $push: { savedplaces: req.params.id } }, { new: true })
-    .then(dbIdea => {
-      db.Idea.find({ _id: req.params.id })
-        .then(saved => {
-          console.log("saved" + saved);
-          res.json(saved)
-        })
+  // console.log("params: " + req.params.email, req.params.id);
+  // db.User
+  //   .findAll({ email: req.params.email }, { $push: { savedplaces: req.params.id } }, { new: true })
+  //   .then(dbIdea => {
+  //     console.log(dbIdea);
+  //     db.Idea.find({ _id: req.params.id })
+  //       .then(saved => {
+  //         console.log("saved" + saved);
+  //         res.json(saved)
+  //       })
 
-    })
+  //   })
 
-    .catch(err => res.status(422).json(err));
+  //   .catch(err => res.status(422).json(err));
 
 
     db.User

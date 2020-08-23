@@ -12,10 +12,10 @@ class SavedIdeas extends Component {
     constructor(props){
   super (props)
 }
-    componentDidMount() {
-        console.log(this.props.saved);
+    // componentDidMount() {
+    //     console.log(this.props);
         
-    }
+    // }
 
 
     // showSavedIdeas = () => {
@@ -30,7 +30,7 @@ class SavedIdeas extends Component {
 
 
     render() {
-
+// console.log(this.props);
         return (
             <div id="results1">
                 <img  alt="saved" id="imgplace1" src={saved} height="150px" width="330px" />
@@ -40,7 +40,8 @@ class SavedIdeas extends Component {
 <p></p>
                    </IdeaSearch>
                    
-                {this.props.savedideas.map((idea, i) => {
+                {this.props.savedplaces.map((idea, i) => {
+                
                     return (
                         <ChosenIdeas key={i} >
                             
@@ -51,7 +52,7 @@ class SavedIdeas extends Component {
                                     <img id="imglst" alt={idea.placename} src={idea.image} />
                                     </Col>
                                     <Col sm={5}>
-                                <p id="label">Placename:
+                                <p id="label">
                                     {/* {idea._id}  */}
                                     {idea.placename}</p>
                                  <p id="listitem"><span id="listitem1">Address:</span> {idea.address}</p>
