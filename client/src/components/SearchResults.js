@@ -49,6 +49,7 @@ class SearchResults extends React.Component {
     // }
 
     handleChange = event => {
+        event.preventDefault();
         const value = event.target.value;
         this.setState({ ...this.state, [event.target.name]: value })
     }
@@ -96,6 +97,7 @@ class SearchResults extends React.Component {
 
 
     saveIdea = (id, email) => {
+        
         // build idea
         // let savedidea = {
         //     placename: this.state.ideas[id].placename,
@@ -125,7 +127,7 @@ class SearchResults extends React.Component {
 
         return (
             <Row>
-                <Col md={6}>
+                <Col sm={6} >
                 
                 <IdeaSearch
                     title={"Find a place to go :"}
@@ -203,7 +205,7 @@ class SearchResults extends React.Component {
 
                 </div>
                 </Col>
-                <Col md={5}>
+                <Col sm={5}>
                 <SavedIdeas savedplaces={this.state.savedplaces} />
                 </Col>
             </Row>

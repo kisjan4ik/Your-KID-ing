@@ -221,7 +221,7 @@ body {
 
 #placesearch{
   /* float:left; */
-  width: 750px;
+  width: 85%;
   margin-right:10%;
   /* width:30%; */
   margin-left:7%;
@@ -279,7 +279,7 @@ body {
   /* margin-left:60%; */
   /* margin-bottom:10%; */
   /* width:40%; */
-  width:750px;
+  width:85%;
   margin-left:7%;
   margin-top: 50px;
   padding: 15px;
@@ -291,7 +291,7 @@ body {
 }
 #results1{
 
-  width:750px;
+  width:95%;
   margin-left:7%;
   margin-top: 130px;
   padding: 15px;
@@ -427,7 +427,8 @@ body {
 }
 #imgplace{
  position: relative;
- left:50%;
+ left:40%;
+ margin-right:5px;
 
 }
  #nav{
