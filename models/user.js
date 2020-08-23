@@ -27,9 +27,10 @@ const UserSchema = new Schema({
         require: true
     },
 
-    savedplaces:[{ 
-        type: Schema.Types.ObjectId, 
-        ref: "Idea" }]
+    savedplaces: [{
+        type: Schema.Types.ObjectId,
+        ref: "Idea"
+    }]
 });
 
 module.exports = User = mongoose.model("user", UserSchema);

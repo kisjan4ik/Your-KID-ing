@@ -31,8 +31,8 @@ const Login = (props) => {
     return (
         <div className="form-container">
             <Header as='h2' secondary="true" textAlign='center'>
-               <p id="login">Login to your account</p> 
-                </Header>
+                <p id="login">Login to your account</p>
+            </Header>
             <LoginForm
                 renderMessage={renderFormMessage}
                 buttonText="Login"

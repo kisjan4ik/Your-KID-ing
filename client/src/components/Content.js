@@ -4,13 +4,13 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 
-function Content (props) {
+function Content(props) {
 
     return (
         <Container fluid={true}>
             <Row className="justify-content-left">
                 <Col md={4}>
-                {props.children}
+                    {props.children}
                 </Col>
             </Row>
         </Container>

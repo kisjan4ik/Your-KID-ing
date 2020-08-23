@@ -9,7 +9,7 @@ function HomeForm(props) {
             <a href={props.item.link} target="blank" rel="noopener noreferrer"><img className="t-card-image" src={props.item.imgSrc} alt={props.item.imgSrc} /></a>
 
         </div>
-        </div>
+    </div>
     )
 }
 export default HomeForm;

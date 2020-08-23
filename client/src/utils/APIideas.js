@@ -6,10 +6,10 @@ const IDEAURL = "/api/ideas";
 export default {
   where: function (activity) {
     console.log("activity:" + JSON.stringify(activity));
-    return axios.get(IDEAURL + 
+    return axios.get(IDEAURL +
       // "/" + activity.activeness + 
-      "/" + activity.where +"/" + activity.age)
-    
+      "/" + activity.where + "/" + activity.age)
+
   },
 
   activeness: function () {
@@ -29,12 +29,12 @@ export default {
 
   // Saves an idea 
   saveIdea: function (id, email) {
-    return axios.post("/api/ideas/"+ id +"/" + email);
+    return axios.post("/api/ideas/" + id + "/" + email);
   },
-  
+
   getUserPlaces: function (id) {
-    console.log("id: "+ id);
-    return axios.get("/api/ideas/dashboard/savedplaces/"+ id)
-}
+    console.log("id: " + id);
+    return axios.get("/api/ideas/dashboard/savedplaces/" + id)
+  }
 
 };

@@ -5,7 +5,7 @@ import arts from "../assets/images/arts.jpg";
 import education from "../assets/images/education.jpg";
 import indoorgames from "../assets/images/indoorgames.jpg";
 import Row from "react-bootstrap/Row";
-import Container from  "react-bootstrap/Container";
+import Container from "react-bootstrap/Container";
 import Carousel from "./Carousel";
 
 
@@ -62,31 +62,31 @@ class HomeCard extends React.Component {
             }
         })
 
-this.setState({
-    items
-})
+        this.setState({
+            items
+        })
     }
 
-makeItems = (items) => {
-    return items.map (item => {
-        return <HomeForm item={item} click={(e => this.handleCardClick(item.id, e))} key={item.id}/>
-    })
-}
+    makeItems = (items) => {
+        return items.map(item => {
+            return <HomeForm item={item} click={(e => this.handleCardClick(item.id, e))} key={item.id} />
+        })
+    }
 
     render() {
         return (
             <>
-            <Container fluid={true}>
-                
-                <Row className="justify-content-around">
-                
-                    {this.makeItems(this.state.items)}
+                <Container fluid={true}>
 
-                </Row>
-                
-            </Container>
-            <Carousel className="t-card-image"/>
-            
+                    <Row className="justify-content-around">
+
+                        {this.makeItems(this.state.items)}
+
+                    </Row>
+
+                </Container>
+                <Carousel className="t-card-image" />
+
             </>
         )
     }

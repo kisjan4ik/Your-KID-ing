@@ -68,28 +68,28 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
 
-getSaved: function(req, res){
-  // console.log("params: " + req.params.email, req.params.id);
-  // db.User
-  //   .findAll({ email: req.params.email }, { $push: { savedplaces: req.params.id } }, { new: true })
-  //   .then(dbIdea => {
-  //     console.log(dbIdea);
-  //     db.Idea.find({ _id: req.params.id })
-  //       .then(saved => {
-  //         console.log("saved" + saved);
-  //         res.json(saved)
-  //       })
+  getSaved: function (req, res) {
+    // console.log("params: " + req.params.email, req.params.id);
+    // db.User
+    //   .findAll({ email: req.params.email }, { $push: { savedplaces: req.params.id } }, { new: true })
+    //   .then(dbIdea => {
+    //     console.log(dbIdea);
+    //     db.Idea.find({ _id: req.params.id })
+    //       .then(saved => {
+    //         console.log("saved" + saved);
+    //         res.json(saved)
+    //       })
 
-  //   })
+    //   })
 
-  //   .catch(err => res.status(422).json(err));
+    //   .catch(err => res.status(422).json(err));
 
 
     db.User
-    .findById(req.params.id)
-    .populate("savedplaces")
-    .then(dbIdea => res.json(dbIdea))
-    .catch(err => res.status(422).json(err))
-},
+      .findById(req.params.id)
+      .populate("savedplaces")
+      .then(dbIdea => res.json(dbIdea))
+      .catch(err => res.status(422).json(err))
+  },
 
 };

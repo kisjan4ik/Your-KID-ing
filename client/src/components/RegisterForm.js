@@ -6,7 +6,7 @@ import { Field, reduxForm } from "redux-form";
 import { clearErrors } from "../actions/authActions";
 
 const RegisterForm = (props) => {
-    console.log(props);
+ 
     const error = useSelector(state => state.errors);
     const [errorMessage, setErrorMessage] = useState("");
 
@@ -76,14 +76,13 @@ const renderInput = ({ input, label }) => {
 
         if (input.name === "email" || input.name === "firstname" || input.name === "lastname") {
             return "user icon"
-        } 
+        }
         if (input.name === "nickname") {
             return "user outline icon"
         }
         if (input.name === "location") {
             return "map marker alternate icon"
-        }else 
-        {
+        } else {
             return "lock icon"
         }
 

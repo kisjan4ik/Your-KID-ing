@@ -25,44 +25,44 @@ export const App = () => {
     return (
         <>
             <Router history={history}>
-            <Particles  params={{
-    particles: {
-      color: {
-        value: [
-            "#529B88",
-            "#CDD180",
-            "#FFFA32",
-            "#FB6255",
-            "#FB4A53",
-            "#FF4E50",
-            "#F9D423",
-            "#FF00FF",
-            "#00FF00",
-            "#FFFF00",
-            "#0000FF"
-          ]
-      },
-      "line_linked": {
-        "enable": false
-    },
-      "number": {
-        "value": 200,
-        "density": {
-            "enable": false
-        }
-    },
-    "size": {
-        "value": 20,
-        "random": true,
-        "anim": {
-            "speed": 10,
-            "size_min": 0.3
-        }
-    }
-    
-    }
-  }}
-></Particles>
+                <Particles params={{
+                    particles: {
+                        color: {
+                            value: [
+                                "#529B88",
+                                "#CDD180",
+                                "#FFFA32",
+                                "#FB6255",
+                                "#FB4A53",
+                                "#FF4E50",
+                                "#F9D423",
+                                "#FF00FF",
+                                "#00FF00",
+                                "#FFFF00",
+                                "#0000FF"
+                            ]
+                        },
+                        "line_linked": {
+                            "enable": false
+                        },
+                        "number": {
+                            "value": 200,
+                            "density": {
+                                "enable": false
+                            }
+                        },
+                        "size": {
+                            "value": 20,
+                            "random": true,
+                            "anim": {
+                                "speed": 10,
+                                "size_min": 0.3
+                            }
+                        }
+
+                    }
+                }}
+                ></Particles>
                 <NavBar />
                 <Switch>
                     <Route path="/" exact component={Home} />
@@ -72,9 +72,9 @@ export const App = () => {
                     <PrivateRoute path="/pageone" component={PageOne} />
                     <Route component={NoMatch} />
                 </Switch>
-              
+
             </Router>
-              <Footer/>
+            <Footer />
         </>
     )
 }

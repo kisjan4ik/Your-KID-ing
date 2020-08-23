@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 
 const IdeaSchema = new Schema({
-    placename: 
+    placename:
     {
         type: String,
         require: true
@@ -13,27 +13,27 @@ const IdeaSchema = new Schema({
         type: String,
         required: true
     },
-    category: 
+    category:
     {
         type: String,
         require: true
     },
 
-    where: 
+    where:
     {
         type: String,
         require: true
     },
-    activeness: 
+    activeness:
     {
         type: String,
         require: true
     },
     age:
-     {
+    {
         type: String,
     },
-    address: 
+    address:
     {
         type: String,
         require: true

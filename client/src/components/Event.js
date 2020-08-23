@@ -1,8 +1,8 @@
 import React from "react";
-import Card from "./card";
+import Card from "./Card";
 import event from "../assets/images/events.jpg";
 import Row from "react-bootstrap/Row";
-import Container from  "react-bootstrap/Container";
+import Container from "react-bootstrap/Container";
 
 
 class Event extends React.Component {
@@ -32,16 +32,16 @@ class Event extends React.Component {
             }
         })
 
-this.setState({
-    items
-})
+        this.setState({
+            items
+        })
     }
 
-makeItems = (items) => {
-    return items.map (item => {
-        return <Card item={item} click={(e => this.handleCardClick(item.id, e))} key={item.id}/>
-    })
-}
+    makeItems = (items) => {
+        return items.map(item => {
+            return <Card item={item} click={(e => this.handleCardClick(item.id, e))} key={item.id} />
+        })
+    }
 
     render() {
         return (

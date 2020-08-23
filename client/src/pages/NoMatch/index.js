@@ -12,9 +12,9 @@ export const NoMatch = () => {
     const [trail, set] = useTrail(3, () => ({ xy: [0, 0], config: i => (i === 0 ? fast : slow) }))
     return (
         <>
-            <Message id="head"className="message-container" size="huge" secondary="true">
-            
-                <Header size="huge"id="font-404" > <p >404 Page Not Found</p> </Header>
+            <Message id="head" className="message-container" size="huge" secondary="true">
+
+                <Header size="huge" id="font-404" > <p >404 Page Not Found</p> </Header>
                 <h1>
                     <span role="img" aria-label="Face With Rolling Eyes Emoji">
                         🙄
@@ -22,18 +22,18 @@ export const NoMatch = () => {
                 </h1>
             </Message>
             <div>
-                    <svg style={{ position: 'absolute', width: 0, height: 0}}>
-                        <filter id="goo">
-                            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="30" />
-                            <feColorMatrix in="blur" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 30 -7" />
-                        </filter>
-                    </svg>
-                    <div className="hooks-main" onMouseMove={e => set({ xy: [e.clientX, e.clientY] })}>
-                        {trail.map((props, index) => (
-                            <animated.div key={index} style={{ transform: props.xy.interpolate(trans) }} />
-                        ))}
-                    </div>
+                <svg style={{ position: 'absolute', width: 0, height: 0 }}>
+                    <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="30" />
+                        <feColorMatrix in="blur" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 30 -7" />
+                    </filter>
+                </svg>
+                <div className="hooks-main" onMouseMove={e => set({ xy: [e.clientX, e.clientY] })}>
+                    {trail.map((props, index) => (
+                        <animated.div key={index} style={{ transform: props.xy.interpolate(trans) }} />
+                    ))}
                 </div>
+            </div>
         </>
     )
 }

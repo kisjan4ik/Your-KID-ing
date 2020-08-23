@@ -9,7 +9,7 @@ router.route("/")
   .post(ideasController.create);
 router.route("/:where/:age")
 
-// /:activeness
+  // /:activeness
   .get(ideasController.findWhere);
 
 // Matches with "/api/ideas/:id"
@@ -24,6 +24,6 @@ router.route("/:id/:email")
   .post(ideasController.saveIdea);
 
 router.route("/dashboard/savedplaces/:id")
-.get(ideasController.getSaved);
+  .get(ideasController.getSaved);
 
 module.exports = router;

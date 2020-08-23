@@ -2,7 +2,7 @@ var mongoose = require("mongoose");
 var db = require("../models");
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/idea", {
-  useNewUrlParser: true
+    useNewUrlParser: true
 });
 
 var ideaSeed = [
@@ -15,7 +15,7 @@ var ideaSeed = [
         age: "3+",
         address: "1590 E Buena Vista Dr., Lake Buena Vista, FL, 32836",
         phone: "(407) 828-3800",
-        website: "https://www.charactersinflight.com/"    
+        website: "https://www.charactersinflight.com/"
     },
     {
         placename: "Aerostat Adventures Hot Air Balloon Ride",
@@ -884,7 +884,7 @@ var ideaSeed = [
         address: "13529 S. Apopka Vineland Rd., Orlando, FL, 32386",
         phone: "(407) 239-8300",
         website: "http://www.hawaiianrumbleorlando.com/"
-    },{
+    }, {
         placename: "Disney's Winter Summerland Miniature Golf",
         image: "https://fun4orlandokids.com/images/banners/default/168.jpg",
         category: "minigolf",
@@ -927,7 +927,7 @@ var ideaSeed = [
         address: "13529 S. Apopka Vineland Rd., Orlando, FL, 32386",
         phone: "(407) 239-8300",
         website: "http://www.hawaiianrumbleorlando.com/"
-    },   
+    },
     {
         placename: "Universal Orlando Resorts",
         image: "https://fun4orlandokids.com/images/banners/default/211.jpg",
@@ -993,7 +993,7 @@ var ideaSeed = [
         address: "Walt Disney World, Bay Lake and Lake Buena Vista, Florida, 32830",
         phone: "(407) 939-2273",
         website: "https://disneyworld.disney.go.com/"
-    },{
+    }, {
         placename: "Universal Orlando Resorts",
         image: "https://fun4orlandokids.com/images/banners/default/211.jpg",
         category: "Amusement Parks and Rides",
@@ -1036,7 +1036,7 @@ var ideaSeed = [
         address: "3680 Avalon Park East Blvd. Ste. 300, Orlando, FL, 32828",
         phone: "(407) 658-6565",
         website: "https://www.avalonpark.com/news-events/events/"
-    },{
+    }, {
         placename: "Avalon Park Movie Under the Stars",
         image: "https://idealbloghub.com/wp-content/uploads/2020/02/Top-best-Android-Apps-to-watch-and-stream-free-movies-online.jpg",
         category: "movie",
@@ -1189,7 +1189,7 @@ var ideaSeed = [
         address: " Orlando, FL, 32819",
         phone: "(407) 568-7601",
         website: "https://airboatride.com/"
-    },  
+    },
     {
         placename: "Aerophile at Disney Springs",
         image: "https://fun4orlandokids.com/images/banners/default/230.jpg",
@@ -1199,7 +1199,7 @@ var ideaSeed = [
         age: "7+",
         address: "1590 E Buena Vista Dr., Lake Buena Vista, FL, 32836",
         phone: "(407) 828-3800",
-        website: "https://www.charactersinflight.com/"    
+        website: "https://www.charactersinflight.com/"
     },
     {
         placename: "Aerostat Adventures Hot Air Balloon Ride",
@@ -1222,7 +1222,7 @@ var ideaSeed = [
         address: "5525 International Drive, Orlando, Florida 32819, United States",
         phone: "407-603-3286",
         website: "https://airforcefun.com/home"
-    },  {
+    }, {
         placename: "Aerophile at Disney Springs",
         image: "https://fun4orlandokids.com/images/banners/default/230.jpg",
         category: "Air adventures",
@@ -1231,7 +1231,7 @@ var ideaSeed = [
         age: "8+",
         address: "1590 E Buena Vista Dr., Lake Buena Vista, FL, 32836",
         phone: "(407) 828-3800",
-        website: "https://www.charactersinflight.com/"    
+        website: "https://www.charactersinflight.com/"
     },
     {
         placename: "Aerostat Adventures Hot Air Balloon Ride",
@@ -1264,7 +1264,7 @@ var ideaSeed = [
         age: "10+",
         address: "1590 E Buena Vista Dr., Lake Buena Vista, FL, 32836",
         phone: "(407) 828-3800",
-        website: "https://www.charactersinflight.com/"    
+        website: "https://www.charactersinflight.com/"
     },
     {
         placename: "Aerostat Adventures Hot Air Balloon Ride",
@@ -1288,192 +1288,192 @@ var ideaSeed = [
         phone: "407-603-3286",
         website: "https://airforcefun.com/home"
     },
-        {
-            placename: "Aerophile at Disney Springs",
-            image: "https://fun4orlandokids.com/images/banners/default/230.jpg",
-            category: "Air adventures",
-            where: "outdoor",
-            activeness: "moderate",
-            age: "12+",
-            address: "1590 E Buena Vista Dr., Lake Buena Vista, FL, 32836",
-            phone: "(407) 828-3800",
-            website: "https://www.charactersinflight.com/"    
-        },
-        {
-            placename: "Aerostat Adventures Hot Air Balloon Ride",
-            image: "https://fun4orlandokids.com/images/banners/default/230.jpg",
-            category: "Air adventures",
-            where: "outdoor",
-            activeness: "moderate",
-            age: "12+",
-            address: "8849 West Irlo Bronson Memorial Highway, Winter Garden, FL, 34787",
-            phone: "407-476-7101",
-            website: "http://orlandohotairballoon.com/"
-        },
-        {
-            placename: "Air Force Fun Helicopter Tours",
-            image: "https://fun4orlandokids.com/images/banners/default/230.jpg",
-            category: "Air adventures",
-            where: "outdoor",
-            activeness: "moderate",
-            age: "12+",
-            address: "5525 International Drive, Orlando, Florida 32819, United States",
-            phone: "407-603-3286",
-            website: "https://airforcefun.com/home"
-        }, 
-        {
-            placename: "Sea World Adventure Parks",
-            image: "https://fun4orlandokids.com/images/banners/default/211.jpg",
-            category: "Amusement Parks and Rides",
-            where: "outdoor",
-            activeness: "active",
-            age: "2+",
-            address: "Sea World Drive, Orlando, FL, 32821",
-            phone: "407-545-5550",
-            website: "https://seaworld.com/orlando/orlando-parks/"
-        },
-        {
-            placename: "Universal Orlando Resorts",
-            image: "https://fun4orlandokids.com/images/banners/default/211.jpg",
-            category: "Amusement Parks and Rides",
-            where: "outdoor",
-            activeness: "active",
-            age: "2+",
-            address: "6000 Universal Blvd, Orlando, FL, 32819",
-            phone: "407-363-8000",
-            website: "https://www.universalorlando.com/web/en/us"
-        },
-        {
-            placename: "Walt Disney World Resort",
-            image: "https://fun4orlandokids.com/images/banners/default/211.jpg",
-            category: "Amusement Parks and Rides",
-            where: "outdoor",
-            activeness: "active",
-            age: "2+",
-            address: "Walt Disney World, Bay Lake and Lake Buena Vista, Florida, 32830",
-            phone: "(407) 939-2273",
-            website: "https://disneyworld.disney.go.com/"
-        },
-        {
-            placename: "Avalon Park Movie Under the Stars",
-            image: "https://idealbloghub.com/wp-content/uploads/2020/02/Top-best-Android-Apps-to-watch-and-stream-free-movies-online.jpg",
-            category: "movie",
-            where: "outdoor",
-            activeness: "passive",
-            age: "2+",
-            address: "3680 Avalon Park East Blvd. Ste. 300, Orlando, FL, 32828",
-            phone: "(407) 658-6565",
-            website: "https://www.avalonpark.com/news-events/events/"
-        },
-        {
-            placename: "Orlando Science CenterAvalon Park Movie Under the Stars",
-            image: "https://fun4orlandokids.com/media/com_mtree/images/listings/m/10962.png",
-            category: "Science Center",
-            where: "indoor",
-            activeness: "moderate",
-            age: "2+",
-            address: "777 E. Princeton Street, Orlando, FL, 32803",
-            phone: "(407) 514-2000",
-            website: "https://www.osc.org/"
-        }, {
-            placename: "Orlando Science CenterAvalon Park Movie Under the Stars",
-            image: "https://fun4orlandokids.com/media/com_mtree/images/listings/m/10962.png",
-            category: "Science Center",
-            where: "indoor",
-            activeness: "moderate",
-            age: "3+",
-            address: "777 E. Princeton Street, Orlando, FL, 32803",
-            phone: "(407) 514-2000",
-            website: "https://www.osc.org/"
-        },
-        {
-            placename: "Orlando Science CenterAvalon Park Movie Under the Stars",
-            image: "https://fun4orlandokids.com/media/com_mtree/images/listings/m/10962.png",
-            category: "Science Center",
-            where: "indoor",
-            activeness: "moderate",
-            age: "4+",
-            address: "777 E. Princeton Street, Orlando, FL, 32803",
-            phone: "(407) 514-2000",
-            website: "https://www.osc.org/"
-        },
-        {
-            placename: "Orlando Science CenterAvalon Park Movie Under the Stars",
-            image: "https://fun4orlandokids.com/media/com_mtree/images/listings/m/10962.png",
-            category: "Science Center",
-            where: "indoor",
-            activeness: "moderate",
-            age: "5+",
-            address: "777 E. Princeton Street, Orlando, FL, 32803",
-            phone: "(407) 514-2000",
-            website: "https://www.osc.org/"
-        },
-        {
-            placename: "Orlando Science CenterAvalon Park Movie Under the Stars",
-            image: "https://fun4orlandokids.com/media/com_mtree/images/listings/m/10962.png",
-            category: "Science Center",
-            where: "indoor",
-            activeness: "moderate",
-            age: "6+",
-            address: "777 E. Princeton Street, Orlando, FL, 32803",
-            phone: "(407) 514-2000",
-            website: "https://www.osc.org/"
-        },
-        {
-            placename: "Orlando Science CenterAvalon Park Movie Under the Stars",
-            image: "https://fun4orlandokids.com/media/com_mtree/images/listings/m/10962.png",
-            category: "Science Center",
-            where: "indoor",
-            activeness: "moderate",
-            age: "7+",
-            address: "777 E. Princeton Street, Orlando, FL, 32803",
-            phone: "(407) 514-2000",
-            website: "https://www.osc.org/"
-        },
-        {
-            placename: "Orlando Science CenterAvalon Park Movie Under the Stars",
-            image: "https://fun4orlandokids.com/media/com_mtree/images/listings/m/10962.png",
-            category: "Science Center",
-            where: "indoor",
-            activeness: "moderate",
-            age: "8+",
-            address: "777 E. Princeton Street, Orlando, FL, 32803",
-            phone: "(407) 514-2000",
-            website: "https://www.osc.org/"
-        },
-        {
-            placename: "Orlando Science CenterAvalon Park Movie Under the Stars",
-            image: "https://fun4orlandokids.com/media/com_mtree/images/listings/m/10962.png",
-            category: "Science Center",
-            where: "indoor",
-            activeness: "moderate",
-            age: "10+",
-            address: "777 E. Princeton Street, Orlando, FL, 32803",
-            phone: "(407) 514-2000",
-            website: "https://www.osc.org/"
-        },
-        {
-            placename: "Orlando Science CenterAvalon Park Movie Under the Stars",
-            image: "https://fun4orlandokids.com/media/com_mtree/images/listings/m/10962.png",
-            category: "Science Center",
-            where: "indoor",
-            activeness: "moderate",
-            age: "12+",
-            address: "777 E. Princeton Street, Orlando, FL, 32803",
-            phone: "(407) 514-2000",
-            website: "https://www.osc.org/"
-        },
+    {
+        placename: "Aerophile at Disney Springs",
+        image: "https://fun4orlandokids.com/images/banners/default/230.jpg",
+        category: "Air adventures",
+        where: "outdoor",
+        activeness: "moderate",
+        age: "12+",
+        address: "1590 E Buena Vista Dr., Lake Buena Vista, FL, 32836",
+        phone: "(407) 828-3800",
+        website: "https://www.charactersinflight.com/"
+    },
+    {
+        placename: "Aerostat Adventures Hot Air Balloon Ride",
+        image: "https://fun4orlandokids.com/images/banners/default/230.jpg",
+        category: "Air adventures",
+        where: "outdoor",
+        activeness: "moderate",
+        age: "12+",
+        address: "8849 West Irlo Bronson Memorial Highway, Winter Garden, FL, 34787",
+        phone: "407-476-7101",
+        website: "http://orlandohotairballoon.com/"
+    },
+    {
+        placename: "Air Force Fun Helicopter Tours",
+        image: "https://fun4orlandokids.com/images/banners/default/230.jpg",
+        category: "Air adventures",
+        where: "outdoor",
+        activeness: "moderate",
+        age: "12+",
+        address: "5525 International Drive, Orlando, Florida 32819, United States",
+        phone: "407-603-3286",
+        website: "https://airforcefun.com/home"
+    },
+    {
+        placename: "Sea World Adventure Parks",
+        image: "https://fun4orlandokids.com/images/banners/default/211.jpg",
+        category: "Amusement Parks and Rides",
+        where: "outdoor",
+        activeness: "active",
+        age: "2+",
+        address: "Sea World Drive, Orlando, FL, 32821",
+        phone: "407-545-5550",
+        website: "https://seaworld.com/orlando/orlando-parks/"
+    },
+    {
+        placename: "Universal Orlando Resorts",
+        image: "https://fun4orlandokids.com/images/banners/default/211.jpg",
+        category: "Amusement Parks and Rides",
+        where: "outdoor",
+        activeness: "active",
+        age: "2+",
+        address: "6000 Universal Blvd, Orlando, FL, 32819",
+        phone: "407-363-8000",
+        website: "https://www.universalorlando.com/web/en/us"
+    },
+    {
+        placename: "Walt Disney World Resort",
+        image: "https://fun4orlandokids.com/images/banners/default/211.jpg",
+        category: "Amusement Parks and Rides",
+        where: "outdoor",
+        activeness: "active",
+        age: "2+",
+        address: "Walt Disney World, Bay Lake and Lake Buena Vista, Florida, 32830",
+        phone: "(407) 939-2273",
+        website: "https://disneyworld.disney.go.com/"
+    },
+    {
+        placename: "Avalon Park Movie Under the Stars",
+        image: "https://idealbloghub.com/wp-content/uploads/2020/02/Top-best-Android-Apps-to-watch-and-stream-free-movies-online.jpg",
+        category: "movie",
+        where: "outdoor",
+        activeness: "passive",
+        age: "2+",
+        address: "3680 Avalon Park East Blvd. Ste. 300, Orlando, FL, 32828",
+        phone: "(407) 658-6565",
+        website: "https://www.avalonpark.com/news-events/events/"
+    },
+    {
+        placename: "Orlando Science CenterAvalon Park Movie Under the Stars",
+        image: "https://fun4orlandokids.com/media/com_mtree/images/listings/m/10962.png",
+        category: "Science Center",
+        where: "indoor",
+        activeness: "moderate",
+        age: "2+",
+        address: "777 E. Princeton Street, Orlando, FL, 32803",
+        phone: "(407) 514-2000",
+        website: "https://www.osc.org/"
+    }, {
+        placename: "Orlando Science CenterAvalon Park Movie Under the Stars",
+        image: "https://fun4orlandokids.com/media/com_mtree/images/listings/m/10962.png",
+        category: "Science Center",
+        where: "indoor",
+        activeness: "moderate",
+        age: "3+",
+        address: "777 E. Princeton Street, Orlando, FL, 32803",
+        phone: "(407) 514-2000",
+        website: "https://www.osc.org/"
+    },
+    {
+        placename: "Orlando Science CenterAvalon Park Movie Under the Stars",
+        image: "https://fun4orlandokids.com/media/com_mtree/images/listings/m/10962.png",
+        category: "Science Center",
+        where: "indoor",
+        activeness: "moderate",
+        age: "4+",
+        address: "777 E. Princeton Street, Orlando, FL, 32803",
+        phone: "(407) 514-2000",
+        website: "https://www.osc.org/"
+    },
+    {
+        placename: "Orlando Science CenterAvalon Park Movie Under the Stars",
+        image: "https://fun4orlandokids.com/media/com_mtree/images/listings/m/10962.png",
+        category: "Science Center",
+        where: "indoor",
+        activeness: "moderate",
+        age: "5+",
+        address: "777 E. Princeton Street, Orlando, FL, 32803",
+        phone: "(407) 514-2000",
+        website: "https://www.osc.org/"
+    },
+    {
+        placename: "Orlando Science CenterAvalon Park Movie Under the Stars",
+        image: "https://fun4orlandokids.com/media/com_mtree/images/listings/m/10962.png",
+        category: "Science Center",
+        where: "indoor",
+        activeness: "moderate",
+        age: "6+",
+        address: "777 E. Princeton Street, Orlando, FL, 32803",
+        phone: "(407) 514-2000",
+        website: "https://www.osc.org/"
+    },
+    {
+        placename: "Orlando Science CenterAvalon Park Movie Under the Stars",
+        image: "https://fun4orlandokids.com/media/com_mtree/images/listings/m/10962.png",
+        category: "Science Center",
+        where: "indoor",
+        activeness: "moderate",
+        age: "7+",
+        address: "777 E. Princeton Street, Orlando, FL, 32803",
+        phone: "(407) 514-2000",
+        website: "https://www.osc.org/"
+    },
+    {
+        placename: "Orlando Science CenterAvalon Park Movie Under the Stars",
+        image: "https://fun4orlandokids.com/media/com_mtree/images/listings/m/10962.png",
+        category: "Science Center",
+        where: "indoor",
+        activeness: "moderate",
+        age: "8+",
+        address: "777 E. Princeton Street, Orlando, FL, 32803",
+        phone: "(407) 514-2000",
+        website: "https://www.osc.org/"
+    },
+    {
+        placename: "Orlando Science CenterAvalon Park Movie Under the Stars",
+        image: "https://fun4orlandokids.com/media/com_mtree/images/listings/m/10962.png",
+        category: "Science Center",
+        where: "indoor",
+        activeness: "moderate",
+        age: "10+",
+        address: "777 E. Princeton Street, Orlando, FL, 32803",
+        phone: "(407) 514-2000",
+        website: "https://www.osc.org/"
+    },
+    {
+        placename: "Orlando Science CenterAvalon Park Movie Under the Stars",
+        image: "https://fun4orlandokids.com/media/com_mtree/images/listings/m/10962.png",
+        category: "Science Center",
+        where: "indoor",
+        activeness: "moderate",
+        age: "12+",
+        address: "777 E. Princeton Street, Orlando, FL, 32803",
+        phone: "(407) 514-2000",
+        website: "https://www.osc.org/"
+    },
 
 
 ]
 
 db.Idea.deleteMany({})
-.then(() => db.Idea.collection.insertMany(ideaSeed))
-.then(data => {
-  console.log(data.result.n + " records inserted!");
-  process.exit(0);
-})
-.catch(err => {
-  console.error(err);
-  process.exit(1);
-});
+    .then(() => db.Idea.collection.insertMany(ideaSeed))
+    .then(data => {
+        console.log(data.result.n + " records inserted!");
+        process.exit(0);
+    })
+    .catch(err => {
+        console.error(err);
+        process.exit(1);
+    });

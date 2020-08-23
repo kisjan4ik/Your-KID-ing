@@ -14,13 +14,13 @@ export const Home = () => {
         if (!isAuthenticated) {
             return (
                 <>
-                <Button  animated  id="animated">
-                    <Button.Content visible><p id="flatxl3">Login</p></Button.Content>
-                    <Button.Content hidden>
-                        <Icon name='arrow right' />
-                    </Button.Content>
-                </Button>
-                
+                    <Button animated id="animated">
+                        <Button.Content visible><p id="flatxl3">Login</p></Button.Content>
+                        <Button.Content hidden>
+                            <Icon name='arrow right' />
+                        </Button.Content>
+                    </Button>
+
                 </>
             )
         }
@@ -29,15 +29,15 @@ export const Home = () => {
     return (
         <div>
             <Message id="head" className="message-container" size="huge" secondary="true">
-                <Header id="font-pg2"  size="huge" ><p id="font">Stay at home ideas.</p></Header>
-                <p id="subtitle2"  style={{ margin: "5px 0 25px", fontSize: "32px" }}>Here you can find ideas to entertain your kids at home: </p>
-                
+                <Header id="font-pg2" size="huge" ><p id="font">Stay at home ideas.</p></Header>
+                <p id="subtitle2" style={{ margin: "5px 0 25px", fontSize: "32px" }}>Here you can find ideas to entertain your kids at home: </p>
+
                 <Link to="/login">
                     {showLoginBtn()}
                 </Link>
-                
+
             </Message>
-<HomeCard />
+            <HomeCard />
 
         </div>
     )

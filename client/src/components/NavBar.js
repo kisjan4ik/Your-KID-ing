@@ -28,7 +28,7 @@ export const NavBar = () => {
     }
 
     return (
-        <div  className="ui  menu"> 
+        <div className="ui  menu">
             <Link to="/" className="item" id="item1">At home ideas</Link>
             {isAuthenticated ? <Link to="/pageone" className="item" id="item2">Events</Link> : ""}
             <div className="right menu">
