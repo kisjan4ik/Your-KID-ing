@@ -188,7 +188,7 @@ var ideaSeed = [
         category: "bowling",
         where: "indoor",
         activeness: "acive",
-        age: "6+",
+        age: "7+",
         address: "7401 S. Orange Blossom Trail, Orlando, FL, 32809",
         phone: "(407) 855-5731",
         website: "https://www.amf.com/"

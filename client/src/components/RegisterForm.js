@@ -6,7 +6,7 @@ import { Field, reduxForm } from "redux-form";
 import { clearErrors } from "../actions/authActions";
 
 const RegisterForm = (props) => {
- 
+
     const error = useSelector(state => state.errors);
     const [errorMessage, setErrorMessage] = useState("");
 

@@ -50,7 +50,7 @@ module.exports = {
                             lastname,
                             location,
                             email,
-                            id:user.id
+                            id: user.id
                         })
                     })
 

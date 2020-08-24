@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 
 
 function Idea(props) {
- 
+
   const { currentUser } = useSelector(state => state.auth)
 
   return (

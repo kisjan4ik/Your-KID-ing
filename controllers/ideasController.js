@@ -20,7 +20,6 @@ module.exports = {
       "where": where, "age": age
     })
       .then(dbIdea => {
-        // console.log(dbIdea);
         res.json(dbIdea)
       })
       .catch(err => res.status(422).json(err));
@@ -47,13 +46,11 @@ module.exports = {
 
 
   saveIdea: function (req, res) {
-    console.log("params: " + req.params.email, req.params.id);
     db.User
       .findOneAndUpdate({ email: req.params.email }, { $push: { savedplaces: req.params.id } }, { new: true })
       .then(dbIdea => {
         db.Idea.find({ _id: req.params.id })
           .then(saved => {
-            console.log("saved" + saved);
             res.json(saved)
           })
 
@@ -63,21 +60,6 @@ module.exports = {
   },
 
   getSaved: function (req, res) {
-    // console.log("params: " + req.params.email, req.params.id);
-    // db.User
-    //   .findAll({ email: req.params.email }, { $push: { savedplaces: req.params.id } }, { new: true })
-    //   .then(dbIdea => {
-    //     console.log(dbIdea);
-    //     db.Idea.find({ _id: req.params.id })
-    //       .then(saved => {
-    //         console.log("saved" + saved);
-    //         res.json(saved)
-    //       })
-
-    //   })
-
-    //   .catch(err => res.status(422).json(err));
-
 
     db.User
       .findById(req.params.id)
@@ -89,10 +71,8 @@ module.exports = {
   //****************************/ delete the idea from the savedplaces /*********************************//
 
   remove: function (req, res) {
-    console.log("log:" ,req.params);
-    console.log("req.body", req.body);
     db.User
-      .findByIdAndUpdate(req.body.userId, { $pull:{savedplaces: req.params.id }})
+      .findByIdAndUpdate(req.body.userId, { $pull: { savedplaces: req.params.id } })
       .then(dbUser => res.json(dbUser))
       .catch(err => res.status(422).json(err));
   },

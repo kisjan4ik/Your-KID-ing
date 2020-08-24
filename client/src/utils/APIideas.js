@@ -5,7 +5,6 @@ const IDEAURL = "/api/ideas";
 
 export default {
   where: function (activity) {
-    console.log("activity:" + JSON.stringify(activity));
     return axios.get(IDEAURL +
       // "/" + activity.activeness + 
       "/" + activity.where + "/" + activity.age)
@@ -33,14 +32,12 @@ export default {
   },
 
   getUserPlaces: function (id) {
-    console.log("id: " + id);
     return axios.get("/api/ideas/dashboard/savedplaces/" + id)
   },
 
    //****************************/ delete the idea from the savedplaces /*********************************//
 
    deleteUserPlace: function (id, userId) {
-    console.log("id: " + userId);
     return axios({
       url: "/api/ideas/dashboard/savedplaces/" + id,
       data:{userId},

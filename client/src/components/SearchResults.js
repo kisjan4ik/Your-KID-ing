@@ -5,7 +5,6 @@ import IdeaSearch from "./IdeaSearch";
 import ChosenIdeas from "./ChosenIdeas";
 import Idea from "./Idea";
 import Button from "react-bootstrap/Button";
-import SavedIdeas from "../components/SavedIdeas";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import kids from "../assets/images/kidev.png"
@@ -27,12 +26,11 @@ class SearchResults extends React.Component {
 
     }
 
-    componentDidMount(){
-        console.log("loadUserPlaces: ");
+    componentDidMount() {
+
         APIideas.getUserPlaces(localStorage.getItem("id")).then(result => {
-            console.log(result.data.savedplaces)
-            // setSavedPlaces(result.data.savedplaces)
-            this.setState({savedplaces: result.data.savedplaces})
+
+            this.setState({ savedplaces: result.data.savedplaces })
         })
             .catch(err => console.log(err))
     }
@@ -83,24 +81,24 @@ class SearchResults extends React.Component {
     }
 
     deleteUserPlace = (id, userId) => {
-        console.log(id);
+
         APIideas.deleteUserPlace(id, userId)
-        .then(res => 
-            APIideas.getUserPlaces(localStorage.getItem("id")).then(result => {
-                console.log(result.data.savedplaces)
-                // setSavedPlaces(result.data.savedplaces)
-                this.setState({savedplaces: result.data.savedplaces})
-            })
-                .catch(err => console.log(err))
-        
+            .then(res =>
+                APIideas.getUserPlaces(localStorage.getItem("id")).then(result => {
+
+                    this.setState({ savedplaces: result.data.savedplaces })
+                })
+                    .catch(err => console.log(err))
 
 
-        .catch(err => console.log(err))
- 
-        )}
+
+                    .catch(err => console.log(err))
+
+            )
+    }
 
     render() {
-console.log(this.state.savedplaces);
+
         return (
             <Row>
                 <Col sm={6} >
@@ -115,7 +113,7 @@ console.log(this.state.savedplaces);
                                 Activy type:
                     </Form.Label>
                             <Form.Control id="formcontrol" as="select" name="activtype" value={this.state.activtype} onChange={this.handleChange}>
-                            <option id="option"></option>
+                                <option id="option"></option>
                                 <option id="option">Indoor</option>
                                 <option id="option">Outdoor</option>
                             </Form.Control>
@@ -171,11 +169,11 @@ console.log(this.state.savedplaces);
 
                     </div>
                 </Col>
-                <Col 
+                <Col
                     sm={6}
                 >
                     <UserSavedPlaces savedplaces={this.state.savedplaces} deleteUserPlace={this.deleteUserPlace}></UserSavedPlaces>
-                    {/* <SavedIdeas savedplaces={this.state.savedplaces} /> */}
+
                 </Col>
             </Row>
         )

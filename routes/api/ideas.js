@@ -26,9 +26,9 @@ router.route("/:id/:email")
 router.route("/dashboard/savedplaces/:id")
   .get(ideasController.getSaved);
 
-  //****************************/ delete the idea from the savedplaces /*********************************//
+//****************************/ delete the idea from the savedplaces /*********************************//
 
-  router.route("/dashboard/savedplaces/:id")
+router.route("/dashboard/savedplaces/:id")
   .delete(ideasController.remove);
 
 module.exports = router;
