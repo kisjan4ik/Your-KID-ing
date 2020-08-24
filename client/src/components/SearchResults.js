@@ -9,6 +9,7 @@ import SavedIdeas from "../components/SavedIdeas";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import kids from "../assets/images/kidev.png"
+import UserSavedPlaces from "./UserSavedPlaces";
 
 
 class SearchResults extends React.Component {
@@ -24,6 +25,16 @@ class SearchResults extends React.Component {
             savedplaces: []
         };
 
+    }
+
+    componentDidMount(){
+        console.log("loadUserPlaces: ");
+        APIideas.getUserPlaces(localStorage.getItem("id")).then(result => {
+            console.log(result.data.savedplaces)
+            // setSavedPlaces(result.data.savedplaces)
+            this.setState({savedplaces: result.data.savedplaces})
+        })
+            .catch(err => console.log(err))
     }
 
     handleChange = event => {
@@ -64,7 +75,7 @@ class SearchResults extends React.Component {
         APIideas.saveIdea(id, email)
 
             .then(res => {
-               
+
                 this.setState({ ...this.state, savedplaces: [...this.state.savedplaces, res.data[0]] })
 
             })
@@ -72,7 +83,7 @@ class SearchResults extends React.Component {
     }
 
     render() {
-
+console.log(this.state.savedplaces);
         return (
             <Row>
                 <Col sm={6} >
@@ -87,6 +98,7 @@ class SearchResults extends React.Component {
                                 Activy type:
                     </Form.Label>
                             <Form.Control id="formcontrol" as="select" name="activtype" value={this.state.activtype} onChange={this.handleChange}>
+                            <option id="option"></option>
                                 <option id="option">Indoor</option>
                                 <option id="option">Outdoor</option>
                             </Form.Control>
@@ -96,6 +108,7 @@ class SearchResults extends React.Component {
                                 Age:
                     </Form.Label>
                             <Form.Control id="formcontrol" as="select" name="age" value={this.state.age} onChange={this.handleChange}>
+                                <option id="option"></option>
                                 <option id="option">0+</option>
                                 <option id="option">2+</option>
                                 <option id="option">3+</option>
@@ -141,8 +154,11 @@ class SearchResults extends React.Component {
 
                     </div>
                 </Col>
-                <Col sm={5}>
-                    <SavedIdeas savedplaces={this.state.savedplaces} />
+                <Col 
+                    sm={6}
+                >
+                    <UserSavedPlaces savedplaces={this.state.savedplaces}></UserSavedPlaces>
+                    {/* <SavedIdeas savedplaces={this.state.savedplaces} /> */}
                 </Col>
             </Row>
         )
