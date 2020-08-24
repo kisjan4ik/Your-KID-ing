@@ -34,6 +34,7 @@
     "react-iframe": "^1.8.0",
     "react-multi-carousel": "^2.5.5",
     "react-particles-js": "^3.3.0",
-    "react-spring": "^8.0.27"
+    "react-spring": "^8.0.27",
+    "node": "^12.16.2"
   }
 }
