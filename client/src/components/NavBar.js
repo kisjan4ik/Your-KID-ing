@@ -12,13 +12,14 @@ export const NavBar = () => {
         if (isAuthenticated) {
             return (
                 <>
-                    <Link to="/dashboard" className="item" id="item3">{currentUser.nickname}'s places</Link>
+                    <Link to="/dashboard" className="item " id="item3">{currentUser.nickname}'s places</Link>
                     <Logout />
                 </>
             )
         } else {
             return (
                 <div id="right">
+                    
                     <Link to="/login" className="item" id="item4">Login</Link>
                     <Link to="/register" className="item" id="item4">Register</Link>
                 </div>

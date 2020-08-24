@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.020677ac.chunk.css",
+    "main.js": "/static/js/main.bc2083b2.chunk.js",
+    "main.js.map": "/static/js/main.bc2083b2.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.09b85ec0.js",
+    "runtime-main.js.map": "/static/js/runtime-main.09b85ec0.js.map",
+    "static/css/2.7df41cd5.chunk.css": "/static/css/2.7df41cd5.chunk.css",
+    "static/js/2.c90a59a5.chunk.js": "/static/js/2.c90a59a5.chunk.js",
+    "static/js/2.c90a59a5.chunk.js.map": "/static/js/2.c90a59a5.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.3c8cb1b2204fa8a98cf778e8e9813640.js": "/precache-manifest.3c8cb1b2204fa8a98cf778e8e9813640.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.7df41cd5.chunk.css.map": "/static/css/2.7df41cd5.chunk.css.map",
+    "static/css/main.020677ac.chunk.css.map": "/static/css/main.020677ac.chunk.css.map",
+    "static/js/2.c90a59a5.chunk.js.LICENSE.txt": "/static/js/2.c90a59a5.chunk.js.LICENSE.txt",
+    "static/media/arts.jpg": "/static/media/arts.1e340bc5.jpg",
+    "static/media/boardgames.jpg": "/static/media/boardgames.1f7c34b9.jpg",
+    "static/media/semantic.min.css": "/static/media/outline-icons.ef60a4f6.woff",
+    "static/media/education.jpg": "/static/media/education.b4289262.jpg",
+    "static/media/events.jpg": "/static/media/events.877a208d.jpg",
+    "static/media/indoorgames.jpg": "/static/media/indoorgames.38ac4c24.jpg",
+    "static/media/kidev.png": "/static/media/kidev.e75ee509.png",
+    "static/media/kids-transparent-background-1.png": "/static/media/kids-transparent-background-1.bd380d21.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.09b85ec0.js",
+    "static/css/2.7df41cd5.chunk.css",
+    "static/js/2.c90a59a5.chunk.js",
+    "static/css/main.020677ac.chunk.css",
+    "static/js/main.bc2083b2.chunk.js"
+  ]
+}

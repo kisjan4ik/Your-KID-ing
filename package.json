@@ -6,7 +6,6 @@
   "engines": {
     "node": "^12.16.2"
   },
-
   "scripts": {
     "start": "node server.js",
     "server": "nodemon server.js",
@@ -39,6 +38,5 @@
     "react-multi-carousel": "^2.5.5",
     "react-particles-js": "^3.3.0",
     "react-spring": "^8.0.27"
-    
   }
 }

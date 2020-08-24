@@ -6,33 +6,28 @@ body {
     height: 100%;
     font-family: 'Indie Flower', cursive;
     font-weight: bold;
-
 }
-
-
 
 .ui.menu{
-  font-family: 'Indie Flower', cursive;
-    font-weight: bold;
-  margin-top: 0;
-    margin-bottom: 0;
-    background:transparent;
-    border:none;
-}
-
-/* NavBar Styling */
-.ui.menu:first-child {
-  font-family: 'Indie Flower', cursive;
+    font-family: 'Indie Flower', cursive;
     font-weight: bold;
     margin-top: 0;
     margin-bottom: 0;
     background:transparent;
-    border:none;
+}
+
+/* NavBar Styling */
+.ui.menu:first-child {
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+    background:transparent; 
 }
 
 /* Jumbotron/Message styling */
 .ui.message.message-container {
-  padding-top:30px;
+    padding-top:30px;
     text-align: center;
     padding: 50px;
     box-shadow: 0;
@@ -44,25 +39,26 @@ body {
 }
 
 .ui.form.field.field input:-webkit-autofill {
-  font-family: 'Indie Flower', cursive;
-  border-radius: 50px;
+    font-family: 'Indie Flower', cursive;
+    border-radius: 50px;
 }
 
 .ui.message{
-  background: bottom;
-  background-color:lightgreen;
-  opacity: 1;
-  border-radius: 60px;
-  border: solid 2px white;
+    background: bottom;
+    background-color:lightgreen;
+    opacity: 1;
+    border-radius: 60px;
+    border: solid 2px white;
 }
 
 .ui.segment{
-  background: bottom;
-  background-color:rgb(224, 245, 104);
-  opacity: 0.75;
-  border-radius: 45px;
-  border: solid 2px white;
+    background: bottom;
+    background-color:rgb(224, 245, 104);
+    opacity: 0.75;
+    border-radius: 45px;
+    border: solid 2px white;
 }
+
 /* UserForm styling */
 .form-container{
     text-align: center;
@@ -70,6 +66,7 @@ body {
     margin: 0 auto;
     padding-top: 50px;
 }
+
 /* UserForm alert message */
 .ui.alertMssg {
     margin-top: 0;
@@ -77,19 +74,16 @@ body {
     text-align: center;
 }
 
-
 .homecard {
     margin-top:10px;
     min-height: 45px;
-    
-    
 }
+
 .t-card {
     margin: 20px;
+}
   
-  }
-  
-  .t-card-image {
+.t-card-image {
     border-radius: 10px;
     width: 480px;
     height: 300px;
@@ -99,61 +93,67 @@ body {
     margin-left:35px;
     margin-right:40px;
     margin-bottom:50px;
-    
-  }
+}
 
-  .t-card-image:hover {
+.t-card-image:hover {
     border-radius: 10px;
     width: 480px;
     height: 300px;
     box-shadow: 0px 0px 3px 1px #ccc;
     border:#8673f5 double 18px;
     border-radius: 15px;
-  }
+}
 
 
-  #tsparticles {
+#tsparticles {
     position: fixed;
     height: 105vh;
     width: 110vw;
     z-index: -3;
-  }
+}
 
-  #font-user {
+#font-user {
     margin-top:25px;
     font-family: 'Indie Flower', cursive;
     font-size:80px;
     font-weight: 900;
     color: coral;
-  }
-   #subtitle{
-       font-size: 32px;
-       color: blue;
-   }
-   #font-user ::first-letter {
+}
+
+#subtitle{
+    font-size: 32px;
+    color: blue;
+}
+
+#font-user ::first-letter {
     font-size: 200%;
     color: #8A2BE2;
-  }
-  #font-pg1 {
+}
+
+#font-pg1 {
     font-family: 'Indie Flower', cursive;
     font-size:80px;
     font-weight: 900;
     color: rgb(248, 66, 105);
-  }
-  #font-404 {
+}
+
+#font-404 {
     font-family: 'Indie Flower', cursive;
     font-size:80px;
     font-weight: 900;
     color: rgb(59, 10, 172);
-  }
-  #font-404 ::first-letter {
+}
+
+#font-404 ::first-letter {
     font-size: 200%;
     color: #d41021;
-  }
-   #subtitle1{
-       font-size: 32px;
-       color: rgb(76, 76, 209);
-   }
+}
+
+#subtitle1{
+    font-size: 32px;
+    color: rgb(76, 76, 209);
+}
+
    #font-pg1 ::first-letter {
     font-size: 200%;
     color: #06ad1c;
