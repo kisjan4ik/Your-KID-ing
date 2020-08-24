@@ -21,7 +21,7 @@ class SavedIdeas extends Component {
 
         return (
             <div id="results1">
-                <img alt="saved" id="imgplace1" src={saved} height="145px" width="310px" />
+                <img alt="saved" id="imgplace1" src={saved} height="145px" width="270px" />
 
                 <IdeaSearch
                     title={"Saved places :"} >
