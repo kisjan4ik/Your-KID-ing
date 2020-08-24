@@ -44,13 +44,7 @@ module.exports = {
       .then(dbIdea => res.json(dbIdea))
       .catch(err => res.status(422).json(err));
   },
-  remove: function (req, res) {
-    db.Idea
-      .findById({ _id: req.params.id })
-      .then(dbIdea => dbIdea.remove())
-      .then(dbIdea => res.json(dbIdea))
-      .catch(err => res.status(422).json(err));
-  },
+
 
   saveIdea: function (req, res) {
     console.log("params: " + req.params.email, req.params.id);
@@ -92,4 +86,14 @@ module.exports = {
       .catch(err => res.status(422).json(err))
   },
 
+  //****************************/ delete the idea from the savedplaces /*********************************//
+
+  remove: function (req, res) {
+    console.log("log:" ,req.params);
+    console.log("req.body", req.body);
+    db.User
+      .findByIdAndUpdate(req.body.userId, { $pull:{savedplaces: req.params.id }})
+      .then(dbUser => res.json(dbUser))
+      .catch(err => res.status(422).json(err));
+  },
 };

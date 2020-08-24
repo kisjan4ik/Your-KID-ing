@@ -1366,7 +1366,7 @@ var ideaSeed = [
         website: "https://www.avalonpark.com/news-events/events/"
     },
     {
-        placename: "Orlando Science CenterAvalon Park Movie Under the Stars",
+        placename: "Orlando Science Center",
         image: "https://fun4orlandokids.com/media/com_mtree/images/listings/m/10962.png",
         category: "Science Center",
         where: "indoor",
@@ -1376,7 +1376,7 @@ var ideaSeed = [
         phone: "(407) 514-2000",
         website: "https://www.osc.org/"
     }, {
-        placename: "Orlando Science CenterAvalon Park Movie Under the Stars",
+        placename: "Orlando Science Center",
         image: "https://fun4orlandokids.com/media/com_mtree/images/listings/m/10962.png",
         category: "Science Center",
         where: "indoor",
@@ -1387,7 +1387,7 @@ var ideaSeed = [
         website: "https://www.osc.org/"
     },
     {
-        placename: "Orlando Science CenterAvalon Park Movie Under the Stars",
+        placename: "Orlando Science Center",
         image: "https://fun4orlandokids.com/media/com_mtree/images/listings/m/10962.png",
         category: "Science Center",
         where: "indoor",
@@ -1398,7 +1398,7 @@ var ideaSeed = [
         website: "https://www.osc.org/"
     },
     {
-        placename: "Orlando Science CenterAvalon Park Movie Under the Stars",
+        placename: "Orlando Science Center",
         image: "https://fun4orlandokids.com/media/com_mtree/images/listings/m/10962.png",
         category: "Science Center",
         where: "indoor",
@@ -1409,7 +1409,7 @@ var ideaSeed = [
         website: "https://www.osc.org/"
     },
     {
-        placename: "Orlando Science CenterAvalon Park Movie Under the Stars",
+        placename: "Orlando Science Center",
         image: "https://fun4orlandokids.com/media/com_mtree/images/listings/m/10962.png",
         category: "Science Center",
         where: "indoor",
@@ -1420,7 +1420,7 @@ var ideaSeed = [
         website: "https://www.osc.org/"
     },
     {
-        placename: "Orlando Science CenterAvalon Park Movie Under the Stars",
+        placename: "Orlando Science Center",
         image: "https://fun4orlandokids.com/media/com_mtree/images/listings/m/10962.png",
         category: "Science Center",
         where: "indoor",
@@ -1431,7 +1431,7 @@ var ideaSeed = [
         website: "https://www.osc.org/"
     },
     {
-        placename: "Orlando Science CenterAvalon Park Movie Under the Stars",
+        placename: "Orlando Science Center",
         image: "https://fun4orlandokids.com/media/com_mtree/images/listings/m/10962.png",
         category: "Science Center",
         where: "indoor",
@@ -1442,7 +1442,7 @@ var ideaSeed = [
         website: "https://www.osc.org/"
     },
     {
-        placename: "Orlando Science CenterAvalon Park Movie Under the Stars",
+        placename: "Orlando Science Center",
         image: "https://fun4orlandokids.com/media/com_mtree/images/listings/m/10962.png",
         category: "Science Center",
         where: "indoor",
@@ -1453,7 +1453,7 @@ var ideaSeed = [
         website: "https://www.osc.org/"
     },
     {
-        placename: "Orlando Science CenterAvalon Park Movie Under the Stars",
+        placename: "Orlando Science Center",
         image: "https://fun4orlandokids.com/media/com_mtree/images/listings/m/10962.png",
         category: "Science Center",
         where: "indoor",

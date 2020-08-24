@@ -82,6 +82,23 @@ class SearchResults extends React.Component {
             .catch(err => console.log(err));
     }
 
+    deleteUserPlace = (id, userId) => {
+        console.log(id);
+        APIideas.deleteUserPlace(id, userId)
+        .then(res => 
+            APIideas.getUserPlaces(localStorage.getItem("id")).then(result => {
+                console.log(result.data.savedplaces)
+                // setSavedPlaces(result.data.savedplaces)
+                this.setState({savedplaces: result.data.savedplaces})
+            })
+                .catch(err => console.log(err))
+        
+
+
+        .catch(err => console.log(err))
+ 
+        )}
+
     render() {
 console.log(this.state.savedplaces);
         return (
@@ -157,7 +174,7 @@ console.log(this.state.savedplaces);
                 <Col 
                     sm={6}
                 >
-                    <UserSavedPlaces savedplaces={this.state.savedplaces}></UserSavedPlaces>
+                    <UserSavedPlaces savedplaces={this.state.savedplaces} deleteUserPlace={this.deleteUserPlace}></UserSavedPlaces>
                     {/* <SavedIdeas savedplaces={this.state.savedplaces} /> */}
                 </Col>
             </Row>

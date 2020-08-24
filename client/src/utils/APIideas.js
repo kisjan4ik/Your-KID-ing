@@ -35,6 +35,17 @@ export default {
   getUserPlaces: function (id) {
     console.log("id: " + id);
     return axios.get("/api/ideas/dashboard/savedplaces/" + id)
-  }
+  },
 
+   //****************************/ delete the idea from the savedplaces /*********************************//
+
+   deleteUserPlace: function (id, userId) {
+    console.log("id: " + userId);
+    return axios({
+      url: "/api/ideas/dashboard/savedplaces/" + id,
+      data:{userId},
+      method:"delete"
+    })
+
+  }
 };

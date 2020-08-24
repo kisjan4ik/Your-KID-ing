@@ -24,7 +24,7 @@ export default (state = initialState, action) => {
             return {
                 ...state,
                 token: action.payload.token,
-                currentUser: { email: action.payload.email, firstname: action.payload.firstname, lastname: action.payload.lastname, nickname: action.payload.nickname, location: action.payload.location },
+                currentUser: { email: action.payload.email, firstname: action.payload.firstname, lastname: action.payload.lastname, nickname: action.payload.nickname, location: action.payload.location, id: action.payload.id },
                 isAuthenticated: true
             };
         case REGISTER_FAIL:

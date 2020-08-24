@@ -49,7 +49,8 @@ module.exports = {
                             firstname,
                             lastname,
                             location,
-                            email
+                            email,
+                            id:user.id
                         })
                     })
 

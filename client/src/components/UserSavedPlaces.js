@@ -6,8 +6,10 @@ import SavedIdeas from "../components/SavedIdeas";
 
 
 
-export const UserSavedPlaces = (props) => {
 
+export const UserSavedPlaces = (props) => {
+    const user = useSelector(state => state.auth.currentUser);
+    console.log("user", user._id);
     // const [savedplaces, setSavedPlaces] = useState([])
 
     // useEffect(() => {
@@ -57,6 +59,8 @@ export const UserSavedPlaces = (props) => {
                             // phone={idea.phone}
                             // website={idea.website}
                             savedplaces={props.savedplaces}
+                            deleteUserPlace={props.deleteUserPlace}
+                            userId={user._id}
 
                         />
                         
