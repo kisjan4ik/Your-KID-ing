@@ -1,14 +1,11 @@
 
-# Boiler Plate - MERN Application with Authentication using JSON Web Tokens (JWT)  
-
-## Online Example & Deployment:
-
-This application was deployed to Heroku services.
--  Link: https://project3-plate.herokuapp.com/
-
+# Your KID-ing 
+  
 ## Description
 
-This is a Boiler Plate MERN application with authentication using JSON Web Tokens. This APP was design to be used as a starting point for any developer looking to integrate authentication with a MERN application.
+This is an applicaton helping to find different types of activities for  their kids. 
+Users can find places to go, filtered by child's age and indoor or outdoor prefferences and save the places they like to their account page.
+Also users can find events in the area and ideas to entertain kids when at home.
 
 This application uses JWT to handle Authentication and Redux to handle React state.
 
@@ -34,39 +31,36 @@ npm install
 
 ## Usage
 ``` 
-    To start using this project: 
+    To start using this project locally: 
 
-    1.  Install node modules for Fron-End and Back-End with: npm install
-    2.  Create a .env file at the root location of the project to handle the database credentials and JWT secret:
-    
-        # Database Info
-        DATABASE_INFO = "Your Mongo Credentials"
-
-        #JWT Secret
-        JWT_SECRET = "Your JWT Secret"
-
-    3.  Run the following command to start the application: npm run dev
-    4.  Enjoy..!
+    1.  Install node modules for Fron-End and Back-End with: run the following command : npm run dev
+    2.  You can also find deployed to Heroku version at: https://calm-basin-38354.herokuapp.com/
 ``` 
 
 ## Questions
 
-<img src="https://avatars0.githubusercontent.com/u/40499942?v=4" alt="avatar" style="border-radius: 16px" width="30" />
+If you have any questions about the repo, open an issue or contact [kisjan4ik](https://github.com/kisjan4ik) directly at oturetska@yahoo.com.
 
-If you have any questions about the repo, open an issue or contact [jaab30](https://github.com/jaab30) directly at jaab30@yahoo.com.
-
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jaab30/ticketGen)
-
-<!-- ## Video Preview -->
-
-<!-- [<img src="https://user-images.githubusercontent.com/40499942/83711110-511fe400-a5f0-11ea-9fc9-e3397e3b0cb9.jpg" alt="app video" width="600px"/>](https://www.youtube.com/watch?v=6_Ur7afd5zE&feature=youtu.be) -->
-
-## images
-
-<img src="https://user-images.githubusercontent.com/40499942/86778760-bcfacf80-c028-11ea-9c8c-56fa2f0b5cd7.png" alt="app example" width="600px"/>
-<img src="https://user-images.githubusercontent.com/40499942/86778798-c84dfb00-c028-11ea-914b-70ea02530111.png" alt="app example" width="600px"/>
-<img src="https://user-images.githubusercontent.com/40499942/86778829-d4d25380-c028-11ea-90a0-8e1f75e5f3a4.png" alt="app example" width="600px"/>
-<img src="https://user-images.githubusercontent.com/40499942/86778867-df8ce880-c028-11ea-9778-b583e8b9b6bf.png" alt="app example" width="600px"/>
-<img src="https://user-images.githubusercontent.com/40499942/86778904-eb78aa80-c028-11ea-9e92-fed6e7c6af3f.png" alt="app example" width="600px"/>
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/kisjan4ik/ticketGen)
 
 
+## Screenshoots:
+
+![Screenshoot 1](https://user-images.githubusercontent.com/63433561/91320437-82d9be80-e78b-11ea-99c3-c1d6a84eef5a.PNG)
+
+![Screenshoot 2](https://user-images.githubusercontent.com/63433561/91320438-83725500-e78b-11ea-9b1d-163819353f17.PNG)
+
+![Screenshoot 3](https://user-images.githubusercontent.com/63433561/91320440-83725500-e78b-11ea-872a-9099f9d8e208.PNG)
+
+![Screenshoot 4](https://user-images.githubusercontent.com/63433561/91320442-840aeb80-e78b-11ea-9554-4281fd591fb2.PNG)
+
+![Screenshoot 5](https://user-images.githubusercontent.com/63433561/91320444-840aeb80-e78b-11ea-98dc-16fabbe6b59e.PNG)
+
+![Screenshoot 6](https://user-images.githubusercontent.com/63433561/91320446-84a38200-e78b-11ea-84ba-84818c52cc42.PNG)
+
+
+
+## Online Example & Deployment:
+
+This application was deployed to Heroku services.
+-  Link: https://calm-basin-38354.herokuapp.com/
