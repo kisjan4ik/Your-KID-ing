@@ -14,7 +14,7 @@ class Event extends React.Component {
                 {
                     id: 0,
                     imgSrc: event,
-                    link: "https://mommypoppins.com/events/1400/orlando/all/tag/all/age/all/all/deals/0/near/0/0",
+                    link: "https://protected-peak-46001.herokuapp.com/",
                     selected: false
                 },
             ]

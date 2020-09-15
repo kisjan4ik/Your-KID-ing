@@ -9,7 +9,7 @@ export const Location = () => {
 
     return (
         <>
-            <p id="label2" >{user ? user.location : ""} ?</p>
+            <p id="label2" >{user ? user.location : ""} or in another city?</p>
         </>
     )
 }

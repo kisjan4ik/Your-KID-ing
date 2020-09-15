@@ -13,7 +13,7 @@ export const PageOne = () => {
             <Message id="head" className="message-container" size="huge" secondary="true">
 
                 <Header id="font-pg1" size="huge"><p>Kids events</p>  </Header>
-                <p id="subtitle1">in your area</p>
+                {/* <p id="subtitle1">in your area</p> */}
             </Message>
 
             <div id="events">
