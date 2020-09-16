@@ -95,7 +95,14 @@ body {
     margin-bottom:50px;
 }
 
-
+.t-card-image:hover {
+  border-radius: 10px;
+  width: 480px;
+  height: 300px;
+  box-shadow: 0px 0px 3px 1px #ccc;
+  border:#8673f5 double 18px;
+  border-radius: 15px;
+}
 
 
 #tsparticles {
